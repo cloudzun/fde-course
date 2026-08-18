@@ -141,7 +141,7 @@ Palantir 的平台、团队与方法论，可以用 **People–Process–Technol
 | **飞轮（三者咬合）** | 能力回注机制：现场 People 发现痛点 → Process 沉淀方法 → Technology 固化为平台能力 | PPT 三者不是并列清单，而是一个自我强化的循环——这才是护城河 |
 
 ```mermaid
-graph LR
+graph TD
     PE["People<br/>特种小组 + 产品汇报线"] -->|发现真痛点| PR["Process<br/>碎石路→铺装公路<br/>五次部署法则"]
     PR -->|沉淀方法| TE["Technology<br/>Foundry / Ontology / AIP"]
     TE -->|降低下一次成本| PE

@@ -169,11 +169,7 @@ graph TD
     B4 ==> C1
     C1 --> C2 --> C3 --> C4
 
-    classDef s1 fill:#eef2f7,stroke:#5a6b7f;
-    classDef s2 fill:#e3e9f1,stroke:#4a5f7d;
     classDef s3 fill:#dbe4f0,stroke:#3949ab;
-    class A1,A2,A3,A4 s1;
-    class B1,B2,B3,B4 s2;
     class C1,C2,C3,C4 s3;
 ```
 *图：FDE转型分基础建设、能力积累、飞轮加速三阶段，逐级递进启动能力回注飞轮*

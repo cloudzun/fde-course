@@ -122,10 +122,7 @@ graph TD
     fast --> fund["利润反哺研发投入"]
     fund -->|持续迭代| pit
     
-    style pit fill:#eef2f7,stroke:#5a6b7f
-    style mod fill:#eef2f7,stroke:#5a6b7f
     style road fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
-    style fast fill:#eef2f7,stroke:#5a6b7f
     style fund fill:#e4efe4,stroke:#5b7a5b
 ```
 *图：FDE经济学与产品能力回注飞轮*
@@ -150,8 +147,6 @@ graph TD
     PR -->|沉淀方法| TE["Technology<br/>Foundry / Ontology / AIP"]
     TE -->|降低下一次成本| PE
 
-    style PE fill:#eef2f7,stroke:#5a6b7f
-    style PR fill:#eef2f7,stroke:#5a6b7f
     style TE fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
 ```
 *图：Palantir 的 PPT 三维度互相咬合，形成能力回注飞轮*

@@ -49,9 +49,6 @@ graph TD
     viol -->|关联地点| house
 
     style person fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
-    style house fill:#eef2f7,stroke:#5a6b7f
-    style corp fill:#eef2f7,stroke:#5a6b7f
-    style viol fill:#eef2f7,stroke:#5a6b7f
 ```
 *图：某政务场景的 Ontology，以人口为起点关联房屋、法人企业与环保违规事件*
 

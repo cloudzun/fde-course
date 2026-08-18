@@ -108,7 +108,7 @@ graph TD
 - **FR (交付经理, Fulfillment Representative)**：负责项目的生命周期管理、资源协调与实施交付。
 
 ```mermaid
-graph LR
+graph TD
     subgraph tri["华为云铁三角客户交互界面"]
         AR["AR 客户经理 - 商务主导"] 
         SR["SR 解决方案经理 - 技术主导"] 
@@ -125,7 +125,6 @@ graph LR
     style AR fill:#dbe4f0,stroke:#3949ab
     style SR fill:#dbe4f0,stroke:#3949ab
     style FR fill:#dbe4f0,stroke:#3949ab
-    style Client fill:#eef2f7,stroke:#5a6b7f
 ```
 *图：华为云AR/SR/FR三角色以统一界面协同，对政企客户形成铁三角闭环交付*
 
@@ -184,7 +183,6 @@ graph TD
 
     style cost fill:#f5ece0,stroke:#a8895f
     style profit fill:#e4efe4,stroke:#5b7a5b
-    style otss fill:#eef2f7,stroke:#5a6b7f
     style fde_m fill:#dbe4f0,stroke:#3949ab
 ```
 *图：腾讯云从被动OTSS运维的成本中心，向主动业务驱动的FDE利润中心演进路径*
@@ -253,8 +251,6 @@ graph LR
     F -.->|真实业务反馈| P
 
     style F fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
-    style P fill:#eef2f7,stroke:#5a6b7f
-    style C fill:#eef2f7,stroke:#5a6b7f
     style Client fill:#e4efe4,stroke:#5b7a5b
 ```
 *图：火山引擎以技术底座和千人级FDE铁军，联合咨询外脑对客户实现现场交付与反馈闭环*

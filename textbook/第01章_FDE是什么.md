@@ -51,9 +51,6 @@ graph TD
     prod --- FDE
     eng --- FDE
     
-    style biz fill:#eef2f7,stroke:#5a6b7f
-    style prod fill:#eef2f7,stroke:#5a6b7f
-    style eng fill:#eef2f7,stroke:#5a6b7f
     style FDE fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
 ```
 *图：FDE 融合工程师、业务顾问与产品经理三重角色，三位一体实现降维打击*
@@ -122,9 +119,6 @@ graph TD
 graph LR
     discovery["Discovery<br/>发现期"] --> prototype["Prototype<br/>原型期"] --> build["Build<br/>构建期"] --> scale["Scale<br/>扩展期"]
 
-    style discovery fill:#eef2f7,stroke:#5a6b7f
-    style prototype fill:#e3e9f1,stroke:#4a5f7d
-    style build fill:#e3e9f1,stroke:#4a5f7d
     style scale fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
 ```
 *图：FDE 四阶段交付——Discovery 发现、Prototype 原型、Build 构建、Scale 扩展，层层递进由点到面*

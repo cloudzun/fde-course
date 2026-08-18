@@ -83,9 +83,7 @@ graph TD
     sen -->|客户管理 + 团队统筹能力| lead["FDE 负责人 (Deployment Lead)"]
     
     %% 注释模块
-    classDef default fill:#eef2f7,stroke:#5a6b7f;
     classDef highlight fill:#dbe4f0,stroke:#3949ab,stroke-width:2px;
-    class jun,mid,sen default;
     class arch,lead highlight;
 ```
 
@@ -156,9 +154,6 @@ graph LR
     style i1 fill:#f5ece0,stroke:#a8895f
     style i2 fill:#f5ece0,stroke:#a8895f
     style i3 fill:#f5ece0,stroke:#a8895f
-    style p1 fill:#eef2f7,stroke:#5a6b7f
-    style p2 fill:#eef2f7,stroke:#5a6b7f
-    style p3 fill:#eef2f7,stroke:#5a6b7f
     style o1 fill:#e4efe4,stroke:#5b7a5b
     style o2 fill:#e4efe4,stroke:#5b7a5b
     style o3 fill:#e4efe4,stroke:#5b7a5b

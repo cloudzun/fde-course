@@ -66,7 +66,6 @@ graph LR
     ppt -.贯穿每个阶段.-> time
 
     style p1 fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
-    style p2 fill:#eef2f7,stroke:#5a6b7f
     style p3 fill:#e4efe4,stroke:#5b7a5b
 ```
 *图：每个交付阶段，都需要同时推进 People / Process / Technology 三个维度*

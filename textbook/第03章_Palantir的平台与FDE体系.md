@@ -56,10 +56,6 @@ graph TD
 
     style src fill:#f5ece0,stroke:#a8895f
     style onto fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
-    style pipe fill:#eef2f7,stroke:#5a6b7f
-    style ana fill:#eef2f7,stroke:#5a6b7f
-    style work fill:#eef2f7,stroke:#5a6b7f
-    style aip fill:#eef2f7,stroke:#5a6b7f
 ```
 *图：Palantir 平台五大层级：数据在管道清洗融合后进入本体层，支撑业务应用与 AI。*
 
@@ -101,9 +97,7 @@ graph LR
     tech <-->|"算力 / 部署 / 资源支持"| infra
     strategy <-->|"安全合规斡旋 / 立项"| infra
 
-    style strategy fill:#eef2f7,stroke:#5a6b7f
     style tech fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
-    style infra fill:#eef2f7,stroke:#5a6b7f
 ```
 *图：三角色谱系中，技术执行工程师（Delta）是核心作战力量。*
 

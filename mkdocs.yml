@@ -75,6 +75,7 @@ copyright: Copyright &copy; 2026 · CC BY-NC-ND 4.0 · 《AI 时代的 FDE：认
 
 plugins:
   - search
+  - callouts
 
 nav:
   - 首页: index.md
@@ -86,10 +87,10 @@ nav:
       - 第3章 Palantir的平台与FDE体系: textbook/第03章_Palantir的平台与FDE体系.md
       - 第4章 Palantir经典案例集: textbook/第04章_Palantir经典案例集.md
   - 第三篇 · 流程篇:
-      - 第5章 Phase 1: Discovery（发现期）: textbook/第05章_Phase1_Discovery.md
-      - 第6章 Phase 2: Prototype（原型期）: textbook/第06章_Phase2_Prototype.md
-      - 第7章 Phase 3: Build（构建期）: textbook/第07章_Phase3_Build.md
-      - 第8章 Phase 4: Scale（扩展期）: textbook/第08章_Phase4_Scale.md
+      - "第5章 Phase 1: Discovery（发现期）": textbook/第05章_Phase1_Discovery.md
+      - "第6章 Phase 2: Prototype（原型期）": textbook/第06章_Phase2_Prototype.md
+      - "第7章 Phase 3: Build（构建期）": textbook/第07章_Phase3_Build.md
+      - "第8章 Phase 4: Scale（扩展期）": textbook/第08章_Phase4_Scale.md
       - 第9章 能力回注方法论: textbook/第09章_能力回注方法论.md
   - 第四篇 · 团队篇:
       - 第10章 FDE角色体系: textbook/第10章_FDE角色体系.md

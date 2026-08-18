@@ -1,0 +1,27 @@
+{
+  "name": "fde-course",
+  "version": "1.0.0",
+  "description": "> **副题：从非标交付到平台飞轮——\"卖人力\"到\"卖能力\"的完整方法论**",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudzun/fde-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cloudzun/fde-course/issues"
+  },
+  "homepage": "https://github.com/cloudzun/fde-course#readme",
+  "dependencies": {
+    "katex": "^0.16.11",
+    "mermaid": "^11.16.1"
+  }
+}

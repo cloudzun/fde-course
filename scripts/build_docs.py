@@ -43,7 +43,7 @@ if os.path.isdir(tb_assets):
 # 2. 首页
 shutil.copy2(os.path.join(ROOT, "index.md"), os.path.join(DOCS, "index.md"))
 
-# 3. 静态资源（自定义样式 / KaTeX 初始化）
+# 3. 静态资源（自定义样式 / KaTeX 初始化 / 本地 vendor 库）
 for src, rel in [
     (os.path.join(ROOT, "assets", "extra.css"), "assets/extra.css"),
     (os.path.join(ROOT, "javascripts", "katex.js"), "javascripts/katex.js"),
@@ -51,5 +51,10 @@ for src, rel in [
     dst = os.path.join(DOCS, rel)
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     shutil.copy2(src, dst)
+
+# 3.1 本地 vendor（katex / mermaid，避免 CDN 不可达）
+vendor = os.path.join(ROOT, "assets", "vendor")
+if os.path.isdir(vendor):
+    shutil.copytree(vendor, os.path.join(DOCS, "assets", "vendor"))
 
 print(f"build_docs.py: 已同步 {len(os.listdir(os.path.join(DOCS,'textbook')))} 个教材文件到 docs/")

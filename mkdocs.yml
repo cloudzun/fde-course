@@ -60,12 +60,13 @@ markdown_extensions:
   - md_in_html
 
 extra_javascript:
-  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
-  - https://unpkg.com/katex@0.16.11/dist/katex.min.js
+  - assets/vendor/katex.min.js
+  - assets/vendor/auto-render.min.js
   - javascripts/katex.js
-  - https://unpkg.com/katex@0.16.11/dist/contrib/copy-tex.min.js
+  - assets/vendor/mermaid.min.js
 
 extra_css:
+  - assets/vendor/katex.min.css
   - assets/extra.css
 
 extra:

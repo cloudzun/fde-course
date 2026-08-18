@@ -35,7 +35,8 @@ graph TD
     onto --> sc5["场景N: 配置化组装<br/>成本 ~15%"]
 
     style onto fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
-    style sc1,sc2,sc3,sc4 fill:#eef2f7,stroke:#5a6b7f
+    classDef scMain fill:#eef2f7,stroke:#5a6b7f;
+    class sc1,sc2,sc3,sc4 scMain;
     style sc5 fill:#e4efe4,stroke:#5b7a5b
 ```
 *图：底座打通后，新场景的边际成本随复用度提升而递减*

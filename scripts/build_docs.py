@@ -34,6 +34,12 @@ def natural_key(name):
 for f in sorted(glob.glob(os.path.join(ROOT, "textbook", "*.md")), key=natural_key):
     copy_md(f, os.path.join(DOCS, "textbook"))
 
+# 1.1 教材内嵌资源（textbook/assets/ 子目录，如图片）→ docs/textbook/assets/
+tb_assets = os.path.join(ROOT, "textbook", "assets")
+if os.path.isdir(tb_assets):
+    dst = os.path.join(DOCS, "textbook", "assets")
+    shutil.copytree(tb_assets, dst)
+
 # 2. 首页
 shutil.copy2(os.path.join(ROOT, "index.md"), os.path.join(DOCS, "index.md"))
 

@@ -1,0 +1,104 @@
+# AI 时代的 FDE —— 文档站点配置
+site_name: AI 时代的 FDE：认知、流程、团队与中国落地
+site_description: FDE（前沿部署工程师）方法论与落地手册 —— 六篇 16 章：认知 / 标杆 / 流程 / 团队 / 中国实践 / AI 落地，贯穿"卖人力→卖能力"飞轮主线
+site_url: https://www.cloudzun.com/fde-course/
+repo_url: https://github.com/cloudzun/fde-course
+repo_name: cloudzun/fde-course
+edit_uri: ""
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: 切换深色模式
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: 切换浅色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+  - https://unpkg.com/katex@0.16.11/dist/katex.min.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0.16.11/dist/contrib/copy-tex.min.js
+
+extra_css:
+  - assets/extra.css
+
+extra:
+  generator: false
+
+copyright: Copyright &copy; 2026 · CC BY-NC-ND 4.0 · 《AI 时代的 FDE：认知、流程、团队与中国落地》
+
+plugins:
+  - search
+
+nav:
+  - 首页: index.md
+  - 导读与结构: textbook/00_封面与全书导读.md
+  - 第一篇 · 认知篇:
+      - 第1章 FDE是什么: textbook/第01章_FDE是什么.md
+      - 第2章 为什么需要FDE: textbook/第02章_为什么需要FDE.md
+  - 第二篇 · 标杆篇:
+      - 第3章 Palantir的平台与FDE体系: textbook/第03章_Palantir的平台与FDE体系.md
+      - 第4章 Palantir经典案例集: textbook/第04章_Palantir经典案例集.md
+  - 第三篇 · 流程篇:
+      - 第5章 Phase 1: Discovery（发现期）: textbook/第05章_Phase1_Discovery.md
+      - 第6章 Phase 2: Prototype（原型期）: textbook/第06章_Phase2_Prototype.md
+      - 第7章 Phase 3: Build（构建期）: textbook/第07章_Phase3_Build.md
+      - 第8章 Phase 4: Scale（扩展期）: textbook/第08章_Phase4_Scale.md
+      - 第9章 能力回注方法论: textbook/第09章_能力回注方法论.md
+  - 第四篇 · 团队篇:
+      - 第10章 FDE角色体系: textbook/第10章_FDE角色体系.md
+      - 第11章 四阶段中的角色协作: textbook/第11章_四阶段中的角色协作.md
+      - 第12章 FDE人才培养与知识管理: textbook/第12章_FDE人才培养与知识管理.md
+  - 第五篇 · 中国实践篇:
+      - 第13章 中国云服务商的FDE实践图谱: textbook/第13章_中国云服务商的FDE实践图谱.md
+      - 第14章 中国区FDE转型的五大挑战与应对: textbook/第14章_中国区FDE转型的五大挑战与应对.md
+  - 第六篇 · AI 篇:
+      - 第15章 AI FDE 落地（Echo 视角）: textbook/第15章_AI_FDE落地_Echo共识与对齐.md
+      - 第16章 AI FDE 落地（Delta 视角）: textbook/第16章_AI_FDE落地_Delta技术与场景.md
+  - 附录: textbook/附录_参考来源与官方资料.md

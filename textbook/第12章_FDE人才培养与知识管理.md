@@ -77,17 +77,19 @@
 
 ```mermaid
 graph TD
-    A["初级 FDE (Associate)"] -->|掌握工具链, 能独立写模块| B["中级 FDE (Mid-level)"]
-    B -->|独立 own 场景交付, 识别业务痛点| C["高级 FDE (Senior)"]
-    C -->|全局视野 + 强悍攻坚能力| D["平台架构师 (Platform Architect)"]
-    C -->|客户管理 + 团队统筹能力| E["FDE 负责人 (Deployment Lead)"]
+    jun["初级 FDE (Associate)"] -->|掌握工具链, 能独立写模块| mid["中级 FDE (Mid-level)"]
+    mid -->|独立 own 场景交付, 识别业务痛点| sen["高级 FDE (Senior)"]
+    sen -->|全局视野 + 强悍攻坚能力| arch["平台架构师 (Platform Architect)"]
+    sen -->|客户管理 + 团队统筹能力| lead["FDE 负责人 (Deployment Lead)"]
     
     %% 注释模块
-    classDef default fill:#f4f6f9,stroke:#5a6b7f,stroke-width:1.5px;
-    classDef highlight fill:#dbe4f0,stroke:#3a5578,stroke-width:2px;
-    class A,B,C default;
-    class D,E highlight;
+    classDef default fill:#eef2f7,stroke:#5a6b7f;
+    classDef highlight fill:#dbe4f0,stroke:#3949ab,stroke-width:2px;
+    class jun,mid,sen default;
+    class arch,lead highlight;
 ```
+
+*图：FDE 职级进阶双轨——高级阶段后分叉技术线（架构师）与管理线（负责人）*
 
 > [!NOTE]
 > 晋升的**触发条件是能力标志而非年限**（各级能力标准见 10.3）。图中箭头标注的是"跨级所需能力"，而非"必须熬满几年"——能力达标者可加速晋升。
@@ -122,42 +124,47 @@ graph TD
 ```mermaid
 graph LR
     subgraph "输入 (Input)"
-        I1["项目踩坑与复盘"]
-        I2["客户新需求反馈"]
-        I3["技术前沿探索"]
+        i1["项目踩坑与复盘"]
+        i2["客户新需求反馈"]
+        i3["技术前沿探索"]
     end
     
     subgraph "加工 (Processing)"
-        P1["内部知识库 (Wiki/Notion)"]
-        P2["代码资产库 (GitLab)"]
-        P3["定期复盘会 (Post-mortem)"]
+        p1["内部知识库 (Wiki/Notion)"]
+        p2["代码资产库 (GitLab)"]
+        p3["定期复盘会 (Post-mortem)"]
     end
     
     subgraph "输出 (Output)"
-        O1["行业Playbook"]
-        O2["通用产品Feature"]
-        O3["最佳实践/培训材料"]
+        o1["行业Playbook"]
+        o2["通用产品Feature"]
+        o3["最佳实践/培训材料"]
     end
     
-    I1 --> P1
-    I2 --> P2
-    I3 --> P3
+    i1 --> p1
+    i2 --> p2
+    i3 --> p3
     
-    P1 --> O1
-    P2 --> O2
-    P3 --> O3
+    p1 --> o1
+    p2 --> o2
+    p3 --> o3
     
     %% 飞轮效应反馈线
-    O1 -.->|武装新人打新项目| I1
-    O2 -.->|提升交付效率| I2
+    o1 -.->|武装新人打新项目| i1
+    o2 -.->|提升交付效率| i2
 
-    style I1 fill:#f5ece0,stroke:#a8895f
-    style I2 fill:#f5ece0,stroke:#a8895f
-    style I3 fill:#f5ece0,stroke:#a8895f
-    style O1 fill:#e4efe4,stroke:#5b7a5b
-    style O2 fill:#e4efe4,stroke:#5b7a5b
-    style O3 fill:#e4efe4,stroke:#5b7a5b
+    style i1 fill:#f5ece0,stroke:#a8895f
+    style i2 fill:#f5ece0,stroke:#a8895f
+    style i3 fill:#f5ece0,stroke:#a8895f
+    style p1 fill:#eef2f7,stroke:#5a6b7f
+    style p2 fill:#eef2f7,stroke:#5a6b7f
+    style p3 fill:#eef2f7,stroke:#5a6b7f
+    style o1 fill:#e4efe4,stroke:#5b7a5b
+    style o2 fill:#e4efe4,stroke:#5b7a5b
+    style o3 fill:#e4efe4,stroke:#5b7a5b
 ```
+
+*图：知识管理飞轮——输入经加工沉淀为输出，输出又以反馈线回哺新一轮输入*
 
 ### 12.5 Demo Day与跨项目学习机制
 

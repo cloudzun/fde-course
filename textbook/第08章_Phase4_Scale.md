@@ -27,15 +27,16 @@ Scale 阶段最大的诱惑是“什么都想做”，最大的风险是“扩�
 
 ```mermaid
 graph TD
-    O["统一 Ontology 底座<br/>(Build 阶段建成)"]
-    O --> S1["场景1: 核心快赢<br/>成本 100%"]
-    O --> S2["场景2: 相邻扩展<br/>成本 ~40%"]
-    O --> S3["场景3: 相邻扩展<br/>成本 ~25%"]
-    O --> S4["场景4: 高价值跨域<br/>成本 ~50%"]
-    O --> S5["场景N: 配置化组装<br/>成本 ~15%"]
+    onto["统一 Ontology 底座<br/>(Build 阶段建成)"]
+    onto --> sc1["场景1: 核心快赢<br/>成本 100%"]
+    onto --> sc2["场景2: 相邻扩展<br/>成本 ~40%"]
+    onto --> sc3["场景3: 相邻扩展<br/>成本 ~25%"]
+    onto --> sc4["场景4: 高价值跨域<br/>成本 ~50%"]
+    onto --> sc5["场景N: 配置化组装<br/>成本 ~15%"]
 
-    style O fill:#dbe4f0,stroke:#3a5578,stroke-width:2px
-    style S5 fill:#e4efe4,stroke:#5b7a5b
+    style onto fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style sc1,sc2,sc3,sc4 fill:#eef2f7,stroke:#5a6b7f
+    style sc5 fill:#e4efe4,stroke:#5b7a5b
 ```
 *图：底座打通后，新场景的边际成本随复用度提升而递减*
 

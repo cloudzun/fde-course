@@ -116,15 +116,17 @@ FDE 深入现场，面对极端老旧的数据接口和严格的密级隔离约�
 
 ```mermaid
 graph TD
-    A["现场FDE解决孤立痛点"] -->|定制化整合| B["沉淀初步非标模块"]
-    B -->|经历5个相似部署| C["研发重构为铺装公路"]
-    C -->|平台能力增强| D["缩短新客户部署周期"]
-    D --> E["利润反哺研发投入"]
-    E -->|持续迭代| A
+    pit["现场FDE解决孤立痛点"] -->|定制化整合| mod["沉淀初步非标模块"]
+    mod -->|经历5个相似部署| road["研发重构为铺装公路"]
+    road -->|平台能力增强| fast["缩短新客户部署周期"]
+    fast --> fund["利润反哺研发投入"]
+    fund -->|持续迭代| pit
     
-    style A fill:#eef2f7,stroke:#5a6b7f
-    style C fill:#dbe4f0,stroke:#3a5578
-    style E fill:#e4efe4,stroke:#5b7a5b
+    style pit fill:#eef2f7,stroke:#5a6b7f
+    style mod fill:#eef2f7,stroke:#5a6b7f
+    style road fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style fast fill:#eef2f7,stroke:#5a6b7f
+    style fund fill:#e4efe4,stroke:#5b7a5b
 ```
 *图：FDE经济学与产品能力回注飞轮*
 
@@ -148,9 +150,9 @@ graph TD
     PR -->|沉淀方法| TE["Technology<br/>Foundry / Ontology / AIP"]
     TE -->|降低下一次成本| PE
 
-    style PE fill:#dbe4f0,stroke:#3a5578,stroke-width:2px
+    style PE fill:#eef2f7,stroke:#5a6b7f
     style PR fill:#eef2f7,stroke:#5a6b7f
-    style TE fill:#e4efe4,stroke:#5b7a5b
+    style TE fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
 ```
 *图：Palantir 的 PPT 三维度互相咬合，形成能力回注飞轮*
 

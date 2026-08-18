@@ -9,18 +9,19 @@
 
 ```mermaid
 graph TD
-    A["客户定制需求多且分散"] --> B["企业投入大量研发进行定制开发"]
-    B --> C["交付周期长，成本失控"]
-    C --> D["项目利润率(毛利)极低甚至亏损"]
-    D --> E["无力投入核心平台研发"]
-    E --> F["产品竞争力下降"]
-    F --> G["只能靠低价和更深度的定制抢单"]
-    G --> A
+    cust["客户定制需求多且分散"] --> rd["企业投入大量研发进行定制开发"]
+    rd --> delivery["交付周期长，成本失控"]
+    delivery --> loss["项目利润率(毛利)极低甚至亏损"]
+    loss --> noRnd["无力投入核心平台研发"]
+    noRnd --> compet["产品竞争力下降"]
+    compet --> lowprice["只能靠低价和更深度的定制抢单"]
+    lowprice --> cust
     
-    style A fill:#f5ece0,stroke:#a8895f
-    style D fill:#ecdcc9,stroke:#9a7b4f
-    style G fill:#e0c9b0,stroke:#8a6a42
+    style cust fill:#f5ece0,stroke:#a8895f
+    style loss fill:#fdecea,stroke:#d94f4f
+    style lowprice fill:#f5ece0,stroke:#a8895f
 ```
+*图：项目制交付陷入"需求分散→定制→亏损→无力投平台"的自我强化死亡螺旋*
 
 **为什么这是“结构性”困境，而非“管理不善”？**
 
@@ -134,13 +135,13 @@ $$
 
 ```mermaid
 graph TD
-    A["FDE解决客户非标痛点"] -->|提炼/解耦| B["业务抽象为通用能力"]
-    B -->|合并到主分支| C["核心平台(Foundry/AIP)升级"]
-    C -->|平台能力增强| D["降低下一个类似客户的交付成本"]
-    D --> A
+    solve["FDE解决客户非标痛点"] -->|提炼/解耦| abstract["业务抽象为通用能力"]
+    abstract -->|合并到主分支| platform["核心平台(Foundry/AIP)升级"]
+    platform -->|平台能力增强| reduce["降低下一个类似客户的交付成本"]
+    reduce --> solve
 
-    style A fill:#dbe4f0,stroke:#3a5578,stroke-width:2px
-    style C fill:#e4efe4,stroke:#5b7a5b
+    style solve fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style platform fill:#e4efe4,stroke:#5b7a5b
 ```
 *图：FDE经济学飞轮*
 
@@ -206,18 +207,18 @@ graph TD
 ```mermaid
 graph LR
     subgraph start["启动期：种子逻辑"]
-        A1["稀缺=行业Know-how"] --> A2["广撒种 赌通用性"]
-        A2 --> A3["判断点：Outcome+Data<br/>+痛点行业普遍性"]
+        seedScarcity["稀缺=行业Know-how"] --> sowSeed["广撒种 赌通用性"]
+        sowSeed --> seedJudge["判断点：Outcome+Data<br/>+痛点行业普遍性"]
     end
     subgraph mature["成熟期：杠杆逻辑"]
-        B1["稀缺=FDE交付带宽"] --> B2["精挑选 收割红利"]
-        B2 --> B3["判断点：复用杠杆+战略延展<br/>+负向筛选反噬项目"]
+        matureScarcity["稀缺=FDE交付带宽"] --> harvest["精挑选 收割红利"]
+        harvest --> reject["判断点：复用杠杆+战略延展<br/>+负向筛选反噬项目"]
     end
     start ==>|飞轮转起来<br/>约5个项目后| mature
 
-    style A2 fill:#dbe4f0,stroke:#3a5578
-    style B2 fill:#e4efe4,stroke:#5b7a5b
-    style B3 fill:#f5ece0,stroke:#a8895f
+    style sowSeed fill:#dbe4f0,stroke:#3949ab
+    style harvest fill:#e4efe4,stroke:#5b7a5b
+    style reject fill:#f5ece0,stroke:#a8895f
 ```
 *图：飞轮启动前后，项目承接选择逻辑的反转*
 

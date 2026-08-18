@@ -43,19 +43,20 @@ FDE不仅要解决“代码怎么写”的问题，更要解决“业务需要�
 
 ```mermaid
 graph TD
-    A["业务顾问 (懂行业/挖痛点)"]
-    B["产品经理 (懂平台/做抽象)"]
-    C["全栈工程师 (懂代码/速交付)"]
+    biz["业务顾问 (懂行业/挖痛点)"]
+    prod["产品经理 (懂平台/做抽象)"]
+    eng["全栈工程师 (懂代码/速交付)"]
     
-    A --- FDE["FDE 前沿部署工程师"]
-    B --- FDE
-    C --- FDE
+    biz --- FDE["FDE 前沿部署工程师"]
+    prod --- FDE
+    eng --- FDE
     
-    style A fill:#eef2f7,stroke:#5a6b7f
-    style B fill:#eef2f7,stroke:#5a6b7f
-    style C fill:#eef2f7,stroke:#5a6b7f
-    style FDE fill:#dbe4f0,stroke:#3a5578,stroke-width:3px
+    style biz fill:#eef2f7,stroke:#5a6b7f
+    style prod fill:#eef2f7,stroke:#5a6b7f
+    style eng fill:#eef2f7,stroke:#5a6b7f
+    style FDE fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
 ```
+*图：FDE 融合工程师、业务顾问与产品经理三重角色，三位一体实现降维打击*
 
 1. **全栈工程师维度**：要求具备极强的系统集成、数据管道搭建、全栈开发及故障排查能力。在现场，FDE可能需要连接十年前的遗留ERP系统，编写复杂的数据转换脚本。
 2. **业务顾问维度**：要求具备敏锐的商业嗅觉和沟通能力。不仅要听懂客户说出来的需求，更要挖掘出客户未表达出的深层痛点，并在客户内部复杂的部门利益间斡旋。
@@ -119,13 +120,14 @@ graph TD
 
 ```mermaid
 graph LR
-    A["Discovery<br/>发现期"] --> B["Prototype<br/>原型期"] --> C["Build<br/>构建期"] --> D["Scale<br/>扩展期"]
+    discovery["Discovery<br/>发现期"] --> prototype["Prototype<br/>原型期"] --> build["Build<br/>构建期"] --> scale["Scale<br/>扩展期"]
 
-    style A fill:#eef2f7,stroke:#5a6b7f
-    style B fill:#e3e9f1,stroke:#4a5f7d
-    style C fill:#d8e0ec,stroke:#3f567a
-    style D fill:#dbe4f0,stroke:#3a5578,stroke-width:2px
+    style discovery fill:#eef2f7,stroke:#5a6b7f
+    style prototype fill:#e3e9f1,stroke:#4a5f7d
+    style build fill:#e3e9f1,stroke:#4a5f7d
+    style scale fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
 ```
+*图：FDE 四阶段交付——Discovery 发现、Prototype 原型、Build 构建、Scale 扩展，层层递进由点到面*
 
 四个阶段层层递进、由轻到重、由点到面：
 

@@ -171,11 +171,12 @@ graph TD
 
     classDef s1 fill:#eef2f7,stroke:#5a6b7f;
     classDef s2 fill:#e3e9f1,stroke:#4a5f7d;
-    classDef s3 fill:#dbe4f0,stroke:#3a5578;
+    classDef s3 fill:#dbe4f0,stroke:#3949ab;
     class A1,A2,A3,A4 s1;
     class B1,B2,B3,B4 s2;
     class C1,C2,C3,C4 s3;
 ```
+*图：FDE转型分基础建设、能力积累、飞轮加速三阶段，逐级递进启动能力回注飞轮*
 
 这三个阶段并非平均用力，而是一条**"先亏后赚、先重后轻"的飞轮启动曲线**。下面逐阶段拆解：每个阶段要达成什么、用哪些工具做、以及——最关键的——**凭什么客观信号判断这一阶段已经成熟、可以进入下一阶段**（成熟度不能只看时间，时间到了但指标没到，就是没成熟）。
 

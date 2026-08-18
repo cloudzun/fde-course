@@ -33,33 +33,35 @@ FDE的强大离不开其背后的武器库。没有强大底座支撑的FDE，�
 
 ```mermaid
 graph TD
-    subgraph "客户现场"
-        A["异构数据源 (ERP/IoT/CRM)"]
+    subgraph site["客户现场"]
+        src["异构数据源 (ERP/IoT/CRM)"]
     end
     
-    subgraph "核心底座"
-        B["数据集成管道 (Pipeline Builder)"]
-        C["本体层 (Ontology) - 数据即现实"]
+    subgraph core["核心底座"]
+        pipe["数据集成管道 (Pipeline Builder)"]
+        onto["本体层 (Ontology) - 数据即现实"]
     end
     
-    subgraph "业务应用层"
-        D["分析与挖掘 (Quiver/Contour)"]
-        E["业务操作系统 (Workshop)"]
-        F["人工智能Agent (AIP Logic)"]
+    subgraph app["业务应用层"]
+        ana["分析与挖掘 (Quiver/Contour)"]
+        work["业务操作系统 (Workshop)"]
+        aip["人工智能Agent (AIP Logic)"]
     end
     
-    A --"FDE驻场拉通"--> B
-    B --> C
-    C --> D
-    C --> E
-    C --> F
+    src --"FDE驻场拉通"--> pipe
+    pipe --> onto
+    onto --> ana
+    onto --> work
+    onto --> aip
 
-    style A fill:#f5ece0,stroke:#a8895f
-    style C fill:#dbe4f0,stroke:#3a5578,stroke-width:2px
-    style D fill:#eef2f7,stroke:#5a6b7f
-    style E fill:#eef2f7,stroke:#5a6b7f
-    style F fill:#eef2f7,stroke:#5a6b7f
+    style src fill:#f5ece0,stroke:#a8895f
+    style onto fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style pipe fill:#eef2f7,stroke:#5a6b7f
+    style ana fill:#eef2f7,stroke:#5a6b7f
+    style work fill:#eef2f7,stroke:#5a6b7f
+    style aip fill:#eef2f7,stroke:#5a6b7f
 ```
+*图：Palantir 平台五大层级：数据在管道清洗融合后进入本体层，支撑业务应用与 AI。*
 
 在被上表与上图反复点名的 **Ontology（本体层）** 上，值得停下来看一个具体的、可复现的例子——因为它是"为什么 Ontology 比传统数据平台更强"最直观的现场演示。
 
@@ -91,18 +93,19 @@ graph TD
 
 ```mermaid
 graph LR
-    A["业务策略工程师<br/>(对标 Echo)"]
-    B["技术执行工程师<br/>(对标 Delta)"]
-    C["基础设施工程师<br/>(对标 Engineering 序列)"]
+    strategy["业务策略工程师<br/>(对标 Echo)"]
+    tech["技术执行工程师<br/>(对标 Delta)"]
+    infra["基础设施工程师<br/>(对标 Engineering 序列)"]
     
-    A <-->|"定义痛点 / 隔离伪需求"| B
-    B <-->|"算力 / 部署 / 资源支持"| C
-    A <-->|"安全合规斡旋 / 立项"| C
+    strategy <-->|"定义痛点 / 隔离伪需求"| tech
+    tech <-->|"算力 / 部署 / 资源支持"| infra
+    strategy <-->|"安全合规斡旋 / 立项"| infra
 
-    style A fill:#eef2f7,stroke:#5a6b7f
-    style B fill:#dbe4f0,stroke:#3a5578,stroke-width:2px
-    style C fill:#eef2f7,stroke:#5a6b7f
+    style strategy fill:#eef2f7,stroke:#5a6b7f
+    style tech fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style infra fill:#eef2f7,stroke:#5a6b7f
 ```
+*图：三角色谱系中，技术执行工程师（Delta）是核心作战力量。*
 
 1. **技术执行工程师（对标 Delta，即狭义的 FDE / FDSE）**
     - **定位**：尖刀，核心战斗力。享有极高的战术自主权。

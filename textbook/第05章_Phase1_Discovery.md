@@ -56,18 +56,18 @@ FDE 交付一个系统，绝不只是“部署一套软件”。一次成功的�
 ```mermaid
 graph LR
     subgraph time["时间维度：四阶段"]
-        D1["Discovery"] --> D2["Prototype"] --> D3["Build"] --> D4["Scale"]
+        d1["Discovery"] --> d2["Prototype"] --> d3["Build"] --> d4["Scale"]
     end
     subgraph ppt["内容维度：PPT 框架"]
-        P1["People 人员与组织"]
-        P2["Process 流程"]
-        P3["Technology 技术平台"]
+        p1["People 人员与组织"]
+        p2["Process 流程"]
+        p3["Technology 技术平台"]
     end
     ppt -.贯穿每个阶段.-> time
 
-    style P1 fill:#dbe4f0,stroke:#3a5578
-    style P2 fill:#eef2f7,stroke:#5a6b7f
-    style P3 fill:#e4efe4,stroke:#5b7a5b
+    style p1 fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style p2 fill:#eef2f7,stroke:#5a6b7f
+    style p3 fill:#e4efe4,stroke:#5b7a5b
 ```
 *图：每个交付阶段，都需要同时推进 People / Process / Technology 三个维度*
 

@@ -141,3 +141,14 @@
 - **配套**：给 9.1 原有四步法图补齐图注（*图：能力回注四步法流水线…*），符合规范"每图后必须有 1-2 行文字说明"。
 - **核验**：自托管 mermaid（esbuild 打包新版，支持 stateDiagram-v2/sequenceDiagram）经 Chrome 无头渲染验证——两张新图均成功生成 SVG、无语法错误；`mkdocs build` 成功。
 - **联动更新项**：`fde-course` 仓库同步推送并重新部署 GitHub Pages。当前版本 **v1.11**。
+
+## 审校修订记录（v1.12 · 全库 Mermaid 图规范化）
+
+参照 `mermaid_specification.md` 规范，对全库 **21 张既有 mermaid 图**做三项统一（第11章新增反馈环路图 + 第9章上版新增 2 图已达标）：
+
+- **节点 ID 语义化**：全部弃用 A/B/C 式无意义 ID（如三角色 biz/prod/eng、死亡螺旋 cust→rd→delivery→loss→noRnd→compet→lowprice、阿里云 scene→chal→fde→lib→prod→data→meth→cust、华为铁三角 AR/SR/FR 保留、职级 jun→mid→sen→arch/lead 等）；subgraph 标题统一为 `subgraph 英文ID["中文标题"]` 写法。
+- **品牌色统一**：收敛为唯一色板——主色 `#eef2f7/#5a6b7f`、强调 `#dbe4f0/#3949ab`（品牌靛蓝）、次要 `#e3e9f1/#4a5f7d`、琥珀金 `#f5ece0/#a8895f`、绿 `#e4efe4/#5b7a5b`、红 `#fdecea/#d94f4f`；清除全部越界杂色（`#3a5578/#ecdcc9/#cdd8e8` 等），每图 2-3 种底色。
+- **补齐图注**：19 张缺图注的图全部补 `*图：一句话要点*`（紧随 ``` 无空行），如"项目制交付陷入…死亡螺旋"、"FDE 职级进阶双轨"、"知识管理飞轮"等；原有图注保留。
+- **新增**：第11章 11.6 反馈环路新建 flowchart LR 图（前线提卡→双周评审→平台集成→前线验证，含驳回/回退分支，置于列表前避免破坏有序列表编号）。
+- **核验**：`check_mermaid_style.cjs` 色板问题 0；Chrome 无头渲染全部 **24 块 mermaid 均生成 SVG、零语法错误**；`mkdocs build` 成功。
+- **联动更新项**：`fde-course` 仓库同步推送并重新部署 GitHub Pages。当前版本 **v1.12**。

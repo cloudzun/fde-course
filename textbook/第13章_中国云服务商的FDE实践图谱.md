@@ -56,19 +56,20 @@
 
 ```mermaid
 graph TD
-    A["内部极端业务场景 (双11/大促)"] --> B["发现共性技术挑战"]
-    B --> C["一线技术工程师 (类FDE) 解决具体问题"]
-    C --> D["抽象提炼公共组件库"]
-    D --> E["产品化研发团队 (核心研发)"]
-    E --> F["商用数据产品 (Dataphin/DataWorks)"]
-    F --> G["OneData方法论输出"]
-    G --> H["外部政企客户应用"]
-    H -->|反馈新需求| C
+    scene["内部极端业务场景 (双11/大促)"] --> chal["发现共性技术挑战"]
+    chal --> fde["一线技术工程师 (类FDE) 解决具体问题"]
+    fde --> lib["抽象提炼公共组件库"]
+    lib --> prod["产品化研发团队 (核心研发)"]
+    prod --> data["商用数据产品 (Dataphin/DataWorks)"]
+    data --> meth["OneData方法论输出"]
+    meth --> cust["外部政企客户应用"]
+    cust -->|反馈新需求| fde
 
-    style A fill:#f5ece0,stroke:#a8895f
-    style C fill:#dbe4f0,stroke:#3a5578,stroke-width:2px
-    style H fill:#e4efe4,stroke:#5b7a5b
+    style scene fill:#f5ece0,stroke:#a8895f
+    style fde fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style cust fill:#e4efe4,stroke:#5b7a5b
 ```
+*图：阿里云从内部极端场景外化产品，经类FDE一线验证到外部客户应用的能力回注闭环*
 
 **典型本土案例**：
 
@@ -121,11 +122,12 @@ graph LR
     SR <-->|需求与架构方案| Client
     FR <-->|项目实施保障| Client
 
-    style AR fill:#dbe4f0,stroke:#3a5578
-    style SR fill:#dbe4f0,stroke:#3a5578
-    style FR fill:#dbe4f0,stroke:#3a5578
+    style AR fill:#dbe4f0,stroke:#3949ab
+    style SR fill:#dbe4f0,stroke:#3949ab
+    style FR fill:#dbe4f0,stroke:#3949ab
     style Client fill:#eef2f7,stroke:#5a6b7f
 ```
+*图：华为云AR/SR/FR三角色以统一界面协同，对政企客户形成铁三角闭环交付*
 
 > [!NOTE]
 > 铁三角的精髓在于“打破部门壁垒，向客户提供统一接口”。客户感受到的是一个完整的作战单元，而不是松散的销售和交付拼凑。
@@ -172,19 +174,20 @@ graph LR
 
 ```mermaid
 graph TD
-    A["传统OTSS模式"] -->|被动响应/故障驱动| B["解决IT基础设施问题"]
-    A -->|技术栈单一/缺乏业务语境| C["客户视角的成本中心"]
+    otss["传统OTSS模式"] -->|被动响应/故障驱动| it["解决IT基础设施问题"]
+    otss -->|技术栈单一/缺乏业务语境| cost["客户视角的成本中心"]
     
-    D["转型后的FDE模式"] -->|主动介入/业务驱动| E["解决数据流转与业务瓶颈"]
-    D -->|复合能力：代码+业务+架构| F["客户视角的利润中心/赋能者"]
+    fde_m["转型后的FDE模式"] -->|主动介入/业务驱动| biz["解决数据流转与业务瓶颈"]
+    fde_m -->|复合能力：代码+业务+架构| profit["客户视角的利润中心/赋能者"]
     
-    C -.->|"观念升级/能力重塑"| F
+    cost -.->|"观念升级/能力重塑"| profit
 
-    style C fill:#f5ece0,stroke:#a8895f
-    style F fill:#e4efe4,stroke:#5b7a5b
-    style A fill:#eef2f7,stroke:#5a6b7f
-    style D fill:#dbe4f0,stroke:#3a5578
+    style cost fill:#f5ece0,stroke:#a8895f
+    style profit fill:#e4efe4,stroke:#5b7a5b
+    style otss fill:#eef2f7,stroke:#5a6b7f
+    style fde_m fill:#dbe4f0,stroke:#3949ab
 ```
+*图：腾讯云从被动OTSS运维的成本中心，向主动业务驱动的FDE利润中心演进路径*
 
 #### 13.3.2 智能体（Agent）时代的FDE定位
 在当前的大模型与智能体时代，腾讯云为FDE赋予了全新的价值定位。
@@ -249,11 +252,12 @@ graph LR
     F <-->|现场交付与反馈| Client
     F -.->|真实业务反馈| P
 
-    style F fill:#dbe4f0,stroke:#3a5578,stroke-width:2px
+    style F fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
     style P fill:#eef2f7,stroke:#5a6b7f
     style C fill:#eef2f7,stroke:#5a6b7f
     style Client fill:#e4efe4,stroke:#5b7a5b
 ```
+*图：火山引擎以技术底座和千人级FDE铁军，联合咨询外脑对客户实现现场交付与反馈闭环*
 
 #### 13.4.2 战略意图与效果
 对于火山引擎而言，FDE不仅是交付人员，更是**客户黏性制造机**和**产品反馈收集器**。通过大规模派驻懂AI和数据的FDE，极大地缩短了客户尝试新技术的决策周期，降低了AI接入门槛。

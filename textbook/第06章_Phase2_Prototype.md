@@ -43,16 +43,17 @@ Ontology是用业务语言描述现实世界的数字孪生。它将底层碎片
 **建模示例：某政务场景的Ontology**
 ```mermaid
 graph TD
-    A["人口 (Entity)"] -->|居住在| B["房屋 (Entity)"]
-    A -->|就职于| C["法人企业 (Entity)"]
-    C -->|发生| D["环保违规事件 (Entity)"]
-    D -->|关联地点| B
+    person["人口 (Entity)"] -->|居住在| house["房屋 (Entity)"]
+    person -->|就职于| corp["法人企业 (Entity)"]
+    corp -->|发生| viol["环保违规事件 (Entity)"]
+    viol -->|关联地点| house
 
-    style A fill:#dbe4f0,stroke:#3a5578
-    style B fill:#eef2f7,stroke:#5a6b7f
-    style C fill:#eef2f7,stroke:#5a6b7f
-    style D fill:#eef2f7,stroke:#5a6b7f
+    style person fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style house fill:#eef2f7,stroke:#5a6b7f
+    style corp fill:#eef2f7,stroke:#5a6b7f
+    style viol fill:#eef2f7,stroke:#5a6b7f
 ```
+*图：某政务场景的 Ontology，以人口为起点关联房屋、法人企业与环保违规事件*
 
 **为什么Ontology是能力回注的关键载体？**
 只有沉淀在Ontology层的业务逻辑，才是跨越底层系统异构性的通用资产。一旦我们在A企业定义了“供应链牛鞭效应”的Ontology逻辑，在B企业即便底层表完全不同，只要映射到这套Ontology，能力就可以秒级复用。

@@ -1,0 +1,2549 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="FDE（前沿部署工程师）方法论与落地手册 —— 六篇 16 章：认知 / 标杆 / 流程 / 团队 / 中国实践 / AI 落地，贯穿"卖人力→卖能力"飞轮主线">
+      
+      
+      
+        <link rel="canonical" href="https://www.cloudzun.com/fde-course/textbook/%E7%AC%AC16%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Delta%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%9C%BA%E6%99%AF/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC15%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Echo%E5%85%B1%E8%AF%86%E4%B8%8E%E5%AF%B9%E9%BD%90/">
+      
+      
+        <link rel="next" href="../%E9%99%84%E5%BD%95_%E5%8F%82%E8%80%83%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%AE%98%E6%96%B9%E8%B5%84%E6%96%99/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第16章 AI FDE 落地（Delta 视角） - AI 时代的 FDE：认知、流程、团队与中国落地</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/vendor/katex.min.css">
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#16-ai-fde-delta" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-header__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 时代的 FDE：认知、流程、团队与中国落地
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第16章 AI FDE 落地（Delta 视角）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-nav__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI 时代的 FDE：认知、流程、团队与中国落地
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_%E5%B0%81%E9%9D%A2%E4%B8%8E%E5%85%A8%E4%B9%A6%E5%AF%BC%E8%AF%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    导读与结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一篇 · 认知篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第一篇 · 认知篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC01%E7%AB%A0_FDE%E6%98%AF%E4%BB%80%E4%B9%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1章 FDE是什么
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC02%E7%AB%A0_%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81FDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2章 为什么需要FDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二篇 · 标杆篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第二篇 · 标杆篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC03%E7%AB%A0_Palantir%E7%9A%84%E5%B9%B3%E5%8F%B0%E4%B8%8EFDE%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3章 Palantir的平台与FDE体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC04%E7%AB%A0_Palantir%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4章 Palantir经典案例集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第三篇 · 流程篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第三篇 · 流程篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC05%E7%AB%A0_Phase1_Discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5章 Phase 1: Discovery（发现期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC06%E7%AB%A0_Phase2_Prototype/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6章 Phase 2: Prototype（原型期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC07%E7%AB%A0_Phase3_Build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7章 Phase 3: Build（构建期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC08%E7%AB%A0_Phase4_Scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8章 Phase 4: Scale（扩展期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC09%E7%AB%A0_%E8%83%BD%E5%8A%9B%E5%9B%9E%E6%B3%A8%E6%96%B9%E6%B3%95%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9章 能力回注方法论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四篇 · 团队篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第四篇 · 团队篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC10%E7%AB%A0_FDE%E8%A7%92%E8%89%B2%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10章 FDE角色体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC11%E7%AB%A0_%E5%9B%9B%E9%98%B6%E6%AE%B5%E4%B8%AD%E7%9A%84%E8%A7%92%E8%89%B2%E5%8D%8F%E4%BD%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11章 四阶段中的角色协作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC12%E7%AB%A0_FDE%E4%BA%BA%E6%89%8D%E5%9F%B9%E5%85%BB%E4%B8%8E%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12章 FDE人才培养与知识管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五篇 · 中国实践篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第五篇 · 中国实践篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC13%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%95%86%E7%9A%84FDE%E5%AE%9E%E8%B7%B5%E5%9B%BE%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13章 中国云服务商的FDE实践图谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC14%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E5%8C%BAFDE%E8%BD%AC%E5%9E%8B%E7%9A%84%E4%BA%94%E5%A4%A7%E6%8C%91%E6%88%98%E4%B8%8E%E5%BA%94%E5%AF%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14章 中国区FDE转型的五大挑战与应对
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六篇 · AI 解决方案篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第六篇 · AI 解决方案篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC15%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Echo%E5%85%B1%E8%AF%86%E4%B8%8E%E5%AF%B9%E9%BD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15章 AI FDE 落地（Echo 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16章 AI FDE 落地（Delta 视角）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16章 AI FDE 落地（Delta 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#16-ai-fde-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第16章 AI FDE 落地（Delta 视角）：技术与场景执行
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第16章 AI FDE 落地（Delta 视角）：技术与场景执行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#161-ai-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.1 落地 AI FDE 的关键注意（避免翻车）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162-ai-ai-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2 AI 辅助四阶段：把 AI 嵌入 FDE 的干活流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16.2 AI 辅助四阶段：把 AI 嵌入 FDE 的干活流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1621-ai-discoveryai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2.1 AI 辅助 Discovery：从"听客户说话"到"AI 帮你听懂"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1622-ai-prototypeshow-dont-tell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2.2 AI 辅助 Prototype：让"Show, Don't Tell"来得更快
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1623-ai-build-scaleagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2.3 AI 辅助 Build / Scale：Agent 编排与自动化运维
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1624-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2.4 AI 辅助能力回注：自动识别复用模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#163-palantir-aip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.3 对标 Palantir AIP：从"工具"到"方法论"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#164-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4 中国本土技术栈与生态（2026 现状）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16.4 中国本土技术栈与生态（2026 现状）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1641-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.1 大模型底座：2026 年国产模型格局
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1642-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.2 Agent 编排与应用开发平台
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1643-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.3 RAG、向量数据库与评测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1644-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.4 AI 编程与原型工具（国产主力）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1645-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.5 私有化部署与信创算力（中国 FDE 的"隐形门槛"）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1646-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.6 合规与备案红线（2026 年口径）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1647" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.7 分层技术栈总表与选型建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#165" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.5 推荐场景与解决方案地图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#166-sop-9ai-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.6 SOP 9：AI FDE 四阶段落地清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#167" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.7 最佳实践提炼：从案例与场景卡里沉淀的六条
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#168-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.8 行业 Agent 落地案例：工作流拆解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16.8 行业 Agent 落地案例：工作流拆解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例一：蚂蚁集团 PEER 模式（投研分析）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例二：平安壹钱包（信贷审批）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例三：制造业设备监测平台（故障响应）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#169-agent-top-n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.9 Agent 落地常见坑：Top-N 反模式清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本篇收尾 · 甲乙方对照：AI 时代，你们还是"高级外包"吗
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95_%E5%8F%82%E8%80%83%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%AE%98%E6%96%B9%E8%B5%84%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#16-ai-fde-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第16章 AI FDE 落地（Delta 视角）：技术与场景执行
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第16章 AI FDE 落地（Delta 视角）：技术与场景执行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#161-ai-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.1 落地 AI FDE 的关键注意（避免翻车）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#162-ai-ai-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2 AI 辅助四阶段：把 AI 嵌入 FDE 的干活流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16.2 AI 辅助四阶段：把 AI 嵌入 FDE 的干活流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1621-ai-discoveryai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2.1 AI 辅助 Discovery：从"听客户说话"到"AI 帮你听懂"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1622-ai-prototypeshow-dont-tell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2.2 AI 辅助 Prototype：让"Show, Don't Tell"来得更快
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1623-ai-build-scaleagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2.3 AI 辅助 Build / Scale：Agent 编排与自动化运维
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1624-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.2.4 AI 辅助能力回注：自动识别复用模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#163-palantir-aip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.3 对标 Palantir AIP：从"工具"到"方法论"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#164-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4 中国本土技术栈与生态（2026 现状）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16.4 中国本土技术栈与生态（2026 现状）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1641-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.1 大模型底座：2026 年国产模型格局
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1642-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.2 Agent 编排与应用开发平台
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1643-rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.3 RAG、向量数据库与评测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1644-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.4 AI 编程与原型工具（国产主力）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1645-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.5 私有化部署与信创算力（中国 FDE 的"隐形门槛"）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1646-2026" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.6 合规与备案红线（2026 年口径）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1647" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4.7 分层技术栈总表与选型建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#165" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.5 推荐场景与解决方案地图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#166-sop-9ai-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.6 SOP 9：AI FDE 四阶段落地清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#167" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.7 最佳实践提炼：从案例与场景卡里沉淀的六条
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#168-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.8 行业 Agent 落地案例：工作流拆解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16.8 行业 Agent 落地案例：工作流拆解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例一：蚂蚁集团 PEER 模式（投研分析）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例二：平安壹钱包（信贷审批）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例三：制造业设备监测平台（故障响应）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#169-agent-top-n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.9 Agent 落地常见坑：Top-N 反模式清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本篇收尾 · 甲乙方对照：AI 时代，你们还是"高级外包"吗
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>第16章 AI FDE 落地（Delta 视角）</h1>
+
+<h2 id="16-ai-fde-delta">第16章 AI FDE 落地（Delta 视角）：技术与场景执行<a class="headerlink" href="#16-ai-fde-delta" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本章导读</strong>：本章从 Delta（FDSE，技术执行工程师）视角讲 AI FDE 怎么"做成"——先立四条落地红线，再把 AI 嵌入四阶段工作流、对标 Palantir AIP 的方法论骨架，用中国本土技术栈落地、在推荐场景中选战场、按 SOP 9 执行，并沉淀最佳实践与反模式教训（技术栈信息截至 2026 年 8 月）。<strong>读完本章，Delta 能把 AI FDE 项目做成。</strong> 商务与共识部分见第15章。</p>
+</div>
+<h3 id="161-ai-fde">16.1 落地 AI FDE 的关键注意（避免翻车）<a class="headerlink" href="#161-ai-fde" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>人机协同红线</strong>：凡是影响客户真金白银的决策路径（结算、风控、审批），AI 输出必须有人工确认环；AI 只能"建议"，不能"拍板"进生产关键链路。</li>
+<li><strong>幻觉与评测</strong>：所有生成式输出都要有评测（Eval）与可追溯；LLM 生成的代码必须走 7.5 的代码审查与测试，不能因为是 AI 写的就免检。</li>
+<li><strong>数据合规不变</strong>：AI 工具处理客户数据同样受 14.5 节数据不出域、PIPL 等约束——本地化/私有化部署模型时，要提前验证国产硬件与信创环境兼容性（同 7.5 的工具链验证）。私有化部署、信创算力与备案红线的具体清单见 16.4.5 / 16.4.6。</li>
+<li><strong>分阶段引入</strong>：先做"AI 写码、AI 整理纪要"这类低风险提效；再上"AI 辅助识别回注"这类中风险；最后才考虑"Agent 化运维/自助查数"这类直接影响生产的高风险项，且每步都要有回滚预案。</li>
+</ol>
+<h3 id="162-ai-ai-fde">16.2 AI 辅助四阶段：把 AI 嵌入 FDE 的干活流程<a class="headerlink" href="#162-ai-ai-fde" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本节定位</strong>：第5–9章的四阶段 SOP 是 FDE 的作战手册；本节把 AI 逐阶段嵌进去——<strong>AI 不是替代四阶段，而是让每个阶段的产出更快、更准</strong>。第15章 15.1 已从 Echo 视角概述了全景，本节给出 Delta 视角的操作细节。</p>
+</div>
+<h4 id="1621-ai-discoveryai">16.2.1 AI 辅助 Discovery：从"听客户说话"到"AI 帮你听懂"<a class="headerlink" href="#1621-ai-discoveryai" title="Permanent link">&para;</a></h4>
+<p>Discovery 的核心是大规模收集并理解客户信息，这恰恰是 LLM 的高价值用武之地：</p>
+<ul>
+<li><strong>访谈与纪要的结构化</strong>：用 LLM 把大量客户访谈录音/逐字稿自动转写、去噪、抽取关键实体与痛点主题，生成利益相关者视图的草稿。FDE 的时间从"整理记录"释放到"验证洞察"。</li>
+<li><strong>痛点聚类与优先级初筛</strong>：把散落各部门的反馈输入 LLM，聚类出高频痛点、量化"哪个痛点出现得最频繁、最影响成本"，辅助快赢场景（5.5）的初筛。</li>
+<li><strong>尽调资料速读</strong>：面对客户成百上千页的制度文档、SOP、历史报表，用 RAG 方式让 AI 秒级回答"这个审批链路的卡点在哪个环节"，加速业务画像。</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p><strong>AI 洞察只是"子弹"，不是"结论"</strong>。AI 归纳出的痛点必须回到现场做人工确认（跟班观察、与业务核对），否则会把 LLM 的"看似合理"误当成客户真话——这正是 5.3 节"眼睛看到的比嘴上说的更真实"的 AI 版本。</p>
+</div>
+<h4 id="1622-ai-prototypeshow-dont-tell">16.2.2 AI 辅助 Prototype：让"Show, Don't Tell"来得更快<a class="headerlink" href="#1622-ai-prototypeshow-dont-tell" title="Permanent link">&para;</a></h4>
+<p>原型期的目标是用最小代价证明最大价值，AI 把"搭原型"的成本再次压低：</p>
+<ul>
+<li><strong>写码提速</strong>：Copilot / Cursor 等 AI 编程工具，以及<strong>国产主力：Trae（字节）、Qoder CN（阿里，原通义灵码更名）、文心快码（百度，政企市场强）</strong>（详见 16.4.4），加速原型代码、数据清洗脚本、管道骨架的编写，把"从想法到可跑原型"的时间从周级压到天级。</li>
+<li><strong>低代码平台的智能增强</strong>：在 6.6 选型的低代码方案（如 Palantir AIP Logic、Retool）中，直接用自然语言生成应用逻辑/Agent；国内对应可选 <strong>Dify、Coze/扣子、阿里云百炼智能体应用</strong>等（详见 16.4.2），进一步缩短 Demo 迭代。</li>
+<li><strong>Demo 内容生成</strong>：用 LLM 根据客户真实数据生成"业务语言版"的话术脚本、洞察卡片，辅助 6.7 的"Demo 的艺术"。</li>
+</ul>
+<h4 id="1623-ai-build-scaleagent">16.2.3 AI 辅助 Build / Scale：Agent 编排与自动化运维<a class="headerlink" href="#1623-ai-build-scaleagent" title="Permanent link">&para;</a></h4>
+<p>进入生产后，AI 的价值从"写得更快"转向"运转更省"：</p>
+<ul>
+<li><strong>Agent 化交付组件</strong>：把重复的集成/转换/告警逻辑做成可编排的 Agent 或工作流（对标 Palantir AIP Logic；国内可用 <strong>Dify / Coze / 阿里云百炼 / 火山方舟</strong>，见 16.4.2），让"改一条业务规则"不再需要改代码、重新发布。</li>
+<li><strong>智能监控与自愈</strong>：让 AI 分析日志与指标，自动定位管道故障根因、生成修复建议，甚至自动止损；FDE 从"救火"转向"审定 AI 的处置"。</li>
+<li><strong>Scale 阶段的 AI 赋能</strong>：用 AI 辅助面向更多业务用户的"自助式"能力（自然语言查数、自动生成报表/看板），让 8.5 的"客户自运营"更容易实现——把典型场景固化成 Agent，客户业务人员自己就能用。</li>
+</ul>
+<h4 id="1624-ai">16.2.4 AI 辅助能力回注：自动识别复用模式<a class="headerlink" href="#1624-ai" title="Permanent link">&para;</a></h4>
+<p>能力回注的最难一步是"识别"（第9章四步法第一步）——要靠人力从代码海里发现哪些定制具备共性。AI 让这一步可以规模化：</p>
+<ul>
+<li><strong>代码复用模式挖掘</strong>：用 AI 对前线项目代码做相似度聚类，自动推荐"这两段清洗逻辑、这个预警模型在两个项目里重复出现"的回注候选，并给出置信度。</li>
+<li><strong>回注需求卡片辅助填写</strong>：AI 根据检测到的重复模式，预填 SOP 4 卡片的通用性评估、技术方案摘要，FDE 只做人工确认与打磨。</li>
+<li><strong>从"人工发现共性"到"AI 提示 + 人工决策"</strong>：AI 负责"地毯式扫描、提出候选"，人负责"判断值得不值得抽象"——这正好规避了 9.1 节"过度抽象 / 为回注而回注"的坑（并呼应 3.4 节"拒绝过早标准化"的精神），因为抽象决策权仍在人。</li>
+</ul>
+<h3 id="163-palantir-aip">16.3 对标 Palantir AIP：从"工具"到"方法论"<a class="headerlink" href="#163-palantir-aip" title="Permanent link">&para;</a></h3>
+<p>Palantir 的 AI 能力不是"在产品里加个 ChatGPT"，而是一套完整的企业 AI 落地架构。理解它的组件划分，有助于 FDE 把 16.4 的中国本土工具"对号入座"：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Palantir AIP 组件</th>
+<th style="text-align: left;">功能</th>
+<th style="text-align: left;">FDE 使用方式</th>
+<th style="text-align: left;">中国替代方案（见 16.4）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>AIP Logic</strong></td>
+<td style="text-align: left;">编排 LLM + 业务逻辑的工作流</td>
+<td style="text-align: left;">把重复的集成/转换/业务规则做成 Agent，改规则不再改代码</td>
+<td style="text-align: left;">Dify / Coze / 自研编排引擎</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>AIP Automate</strong></td>
+<td style="text-align: left;">自动化执行动作（含写回数据库/系统）</td>
+<td style="text-align: left;">Build 后的运维自动化、批量动作执行</td>
+<td style="text-align: left;">n8n / Apache Airflow + LLM 回调</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Agent Builder</strong></td>
+<td style="text-align: left;">为业务用户构建自助式 Agent</td>
+<td style="text-align: left;">Scale 阶段赋能客户自运营（16.2.3）</td>
+<td style="text-align: left;">通义千问智能体 / 豆包 Agent / 百炼智能体应用</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ontology + AI</strong></td>
+<td style="text-align: left;">让 AI 基于结构化本体推理，输出可溯源</td>
+<td style="text-align: left;">保证 AI 结果可审计、可回滚（16.1 红线）</td>
+<td style="text-align: left;">知识图谱 + RAG（自建）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>方法论要点</strong>：AIP 的骨架不是模型，而是"<strong>结构化本体 + 可控动作 + 可审计链路</strong>"——这正是 16.1 第 1 条"关键决策人工确认环"得以成立的技术前提。用中国本土工具复刻时，同样要守住这三样：业务知识结构化（Ontology/RAG）、动作可控（人工确认环）、全链路留痕（审计）。</p>
+</div>
+<h3 id="164-2026">16.4 中国本土技术栈与生态（2026 现状）<a class="headerlink" href="#164-2026" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本节定位与时效</strong>：FDE 在中国落地 AI，工具选型与 Palantir 语境完全不同——既要考虑<strong>私有化/信创</strong>（数据不出域），也要适配<strong>国产模型与平台的供给现状</strong>。本节基于 2026 年 3 月之后的国内技术进展编写，<strong>信息截至 2026 年 8 月</strong>；AI 领域迭代极快，落地前请以各厂商官网最新发布为准。凡涉及"备案/合规"处，以监管最新口径为准。<strong>本节是 Delta 的技术底座；与甲方对齐选型的商务口径见第15章 15.3。</strong></p>
+</div>
+<h4 id="1641-2026">16.4.1 大模型底座：2026 年国产模型格局<a class="headerlink" href="#1641-2026" title="Permanent link">&para;</a></h4>
+<p>2026 年的国产开源/可私有化模型已形成清晰的第一梯队，FDE 选型不再"没得选"，而是"按场景选"：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">模型</th>
+<th style="text-align: left;">厂商/背景</th>
+<th style="text-align: left;">2026 年关键状态</th>
+<th style="text-align: left;">对 FDE 的意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>DeepSeek V4</strong></td>
+<td style="text-align: left;">深度求索（开源）</td>
+<td style="text-align: left;">2026 年 4 月发布并开源，Flash/Pro 双版本 API，<strong>百万 token 上下文成标配</strong>，Agentic Coding 能力强，且<strong>全面适配华为昇腾芯片</strong></td>
+<td style="text-align: left;">政企私有化部署的性价比首选；开源+信创双友好</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>通义千问 Qwen3.8 系列</strong></td>
+<td style="text-align: left;">阿里云（开源）</td>
+<td style="text-align: left;">2026 年 8 月开源 Qwen3.8 系列，全球下载累计超 30 亿次；此前 Qwen3.5 以"每百万 token 低至 0.8 元"打出性价比</td>
+<td style="text-align: left;">与阿里云百炼/DataWorks 生态集成最顺，国内生态最完整</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GLM-5</strong></td>
+<td style="text-align: left;">智谱（开源+商业）</td>
+<td style="text-align: left;">2026 年 2 月公开技术报告（细节全公开），官方宣称支持 <strong>7 大国产芯片平台</strong></td>
+<td style="text-align: left;">信创适配最积极的厂商之一；"全球大模型第一股"背书</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>豆包 2.0（Doubao-Seed-2.0-pro）</strong></td>
+<td style="text-align: left;">字节跳动</td>
+<td style="text-align: left;">2026 年中多轮国产横评第一梯队，综合表现亮眼</td>
+<td style="text-align: left;">与火山方舟/Coze 生态绑定，适合互联网行业客户</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Kimi K3</strong></td>
+<td style="text-align: left;">月之暗面</td>
+<td style="text-align: left;">2026 年主打<strong>原生多模态</strong>能力</td>
+<td style="text-align: left;">多模态/长文档场景可考虑</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>选型参考</strong>：中文场景可参考 SuperCLUE 等中文基准的 2026 年 3 月测评结果做初筛，但<strong>最终决定因素是"能否在客户环境私有化/信创部署"</strong>——这也是 16.4.5 的核心。</p>
+</blockquote>
+<h4 id="1642-agent">16.4.2 Agent 编排与应用开发平台<a class="headerlink" href="#1642-agent" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">平台</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">2026 年状态</th>
+<th style="text-align: left;">适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Dify</strong></td>
+<td style="text-align: left;">开源、可私有化</td>
+<td style="text-align: left;">企业级 Agent 编排的主流开源选择，2026 年企业选型对比中的常客</td>
+<td style="text-align: left;">政企私有化、FDE 自建交付链路</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Coze / 扣子</strong></td>
+<td style="text-align: left;">字节系（SaaS+企业版）</td>
+<td style="text-align: left;">2026 年与企业微信/飞书等场景深度绑定</td>
+<td style="text-align: left;">快速搭 Agent、面向业务用户的轻量场景</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>阿里云百炼</strong></td>
+<td style="text-align: left;">云平台（智能体应用）</td>
+<td style="text-align: left;">与通义千问/Qwen3.8 深度集成</td>
+<td style="text-align: left;">阿里生态客户的 AI 应用开发</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>火山方舟</strong></td>
+<td style="text-align: left;">云平台（豆包生态）</td>
+<td style="text-align: left;">大模型 API + 智能体能力一体</td>
+<td style="text-align: left;">互联网/消费行业客户</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>百度千帆 / AppBuilder</strong></td>
+<td style="text-align: left;">云平台（文心生态）</td>
+<td style="text-align: left;">政企市场积累深</td>
+<td style="text-align: left;">政府/大企业客户</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>生态标准化信号（2026 年 8 月）</strong>：支付宝联合千问、华为、比亚迪等 20 余家企业发布国内首个"智能体商业底座"及 <strong>AHA 跨端互联协议</strong>，智能体"跨端互联"正在从单平台走向开放标准。对 FDE 的含义：<strong>为政企客户搭建的 Agent 应预留"跨平台/跨端"能力</strong>，避免绑定单一平台导致后续迁移成本。</p>
+</div>
+<h4 id="1643-rag">16.4.3 RAG、向量数据库与评测<a class="headerlink" href="#1643-rag" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>向量数据库</strong>：<strong>Milvus 2.6</strong> 是国产开源事实标准（2026 年云上 GA，阿里云深度优化磁盘索引后<strong>亿级向量检索性能提升约 20 倍、存储成本显著下降</strong>）；国产替代还有腾讯云、火山引擎等云上向量检索服务。信创环境优先 Milvus 私有化部署。</li>
+<li><strong>RAG 框架</strong>：主流仍是自研管线（LangChain / LlamaIndex 生态）+ 向量库，或直接使用 16.4.2 平台的 RAG 能力；企业知识库场景建议"自建 RAG 层 + 结构化本体"双轨（呼应 3.1 节 Ontology 思路）。</li>
+<li><strong>评测（Eval）</strong>：2026 年主流开源框架仍是 <strong>Ragas / DeepEval / TruLens / Phoenix</strong> 等；对 Agent 类交付，业界共识是<strong>离线评测之外必须补"生产环境/线上评测"</strong>（真实调用数据回流），否则离线指标好看、上线即翻车。FDE 应把 Eval 集作为交付物的一部分（见 16.1 幻觉与评测）。</li>
+</ul>
+<h4 id="1644-ai">16.4.4 AI 编程与原型工具（国产主力）<a class="headerlink" href="#1644-ai" title="Permanent link">&para;</a></h4>
+<p>2026 年国内 AI 编程工具已形成稳定格局，FDE 在客户现场（尤其内网/信创环境）更应优先国产：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">厂商</th>
+<th style="text-align: left;">2026 年状态</th>
+<th style="text-align: left;">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Trae</strong></td>
+<td style="text-align: left;">字节跳动</td>
+<td style="text-align: left;">国内份额领先（公开口径约 40%+）</td>
+<td style="text-align: left;">免费/低价，适合原型期快速写码</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Qoder CN</strong></td>
+<td style="text-align: left;">阿里（原通义灵码更名）</td>
+<td style="text-align: left;">2026 年更名后定位 AI 原生 IDE</td>
+<td style="text-align: left;">与阿里云生态/百炼联动</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>文心快码</strong></td>
+<td style="text-align: left;">百度</td>
+<td style="text-align: left;">政企市场认可度高</td>
+<td style="text-align: left;">大企业/政务客户环境适配好</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CodeBuddy</strong></td>
+<td style="text-align: left;">腾讯</td>
+<td style="text-align: left;">政企/信创场景有布局</td>
+<td style="text-align: left;">与腾讯云生态联动</td>
+</tr>
+</tbody>
+</table>
+<h4 id="1645-fde">16.4.5 私有化部署与信创算力（中国 FDE 的"隐形门槛"）<a class="headerlink" href="#1645-fde" title="Permanent link">&para;</a></h4>
+<p>中国政企客户"数据不出域"是刚需，AI FDE 落地的第一道坎往往是<strong>算力与部署环境</strong>，而非模型本身：</p>
+<ul>
+<li><strong>国产算力已成主流选项</strong>：2026 年 7 月，粤港澳大湾区建成 11520 张<strong>华为昇腾 910C</strong> 的万卡智算集群（"国芯训国模"），国产万卡级全栈自主可控集群已落地；<strong>DeepSeek V4 等主流开源模型已全面适配昇腾</strong>。私有化部署不再依赖英伟达。</li>
+<li><strong>信创栈验证</strong>：AI 工具链（模型、Dify 等编排平台、Milvus、AI 编程 IDE）需在国产 OS（麒麟/统信）+ 国产 CPU（鲲鹏/飞腾）+ 国产 GPU（昇腾等）上验证可运行——这与 7.5 节"工具链信创兼容性验证"一脉相承。</li>
+<li><strong>部署形态建议</strong>：涉密/高合规场景走<strong>全私有化</strong>（模型+平台+向量库全部内网部署）；一般政企走"私有化核心 + 云 API 补充"的混合形态。</li>
+</ul>
+<h4 id="1646-2026">16.4.6 合规与备案红线（2026 年口径）<a class="headerlink" href="#1646-2026" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>四轨备案体系</strong>：面向公众提供生成式 AI 服务需<strong>大模型备案/登记</strong>；推荐类、深度合成类功能需<strong>算法备案</strong>；2026 年监管口径中<strong>智能体备案</strong>已成为新关注点（"大模型备案潮涌，AI 合规从选择题变成必答题"）。FDE 为政企交付 AI 能力时，须与客户法务确认<strong>谁来做备案、备案主体是谁</strong>。</li>
+<li><strong>PIPL</strong>：AI 处理<strong>敏感个人信息、向第三方提供或出境</strong>需单独同意；一般个人信息处理依合法基础并告知；客户数据不出域仍是硬红线。</li>
+<li><strong>关键决策人工确认环</strong>：影响客户真金白银的路径（结算/风控/审批）AI 只能建议、不能拍板（同 16.1 第 1 条）。</li>
+</ul>
+<h4 id="1647">16.4.7 分层技术栈总表与选型建议<a class="headerlink" href="#1647" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">层级</th>
+<th style="text-align: left;">首选（开源/可私有化）</th>
+<th style="text-align: left;">云平台备选</th>
+<th style="text-align: left;">2026 年选型要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">大模型底座</td>
+<td style="text-align: left;"><strong>DeepSeek V4 / Qwen3.8 / GLM-5</strong></td>
+<td style="text-align: left;">百炼（通义）、方舟（豆包）、千帆（文心）</td>
+<td style="text-align: left;">政企私有化优先 DeepSeek（开源+昇腾适配）；阿里生态客户优先 Qwen</td>
+</tr>
+<tr>
+<td style="text-align: left;">Agent 编排</td>
+<td style="text-align: left;"><strong>Dify（私有化）</strong>、FastGPT 等</td>
+<td style="text-align: left;">Coze/扣子、百炼智能体应用、千帆 AppBuilder</td>
+<td style="text-align: left;">涉密场景必须私有化版；预留跨端互联能力</td>
+</tr>
+<tr>
+<td style="text-align: left;">RAG/知识库</td>
+<td style="text-align: left;">自研（LangChain/LlamaIndex）+ <strong>Milvus 2.6</strong></td>
+<td style="text-align: left;">云上向量检索服务</td>
+<td style="text-align: left;">信创优先 Milvus 私有化；建议 RAG+本体双轨</td>
+</tr>
+<tr>
+<td style="text-align: left;">评测</td>
+<td style="text-align: left;"><strong>Ragas / DeepEval / 自研评测集</strong></td>
+<td style="text-align: left;">平台自带评测</td>
+<td style="text-align: left;">Agent 必须补生产环境评测</td>
+</tr>
+<tr>
+<td style="text-align: left;">AI 编程</td>
+<td style="text-align: left;"><strong>Trae / Qoder CN / CodeBuddy</strong></td>
+<td style="text-align: left;">文心快码（政企）</td>
+<td style="text-align: left;">内网/信创环境提前验证可用性</td>
+</tr>
+<tr>
+<td style="text-align: left;">前端原型</td>
+<td style="text-align: left;">Streamlit / Gradio；Dify/Coze 低代码</td>
+<td style="text-align: left;">钉钉宜搭/飞书低代码</td>
+<td style="text-align: left;">交互外壳用低代码，数据链路用代码</td>
+</tr>
+<tr>
+<td style="text-align: left;">算力/部署</td>
+<td style="text-align: left;"><strong>昇腾 910C 集群</strong>、国产信创推理服务器</td>
+<td style="text-align: left;">各云厂商国产算力专区</td>
+<td style="text-align: left;">私有化+数据不出域为主流</td>
+</tr>
+</tbody>
+</table>
+<p><strong>选型决策树（给一线 FDE）</strong>：</p>
+<ol>
+<li>客户涉密/高合规 → 全私有化：DeepSeek V4 或 GLM-5 + Dify 私有化 + Milvus + 昇腾/信创栈，走备案与保密测评。</li>
+<li>客户在云上（互联网/行业）→ 用其云厂商生态：百炼 / 方舟 / 千帆 + Coze/扣子，API 优先、成本最低。</li>
+<li>混合形态 → 核心数据域内私有化 + 非敏感能力走云 API，两端用同一套 Agent 编排抽象层，避免绑定单一平台。</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本节信息来源与时效</strong>：以上内容综合自 2026 年 3–8 月国内公开报道与厂商发布，包括但不限于：DeepSeek V4 发布与昇腾适配（证券时报、华尔街见闻、腾讯云开发者社区等，2026-04）、Qwen3.8 开源与全球下载超 30 亿次（中国电子报、澎湃新闻等，2026-08）、GLM-5 技术报告与 7 大国产芯片支持（IT之家、中国信通院鲸智社区等，2026-02）、豆包 2.0 与国产模型横评（证券时报、CSDN 横评等，2026 年中）、Dify/Coze 企业选型对比（2026）、支付宝 AHA 智能体协议（2026-08）、Milvus 2.6 云上 GA（Zilliz/阿里云开发者社区，2026）、国产 AI 编程工具格局（Trae/Qoder CN 等，2026）、粤港澳大湾区昇腾 910C 万卡集群（上海证券报等，2026-07）、大模型/算法/智能体备案监管动态（2026-07）。<strong>信息截至 2026 年 8 月，落地前请自行核对最新进展。</strong></p>
+</div>
+<h3 id="165">16.5 推荐场景与解决方案地图<a class="headerlink" href="#165" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本节定位</strong>：16.2 讲"AI 怎么嵌进四阶段"，16.4 讲"用什么工具"——本节回答：<strong>做在哪里、解决什么问题、交付什么</strong>。以下为国内 FDE 团队 2026 年最常落地的 8 个高价值场景（结合第13章中国实践与 16.4 本土技术栈），每张"场景卡"给出：痛点 → 解决方案组合 → 典型交付物 → 四阶段落点 → 技术栈 → 风险合规 → 价值度量。<strong>场景卡是模板而非定稿</strong>——落地时按客户实际裁剪；与甲方对齐"选哪个场景、成功标准是什么"的口径见第15章 15.2/15.3。</p>
+</div>
+<p><strong>总览矩阵（按"启动难度 × 客户价值"粗排）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">场景（行业）</th>
+<th style="text-align: left;">方案类型</th>
+<th style="text-align: left;">启动难度</th>
+<th style="text-align: left;">客户价值</th>
+<th style="text-align: left;">合规敏感度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">知识库问答（企业通用）</td>
+<td style="text-align: left;">RAG</td>
+<td style="text-align: left;">低</td>
+<td style="text-align: left;">中</td>
+<td style="text-align: left;">中</td>
+</tr>
+<tr>
+<td style="text-align: left;">监管报送/合规（金融·政务）</td>
+<td style="text-align: left;">RAG + 工作流</td>
+<td style="text-align: left;">中</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;"><strong>高</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">供应链协同（制造）</td>
+<td style="text-align: left;">数据 + 知识 + Agent</td>
+<td style="text-align: left;">中</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;">中</td>
+</tr>
+<tr>
+<td style="text-align: left;">设备预测性维护（制造·能源）</td>
+<td style="text-align: left;">数据智能 + Agent</td>
+<td style="text-align: left;">中高</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;">中</td>
+</tr>
+<tr>
+<td style="text-align: left;">智能风控/反欺诈（金融）</td>
+<td style="text-align: left;">数据 + 规则 + 人工确认</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;"><strong>极高</strong></td>
+<td style="text-align: left;"><strong>高</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">政策问答/事项办理（政务）</td>
+<td style="text-align: left;">RAG + Agent</td>
+<td style="text-align: left;">中</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;">高</td>
+</tr>
+<tr>
+<td style="text-align: left;">智能座舱/营销助手（汽车·消费）</td>
+<td style="text-align: left;">Agent 上车</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;">中</td>
+</tr>
+<tr>
+<td style="text-align: left;">流程自动化 Agent（企业通用）</td>
+<td style="text-align: left;">Agent + 工作流</td>
+<td style="text-align: left;">低中</td>
+<td style="text-align: left;">中高</td>
+<td style="text-align: left;">低中</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>场景卡 1：企业知识库问答（最容易启动，L2 首选）</strong></p>
+<ul>
+<li><strong>痛点</strong>：制度/文档散落各部门，新人上手慢，员工重复问 HR/IT/业务口径。</li>
+<li><strong>解决方案</strong>：企业私有知识库 RAG——文档接入 → 切分向量化（Milvus 2.6）→ 问答 Agent（DeepSeek/Qwen 私有化）→ 引用溯源（答案必须带出处）。</li>
+<li><strong>典型交付物</strong>：可私有化部署的知识问答系统 + 权限体系 + 引用溯源 + Eval 集。</li>
+<li><strong>四阶段落点</strong>：Discovery 盘点高频问题 Top50；Prototype 用 HR 制度域跑通；Build 扩展部门域 + 权限；Scale 自助文档更新流程。</li>
+<li><strong>技术栈</strong>：见 16.4.1/16.4.3（Qwen/DeepSeek + Milvus + Dify）。</li>
+<li><strong>风险合规</strong>：PIPL（若知识库含个人信息，处理敏感信息/向第三方提供需单独同意）；答案幻觉需 Eval + 人工抽检（16.1）。</li>
+<li><strong>价值度量</strong>：TTFV（数周级）；问答自助解决率（示例指标）。</li>
+</ul>
+<p><strong>场景卡 2：监管报送与合规（金融·政务，高价值高合规）</strong></p>
+<ul>
+<li><strong>痛点</strong>：口径打架、手工汇总、返工多（呼应 4.8 案例二）。</li>
+<li><strong>解决方案</strong>：监管口径知识库（RAG 装规则文档）+ 报送工作流（Agent 自动取数/校验/溯源）+ 差异解释（LLM 生成口径差异说明，人工确认后提交）。</li>
+<li><strong>典型交付物</strong>：自动报送链路 + 口径映射知识库 + 审计留痕。</li>
+<li><strong>四阶段落点</strong>：Discovery 梳理监管规则清单；Prototype 跑通 1-2 张核心报表；Build 全量报表 + 质量规则（7.4）；Scale 移交客户自运营。</li>
+<li><strong>技术栈</strong>：私有化（数据不出域）+ 16.4.1/16.4.2/16.4.6。</li>
+<li><strong>风险合规</strong>：<strong>等保/备案四轨（16.4.6）为硬约束</strong>；报送结果必须人工确认环，AI 只做"建议+初稿"。</li>
+<li><strong>价值度量</strong>：报送周期缩短（T 天→X 天）、口径差异数下降（对应 9.5.1 健康度）。</li>
+</ul>
+<p><strong>场景卡 3：供应链协同（制造，对标 4.8 案例一）</strong></p>
+<ul>
+<li><strong>痛点</strong>：多级库存不透明、缺料靠人工催、供应商数据异构。</li>
+<li><strong>解决方案</strong>：数据管道统一（DataWorks 类）+ 业务对象建模（Ontology：物料/订单/供应商/库存节点）+ 缺料预警 Agent（规则+LLM 生成处置建议）+ 供应商问答助手。</li>
+<li><strong>典型交付物</strong>：多级库存水位看板 + 预警工作流 + 处置建议 Agent。</li>
+<li><strong>四阶段落点</strong>：Discovery 定快赢（库存水位）；Prototype 真实数据跑通预警闭环；Build 扩数据源 + 权限；Scale 推广至多基地 + 回注行业组件。</li>
+<li><strong>技术栈</strong>：16.4.1/16.4.3 + 数据集成（附录 E）。</li>
+<li><strong>风险合规</strong>：供应商数据权限边界；预警阈值需业务确认。</li>
+<li><strong>价值度量</strong>：缺料预警提前量、催办工时下降（可量化，呼应 9.5.1）。</li>
+</ul>
+<p><strong>场景卡 4：设备预测性维护（制造·能源）</strong></p>
+<ul>
+<li><strong>痛点</strong>：设备故障停机损失大、维护靠经验排期。</li>
+<li><strong>解决方案</strong>：IoT/工单数据管道 + 异常检测模型（可跑昇腾环境）+ 维护建议 Agent（融合维修知识库 RAG）+ 工单自动生成工作流。</li>
+<li><strong>典型交付物</strong>：设备健康度看板 + 预测告警 + 自动工单。</li>
+<li><strong>四阶段落点</strong>：Discovery 选高价值设备域；Prototype 单类设备验证召回率；Build 模型调优 + 数据质量（7.4）；Scale 全厂铺开。</li>
+<li><strong>技术栈</strong>：16.4.1/16.4.3/16.4.5（昇腾推理）。</li>
+<li><strong>风险合规</strong>：误报率控制（Eval 阈值）；涉及安全关键设备需人工确认。</li>
+<li><strong>价值度量</strong>：非计划停机下降率、维护成本节约（强可量化）。</li>
+</ul>
+<p><strong>场景卡 5：智能风控/反欺诈（金融，价值最高也最难）</strong></p>
+<ul>
+<li><strong>痛点</strong>：规则引擎响应慢、黑产对抗强、人工审核量大。</li>
+<li><strong>解决方案</strong>：实时特征管道 + 模型（风控模型 + LLM 解释）→ <strong>LLM 只做"解释与人工复核辅助"，不放行决策权</strong>（16.1 红线）+ 策略工作流 + 完整审计留痕。</li>
+<li><strong>典型交付物</strong>：风险评分看板 + 案例解释 Agent + 人工复核队列。</li>
+<li><strong>四阶段落点</strong>：Discovery 定场景（如开户/交易）；Prototype 离线回测；Build 实时管道 + 灰度；Scale 扩展策略域。</li>
+<li><strong>技术栈</strong>：私有化 + 16.4.5 算力 + 16.4.6 合规。</li>
+<li><strong>风险合规</strong>：<strong>最高合规敏感度</strong>——金融监管、个人敏感信息、算法备案；<strong>决策必须人工确认环</strong>。</li>
+<li><strong>价值度量</strong>：欺诈拦截率、误伤率、审核人效（对应 9.5.1 NPS 与健康度）。</li>
+</ul>
+<p><strong>场景卡 6：政策问答与事项办理（政务，呼应广东"湾擎"）</strong></p>
+<ul>
+<li><strong>痛点</strong>：政策文件多、群众咨询量大、跨部门事项难。</li>
+<li><strong>解决方案</strong>：政务知识库 RAG（政策/办事指南）+ 事项引导 Agent（多轮对话）+ 材料预审（LLM 抽检+人工复核）+ 跨部门工单工作流。</li>
+<li><strong>典型交付物</strong>：智能问答入口 + 事项办理引导 + 材料预审辅助。</li>
+<li><strong>四阶段落点</strong>：Discovery 排高频事项；Prototype 2-3 个事项跑通；Build 扩展 + 安全加固（7.6）；Scale 多地市复制（回注政务方案）。</li>
+<li><strong>技术栈</strong>：私有化/政务云 + 16.4.1/16.4.2/16.4.6。</li>
+<li><strong>风险合规</strong>：等保、数据不出域、事项办理结果不得由 AI 单方裁决。</li>
+<li><strong>价值度量</strong>：咨询自助解决率、办理时长缩短。</li>
+</ul>
+<p><strong>场景卡 7：智能座舱/营销助手（汽车·消费，呼应奇瑞×豆包）</strong></p>
+<ul>
+<li><strong>痛点</strong>：座舱交互同质化、营销内容生产效率低。</li>
+<li><strong>解决方案</strong>：豆包/Qwen 上车（语音 + 多模态）+ 用车知识问答 + 营销内容生成 Agent（合规审核前置）+ 用户反馈回流模型。</li>
+<li><strong>典型交付物</strong>：车机助手接入包 + 内容生成工作流 + 数据回流管道。</li>
+<li><strong>四阶段落点</strong>：Discovery 定交互场景；Prototype 单车型闭环；Build 端侧推理优化（离线/在线策略）；Scale 全系铺开 + 接入包标准化。</li>
+<li><strong>技术栈</strong>：16.4.1/16.4.4（端侧适配）。</li>
+<li><strong>风险合规</strong>：车端数据合规、生成内容审核（深度合成备案）。</li>
+<li><strong>价值度量</strong>：助手使用率、内容生产效率（行业报道口径如"超 50 品牌上车"）。</li>
+</ul>
+<p><strong>场景卡 8：流程自动化 Agent（企业通用，L3 抓手）</strong></p>
+<ul>
+<li><strong>痛点</strong>：跨系统重复操作（对账、报销审核、数据搬运）占用人力。</li>
+<li><strong>解决方案</strong>：Agent + 工作流编排（Dify/百炼等）连接多个业务系统，把"规则明确、重复度高"的操作自动化，异常转人工。</li>
+<li><strong>典型交付物</strong>：自动化工作流 + 异常处理人工队列 + 运行看板。</li>
+<li><strong>四阶段落点</strong>：Discovery 找"规则清晰+频次高"的流程；Prototype 单流程闭环；Build 异常处理与回滚（7.5）；Scale 流程库沉淀。</li>
+<li><strong>技术栈</strong>：16.4.2（Dify/Coze/百炼）+ 16.4.3。</li>
+<li><strong>风险合规</strong>：涉及资金/审批的操作必须人工确认环；变更留痕。</li>
+<li><strong>价值度量</strong>：流程处理时长、人工介入率下降。</li>
+</ul>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>如何选第一个场景（给一线 FDE）</strong>：不要贪大，按三条标准挑"种子场景"——<strong>① 规则/知识可结构化（RAG 或规则能覆盖）② 数据可得且权限可控 ③ 痛点高频可量化（能写出 TTFV 与业务指标）</strong>。对多数团队，<strong>场景卡 1（知识库问答）或场景卡 8（流程自动化）</strong>是最佳起步（对应第15章 15.4 的 L2→L3 跨越）；跑通一个种子场景后，把其中沉淀的 Agent/工作流抽象为可复用组件（能力回注，第9章），再横向复制到场景卡 2-7——<strong>这就是 AI FDE 自己的飞轮</strong>。</p>
+</div>
+<h3 id="166-sop-9ai-fde">16.6 SOP 9：AI FDE 四阶段落地清单<a class="headerlink" href="#166-sop-9ai-fde" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>SOP 9: AI FDE 四阶段落地清单</strong>——把 16.2 的 AI 赋能动作固化成一张可勾选的作战表。风险等级用于决定"是否需要额外的人工确认环与回滚预案"。</p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">阶段</th>
+<th style="text-align: left;">AI 赋能动作</th>
+<th style="text-align: left;">工具/方法（含国产选项）</th>
+<th style="text-align: left;">产出物</th>
+<th style="text-align: left;">风险等级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;">访谈转写 + 痛点聚类</td>
+<td style="text-align: left;">Whisper / 通义听悟 + LLM（DeepSeek/Qwen）</td>
+<td style="text-align: left;">结构化痛点报告</td>
+<td style="text-align: left;">低</td>
+</tr>
+<tr>
+<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;">制度文档速读</td>
+<td style="text-align: left;">RAG（Milvus 2.6 + LLM）</td>
+<td style="text-align: left;">业务规则知识库</td>
+<td style="text-align: left;">低</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prototype</td>
+<td style="text-align: left;">AI 辅助写代码</td>
+<td style="text-align: left;">Trae / Qoder CN / Cursor</td>
+<td style="text-align: left;">原型代码</td>
+<td style="text-align: left;">低</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prototype</td>
+<td style="text-align: left;">Agent 化 Demo</td>
+<td style="text-align: left;">Dify / Coze / 百炼</td>
+<td style="text-align: left;">可交互的智能体</td>
+<td style="text-align: left;">中</td>
+</tr>
+<tr>
+<td style="text-align: left;">Build</td>
+<td style="text-align: left;">数据质量 AI 监控</td>
+<td style="text-align: left;">异常检测模型（可跑在昇腾环境）</td>
+<td style="text-align: left;">自动质量报告</td>
+<td style="text-align: left;">中</td>
+</tr>
+<tr>
+<td style="text-align: left;">Build</td>
+<td style="text-align: left;">LLM 生成代码的审查</td>
+<td style="text-align: left;">人工 Review + 7.5 测试流水线</td>
+<td style="text-align: left;">通过审查的代码</td>
+<td style="text-align: left;">中</td>
+</tr>
+<tr>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">自助分析 Copilot</td>
+<td style="text-align: left;">RAG + Ontology</td>
+<td style="text-align: left;">用户可用的查询助手</td>
+<td style="text-align: left;">高</td>
+</tr>
+<tr>
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Agent 化运维</td>
+<td style="text-align: left;">工作流引擎（Airflow/n8n/自研）+ LLM</td>
+<td style="text-align: left;">自动化运维链路</td>
+<td style="text-align: left;">高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>使用说明</strong>：建议按行自上而下渐进引入——前三行风险低、见效快，先跑通建立信心；中间三行需配合 7.5/7.6 的工程与安全基线；最后两行（高风险的 Scale 环节）务必有人工确认环与回滚预案（16.1），并接入第15章 15.4 的成熟度评估判断"团队是否已经准备好"。</p>
+<h3 id="167">16.7 最佳实践提炼：从案例与场景卡里沉淀的六条<a class="headerlink" href="#167" title="Permanent link">&para;</a></h3>
+<p>综合 13.7 四个代表案例、16.5 场景卡与第15章的共识框架，提炼六条可直接复用的 AI FDE 最佳实践：</p>
+<ol>
+<li><strong>种子场景起步，飞轮式复制</strong>：先做 16.5 场景卡 1/8 这类低风险场景（知识库问答、流程自动化），跑通后再把 Agent/工作流抽象回注（第9章），横向复制——四家云厂商案例（13.7）里"标杆项目→标准方案→复制"的路径在 AI 场景同样成立。</li>
+<li><strong>合规与选型前置</strong>：把 16.4.6 备案、14.5.1 等保/信创、第15章 15.3 技术选型共识放在 SOP 0 启动前对齐，而不是上线前补课——广东"湾擎"与监管报送案例（13.7）都证明合规是入场券而非补丁。</li>
+<li><strong>人工确认环是硬边界</strong>：风控、报送、资金审批类场景，LLM 只做"建议+初稿+解释"，放行权必须人工（16.1）——这是 AI FDE 与"AI 玩具"的分水岭。</li>
+<li><strong>Eval 集作为交付物</strong>：每个 AI 项目交付物里必须有评测集与线上评测机制（16.4.3），否则"Demo 惊艳、生产翻车"（第15章 15.4 的 L2→L3 陷阱）。</li>
+<li><strong>甲乙共识写进合同</strong>：用第15章 15.2 的《FDE 协作共识书》把合作模式、验收 Gate、成功指标（9.5.1）固化——奇瑞×豆包这类"AI 上车"案例能快速铺开，正源于甲方把 AI 当战略而非供应商采购。</li>
+<li><strong>回注对象是"能力"而非"代码"</strong>：AI 场景的回注重点是<strong>沉淀可复用的 Agent/工作流/接入包</strong>（场景卡 7 的接入包、场景卡 8 的流程库），让下一个项目站在上一个项目肩膀上——这正是第9章飞轮在 AI 时代的延伸。</li>
+</ol>
+<h3 id="168-agent">16.8 行业 Agent 落地案例：工作流拆解<a class="headerlink" href="#168-agent" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本节定位</strong>：SOP 9（16.6）是"清单"，本节给三个"工作流拆解粒度"的行业案例，看别人是怎么把 Agent/Workflow 拆成一个个可执行环节的。<strong>案例一（蚂蚁 PEER）可溯源</strong>（蚂蚁集团 2024 年开源的 agentUniverse 多智能体框架即采用 PEER 协作模式，见 <code>https://www.infoq.cn/article/CZ5WbilcGzmSQ4vKjETf</code> 及蚂蚁官方开源发布）；<strong>案例二、三的量化口径来自调研报告引述，出处待核验</strong>。读案例时请对照 16.6 的 SOP 9 动作行，想清楚"这案例拆到工作流这一层时，落在清单哪一行"。</p>
+</div>
+<h4 id="peer">案例一：蚂蚁集团 PEER 模式（投研分析）<a class="headerlink" href="#peer" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>工作流拆解</strong>：把投研分析拆成四个分工明确的 Agent 协作完成——<strong>计划（Plan）/ 执行（Execute）/ 表达（Express）/ 评价（Review）</strong>，各自负责分析流程的不同环节，再串成完整链路。</li>
+<li><strong>FDE 的角色</strong>：不直接写每个 Agent 的细节，而是定义<strong>问题与评价标准</strong>——"我们要解什么题""什么算解得好"，把评价 Agent 的裁判标准立住。</li>
+<li><strong>（来源：蚂蚁集团 agentUniverse / PEER 多智能体框架，2024 年开源；相关技术分享见 InfoQ AICon。）</strong></li>
+<li><strong>对 SOP 9 的启示</strong>：对应 <strong>16.6 的"Agent 化 Demo / 自助分析 Copilot"动作行</strong>——把"做什么、做到什么才算好"从 FDE 手里交出去，交给"定义问题"的上游。</li>
+</ul>
+<h4 id="_1">案例二：平安壹钱包（信贷审批）<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>工作流拆解</strong>：用<strong>规划者 / 观察者 / 决策者</strong>三个 Agent 自动执行信贷审批——规划者拆任务、观察者收集与监控信息、决策者给出结论；公开报道口径显示<strong>效率提升约 40%、差错率下降超 60%</strong>。</li>
+<li><strong>关键设计</strong>：决策 Agent 的"<strong>人工确认环</strong>"边界——审批链条上哪些环节允许 AI 自动处理、哪些必须人工拍板，边界画得清清楚楚（呼应 <strong>16.1 红线</strong>第 1 条"关键决策人工确认环"）。（<strong>量化口径 40%/-60% 据调研报告引述，出处待核验。</strong>）</li>
+<li><strong>对 SOP 9 的启示</strong>：对应 <strong>16.6 的"Agent 化运维 / 流程自动化 Agent"动作行</strong>——"规则明确、重复度高"的环节交给 Agent，但<strong>落到生产关键链路的动作必须有人工确认环</strong>，这正是三 Agent 设计里"决策者"与人工边界同时存在的原因。</li>
+</ul>
+<h4 id="_2">案例三：制造业设备监测平台（故障响应）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>工作流拆解</strong>：用 Workflow 架构把设备故障处置串成一条自动化链路——<strong>异常检测 → 通知 → 处置建议 → 工单</strong>，将故障响应时间由平均 2 小时缩短至 15 分钟。</li>
+<li><strong>关键设计</strong>：自动化链路把"发现异常"到"有人接手处理"之间的死区消除，同时用<strong>处置建议</strong>承接人工判断、用<strong>工单</strong>保障责任落地（呼应 <strong>16.5 场景卡 4：设备预测性维护</strong>）。同类方向有可溯源案例：上海"AI+制造"场景建设中，设备故障根因定位已从小时级压缩到分钟级、非计划停机降低约 50%（解放日报 2026 报道 <code>https://www.jfdaily.com.cn/sgh/detail?id=1753082</code>）。（<strong>本案例"2 小时→15 分钟"的具体数字据调研报告引述，出处待核验。</strong>）</li>
+<li><strong>对 SOP 9 的启示</strong>：对应 <strong>16.6 的"数据质量 AI 监控 / 自动化运维链路"动作行</strong>——把监控与响应做成<strong>从感知到动作的闭环</strong>，而非只出报表，才能真正缩短响应时间。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>三个案例的共同点</strong>：都不是"一个万能 Agent 包打天下"，而是<strong>把业务流程拆成多个职责单一、各有人工边界的环节</strong>——这与 16.1 的红线、16.5 的场景卡、16.6 的 SOP 9 完全同构：<strong>Agent 负责把重复环节自动化，FDE 负责定义问题、划清边界、做最后确认。</strong></p>
+</div>
+<h3 id="169-agent-top-n">16.9 Agent 落地常见坑：Top-N 反模式清单<a class="headerlink" href="#169-agent-top-n" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>用途</strong>：16.7 讲"该怎么做"（最佳实践），本节讲"最常见的坑"（反模式）——给一线 FDE 一张"体检表"，项目踩坑时对照定位。以下为国内 Agent 交付中最常见的六种反模式（据调研报告与行业实践归纳，属教材提炼）。</p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">#</th>
+<th style="text-align: left;">反模式</th>
+<th style="text-align: left;">症状</th>
+<th style="text-align: left;">根因</th>
+<th style="text-align: left;">对应防范</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><strong>"Demo 即上线"</strong></td>
+<td style="text-align: left;">POC 惊艳，进生产就崩/没人用</td>
+<td style="text-align: left;">把离线演示当生产交付，未补 Eval 与线上评测</td>
+<td style="text-align: left;">16.1 幻觉与评测、16.4.3 生产环境评测</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"><strong>"万能 Agent"</strong></td>
+<td style="text-align: left;">一个 Agent 试图覆盖所有场景，边界模糊、错误扩散</td>
+<td style="text-align: left;">没有按 16.8 案例的做法拆职责单一的子 Agent</td>
+<td style="text-align: left;">16.8 工作流拆解、16.5 场景卡</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><strong>"无人确认环"</strong></td>
+<td style="text-align: left;">AI 直接拍板结算/风控/审批，出事难追责</td>
+<td style="text-align: left;">红线未设人工确认环（16.1 第 1 条）</td>
+<td style="text-align: left;">16.1 红线、15.2 合同共识</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;"><strong>"为 Agent 而 Agent"</strong></td>
+<td style="text-align: left;">客户没这需求，硬上智能体，变成技术秀</td>
+<td style="text-align: left;">起点不是"消灭哪个岗位的哪类重复工作"（5.8）</td>
+<td style="text-align: left;">5.8 节奏纪律、15.5 甲方自评</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><strong>"模型绑架"</strong></td>
+<td style="text-align: left;">绑定单一模型/平台，换模型或私有化时推倒重来</td>
+<td style="text-align: left;">未预留跨端/可替换抽象层（16.4.2 AHA 提示）</td>
+<td style="text-align: left;">16.4.2 编排抽象层</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;"><strong>"无 Eval 集交付"</strong></td>
+<td style="text-align: left;">上线后效果无法度量，验收扯皮</td>
+<td style="text-align: left;">Eval 集未作为交付物（16.4.3）</td>
+<td style="text-align: left;">16.4.3、15.6 验收条款</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>一句话</strong>：<strong>反模式清单不是"吓唬清单"，而是"检查清单"</strong>——每个 Agent 交付项目的 Gate 评审前，用 16.9 逐条过一遍：踩中任何一条，都先解决再放行（呼应 5.7 Gate 运行规则）。</p>
+</div>
+<h3 id="ai">本篇收尾 · 甲乙方对照：AI 时代，你们还是"高级外包"吗<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>同一个问题，甲方怎么问、乙方怎么答。这一专栏不占章节编号，回应 AI 篇最常见的三组质疑。</p>
+</blockquote>
+<p><strong>Q1：AI 时代你们写码更快了，是不是更不值钱了？</strong></p>
+<blockquote>
+<p><strong>甲方</strong>："AI 都能写代码了，你们 FDE 的价值是不是被稀释了？报价该降吧？"</p>
+<p><strong>乙方</strong>："恰恰相反——<strong>门槛更低，但要求更高</strong>。过去 FDE 要花三天写代码、调界面，现在 AI 辅助下可能只需三十分钟做'逻辑调优'。变化在于：<strong>AI 负责底层复杂性，FDE 负责定义问题与最后确认</strong>——'写得快'不稀缺了，'知道该写什么、写出来有没有人用、结果可不可信'才是稀缺的。所以 AI 时代 FDE 不是更不值钱，而是<strong>从'砌墙的'变成'画图纸并验收的'</strong>，单位价值更高（据调研报告口径，见报告"AI篇"工作方式变化的论述）。"</p>
+</blockquote>
+<p><strong>Q2：AI 化之后，你们跟"用 AI 降本的外包"还有区别吗？</strong></p>
+<blockquote>
+<p><strong>甲方</strong>："你们说 AI FDE，是不是就是把外包 AI 化——用 Agent 少派人、更便宜？"</p>
+<p><strong>乙方</strong>："AI 是放大镜，放大的是你原有的模式。用 <strong>2.5 的三档判定</strong>看：外包用 AI，省的是<strong>人头</strong>——做完人走，留下一栈代码和一堆文档；FDE 用 AI，省的是<strong>重复劳动</strong>，省出的人力投进能力回注——做完留下可复用的 Skill / 模板 / 平台能力，客户撤场后自己能运营、能复制到下一个场景。<strong>判断标准不变：把人数拿掉，看看还剩多少能力；再看平台的组件库，是越做越厚还是原地踏步</strong>（呼应 16.9 反模式"为 Agent 而 Agent"）。所以问题从来不是'你们用不用 AI'，而是'AI 让你们留下了什么'。"</p>
+</blockquote>
+<p><strong>Q3：我们公司不大，适合用 Agent/FDE 吗？</strong></p>
+<blockquote>
+<p><strong>甲方</strong>："我们不是大厂，规模不大，也值得上 Agent/FDE 吗？"</p>
+<p><strong>乙方</strong>："<strong>上不上，不看公司大小，看有没有那几类信号</strong>。直接对照 <strong>15.5 的甲方自评清单</strong>勾一遍：数据是否分散异构、是否需要深度集成、痛点是否高频可量化、组织有没有人推、愿不愿意按价值付费、要不要'人+算力'混合落地——<strong>勾中 ≥3 条就值得</strong>，勾不中就先别花这个钱。小公司如果场景足够清晰、痛点够痛，反而落地更快；否则再大的公司，为 FDE 而 FDE 也是浪费。"</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 · CC BY-NC-ND 4.0 · 《AI 时代的 FDE：认知、流程、团队与中国落地》
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/vendor/katex.min.js"></script>
+      
+        <script src="../../assets/vendor/auto-render.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="../../assets/vendor/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

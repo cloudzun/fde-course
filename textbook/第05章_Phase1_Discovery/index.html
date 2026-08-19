@@ -1,0 +1,2263 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="FDE（前沿部署工程师）方法论与落地手册 —— 六篇 16 章：认知 / 标杆 / 流程 / 团队 / 中国实践 / AI 落地，贯穿"卖人力→卖能力"飞轮主线">
+      
+      
+      
+        <link rel="canonical" href="https://www.cloudzun.com/fde-course/textbook/%E7%AC%AC05%E7%AB%A0_Phase1_Discovery/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC04%E7%AB%A0_Palantir%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E9%9B%86/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC06%E7%AB%A0_Phase2_Prototype/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第5章 Phase 1: Discovery（发现期） - AI 时代的 FDE：认知、流程、团队与中国落地</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/vendor/katex.min.css">
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sop" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-header__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 时代的 FDE：认知、流程、团队与中国落地
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第5章 Phase 1: Discovery（发现期）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-nav__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI 时代的 FDE：认知、流程、团队与中国落地
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_%E5%B0%81%E9%9D%A2%E4%B8%8E%E5%85%A8%E4%B9%A6%E5%AF%BC%E8%AF%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    导读与结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一篇 · 认知篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第一篇 · 认知篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC01%E7%AB%A0_FDE%E6%98%AF%E4%BB%80%E4%B9%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1章 FDE是什么
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC02%E7%AB%A0_%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81FDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2章 为什么需要FDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二篇 · 标杆篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第二篇 · 标杆篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC03%E7%AB%A0_Palantir%E7%9A%84%E5%B9%B3%E5%8F%B0%E4%B8%8EFDE%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3章 Palantir的平台与FDE体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC04%E7%AB%A0_Palantir%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4章 Palantir经典案例集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第三篇 · 流程篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第三篇 · 流程篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5章 Phase 1: Discovery（发现期）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5章 Phase 1: Discovery（发现期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-ppt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How 总纲：PPT 框架 × 四阶段的交付矩阵
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How 总纲：PPT 框架 × 四阶段的交付矩阵">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、任何企业级交付，本质都是对客户三个维度的改造
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、PPT 是“内容维度”，四阶段是“时间维度”，二者构成交付矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、本篇及后续的阅读导航
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、阶段 Gate 的运行规则：未通过、回滚与止损
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、SOP 的裁剪方法：不是模板越多越好
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-phase-1-discovery1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第5章 Phase 1: Discovery（发现期，1-2周）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第5章 Phase 1: Discovery（发现期，1-2周）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 目标与进入条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 利益相关者地图绘制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 业务流程诊断与痛点识别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 数据资产盘点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#541-prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.1 核心业务对象的初步识别（为 Prototype 画草图）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 "快赢"场景筛选
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 输出交付物清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 阶段 Gate 检查清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 节奏纪律：短周期冲刺（避免"第六周死亡"）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC06%E7%AB%A0_Phase2_Prototype/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6章 Phase 2: Prototype（原型期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC07%E7%AB%A0_Phase3_Build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7章 Phase 3: Build（构建期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC08%E7%AB%A0_Phase4_Scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8章 Phase 4: Scale（扩展期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC09%E7%AB%A0_%E8%83%BD%E5%8A%9B%E5%9B%9E%E6%B3%A8%E6%96%B9%E6%B3%95%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9章 能力回注方法论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四篇 · 团队篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第四篇 · 团队篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC10%E7%AB%A0_FDE%E8%A7%92%E8%89%B2%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10章 FDE角色体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC11%E7%AB%A0_%E5%9B%9B%E9%98%B6%E6%AE%B5%E4%B8%AD%E7%9A%84%E8%A7%92%E8%89%B2%E5%8D%8F%E4%BD%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11章 四阶段中的角色协作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC12%E7%AB%A0_FDE%E4%BA%BA%E6%89%8D%E5%9F%B9%E5%85%BB%E4%B8%8E%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12章 FDE人才培养与知识管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五篇 · 中国实践篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第五篇 · 中国实践篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC13%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%95%86%E7%9A%84FDE%E5%AE%9E%E8%B7%B5%E5%9B%BE%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13章 中国云服务商的FDE实践图谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC14%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E5%8C%BAFDE%E8%BD%AC%E5%9E%8B%E7%9A%84%E4%BA%94%E5%A4%A7%E6%8C%91%E6%88%98%E4%B8%8E%E5%BA%94%E5%AF%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14章 中国区FDE转型的五大挑战与应对
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六篇 · AI 解决方案篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第六篇 · AI 解决方案篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC15%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Echo%E5%85%B1%E8%AF%86%E4%B8%8E%E5%AF%B9%E9%BD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15章 AI FDE 落地（Echo 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC16%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Delta%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%9C%BA%E6%99%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16章 AI FDE 落地（Delta 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95_%E5%8F%82%E8%80%83%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%AE%98%E6%96%B9%E8%B5%84%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-ppt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How 总纲：PPT 框架 × 四阶段的交付矩阵
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How 总纲：PPT 框架 × 四阶段的交付矩阵">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、任何企业级交付，本质都是对客户三个维度的改造
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、PPT 是“内容维度”，四阶段是“时间维度”，二者构成交付矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、本篇及后续的阅读导航
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、阶段 Gate 的运行规则：未通过、回滚与止损
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sop_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、SOP 的裁剪方法：不是模板越多越好
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-phase-1-discovery1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第5章 Phase 1: Discovery（发现期，1-2周）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第5章 Phase 1: Discovery（发现期，1-2周）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 目标与进入条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 利益相关者地图绘制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 业务流程诊断与痛点识别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 数据资产盘点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#541-prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4.1 核心业务对象的初步识别（为 Prototype 画草图）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 "快赢"场景筛选
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 输出交付物清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 阶段 Gate 检查清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 节奏纪律：短周期冲刺（避免"第六周死亡"）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sop">第三篇：流程篇 — 四阶段交付 SOP 与能力回注方法论<a class="headerlink" href="#sop" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本篇导读：流程不仅是纪律，更是业务结果的保障</strong></p>
+<p>本篇是整个教材的核心。技术执行工程师（对标Palantir Delta/FDE）往往面临一种矛盾：一方面，我们推崇黑客精神，追求极速破局；另一方面，企业级服务对稳定性、可预期性和商业成功有极高要求。</p>
+<p>如何平衡？答案就在于第 1.5 节已勾勒过的<strong>四阶段方法论</strong>（Discovery → Prototype → Build → Scale）。如果说概念篇只是亮出了这四个阶段的轮廓，那么本篇要做的，就是把每个阶段拆解到<strong>可执行的 SOP 级别</strong>。这套方法论不仅是项目管理的工具，更是认知客户、重构业务、实现价值的认知框架。对于高管，它是控制风险、预判投资回报的沙盘；对于中层，它是协同各部门、推进项目的指挥棒；对于一线，它则是应对复杂现场、步步为营的战术手册。</p>
+</div>
+<hr />
+<h2 id="how-ppt">How 总纲：PPT 框架 × 四阶段的交付矩阵<a class="headerlink" href="#how-ppt" title="Permanent link">&para;</a></h2>
+<p>如果说第一篇回答了 <strong>What（FDE 是什么）</strong>、第二篇与第一篇的经济学部分回答了 <strong>Why（为什么需要 FDE）</strong>，那么从本篇开始，教材进入 <strong>How（如何做）</strong>。</p>
+<p>但 How 不能只是一堆散落的操作技巧。在动手讲四阶段 SOP 之前，我们必须先建立一个统领性的认知框架，否则读者会淹没在细节中，只见树木、不见森林。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>关于本篇方法论的来源属性（请读者先读）</strong>：本篇采用的 <strong>Discovery → Prototype → Build → Scale 四阶段</strong>，是业界对 FDE 式交付的<strong>通用提炼</strong>，并非 Palantir 的官方术语——Palantir 官方对应的表述是"用例生命周期（Use Case Lifecycle：需求提炼 → 方案设计 → 开发排序）"与"平台采纳四阶段（Foundry Adoption：聚焦用例 → 建设基础设施 → 自治式增长 → 超速增长）"。本教材选用 Discovery/Prototype/Build/Scale，是因为它对<strong>从 0 到 1 的单项目交付</strong>更直观易懂。
+同时，本篇各阶段给出的<strong>交付物清单、阶段 Gate 检查清单、以及 SOP 模板</strong>，是本教材为转型企业提炼的<strong>实操建议与最佳实践</strong>，供落地时裁剪采用——它们不是任何厂商公开发布的官方标准。请读者按此定位使用：<strong>框架与清单重在"可执行"，而非"权威认证"。</strong></p>
+</div>
+<h3 id="_1">一、任何企业级交付，本质都是对客户三个维度的改造<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>FDE 交付一个系统，绝不只是“部署一套软件”。一次成功的落地，本质上是对客户组织在三个维度上的同步改造——这正是组织变革领域历经数十年验证的经典框架 <strong>People–Process–Technology（中文定名"人员流程技术"，英文缩写 PPT）。注意此"PPT"与"演示文稿 PPT"无关，仅为本框架的首字母缩写</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">含义</th>
+<th style="text-align: left;">在 FDE 语境下的具体所指</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>People（人员与组织）</strong></td>
+<td style="text-align: left;">谁来用、谁来推、谁来接盘</td>
+<td style="text-align: left;">客户侧的决策者、冠军用户、终端用户、自运营团队；以及 FDE 己方团队的角色配置</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Process（流程）</strong></td>
+<td style="text-align: left;">业务如何运转、如何被重塑</td>
+<td style="text-align: left;">客户业务流程的诊断、审批链路的重塑、新旧流程的切换与采纳；以及 FDE 自身的交付流程 SOP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Technology（技术平台）</strong></td>
+<td style="text-align: left;">用什么技术打通、如何对接</td>
+<td style="text-align: left;">与客户异构系统的集成、数据管道、本体建模、私有化/信创适配</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>PPT 三者缺一不可，且以 People 为先。</strong></p>
+<ul>
+<li>
+<p>只上 Technology 不改 Process、不带 People，系统必然沦为“搁板软件”（买了没人用）。</p>
+</li>
+<li>
+<p>只谈 Process 改造却无 Technology 支撑，是纸上谈兵的咨询 PPT（此 PPT 非彼 PPT）。</p>
+</li>
+<li>
+<p>三者中，<strong>People 是根、Process 是脉、Technology 是器</strong>——顺序不可颠倒。这也是为什么 FDE 的第一周是“听客户说话”（People/Process），而非“打开电脑写代码”（Technology）。</p>
+</li>
+</ul>
+</div>
+<h3 id="ppt">二、PPT 是“内容维度”，四阶段是“时间维度”，二者构成交付矩阵<a class="headerlink" href="#ppt" title="Permanent link">&para;</a></h3>
+<p>这里必须厘清一个极易混淆的关系：<strong>PPT 框架与四阶段方法论不是二选一，而是正交互补的两个维度</strong>。</p>
+<ul>
+<li><strong>四阶段（Discovery→Prototype→Build→Scale）是时间轴</strong>——它回答“<strong>什么时候做</strong>”。</li>
+<li><strong>PPT（People/Process/Technology）是内容轴</strong>——它回答“<strong>做什么</strong>”。</li>
+</ul>
+<p>任何一个交付动作，都同时落在这个矩阵的某个格子里。下表展示了 PPT 三要素在四个阶段中的工作重心如何演进：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">PPT 维度 ＼ 四阶段</th>
+<th style="text-align: left;">Discovery 发现</th>
+<th style="text-align: left;">Prototype 原型</th>
+<th style="text-align: left;">Build 构建</th>
+<th style="text-align: left;">Scale 扩展</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>People 人员组织</strong></td>
+<td style="text-align: left;">利益相关者地图、找冠军用户（5.2）</td>
+<td style="text-align: left;">客户 Demo、决策者亲手试用、争取 Build 资源（6.7）</td>
+<td style="text-align: left;">用户培训、冠军用户培养（7.7）</td>
+<td style="text-align: left;">冠军用户网络、客户自运营（8.4）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Process 流程</strong></td>
+<td style="text-align: left;">业务流程诊断、痛点识别（5.3）</td>
+<td style="text-align: left;">原型跑通业务闭环、Demo 验证价值（6.5/6.7）</td>
+<td style="text-align: left;">从原型到生产的流程固化、质量治理（7.3/7.4）</td>
+<td style="text-align: left;">跨部门推广、组织变革管理（8.3）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Technology 技术平台</strong></td>
+<td style="text-align: left;">数据资产盘点（5.4）</td>
+<td style="text-align: left;">MVP 数据管道、本体建模（6.2/6.3）</td>
+<td style="text-align: left;">异构系统集成、数据源扩展（7.2）</td>
+<td style="text-align: left;">AI 赋能、平台能力回注（8.5/8.6）</td>
+</tr>
+</tbody>
+</table>
+<p><pre class="mermaid"><code>graph LR
+    subgraph time["时间维度：四阶段"]
+        d1["Discovery"] --&gt; d2["Prototype"] --&gt; d3["Build"] --&gt; d4["Scale"]
+    end
+    subgraph ppt["内容维度：PPT 框架"]
+        p1["People 人员与组织"]
+        p2["Process 流程"]
+        p3["Technology 技术平台"]
+    end
+    ppt -.贯穿每个阶段.-&gt; time
+
+    style p1 fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style p3 fill:#e4efe4,stroke:#5b7a5b</code></pre>
+<em>图：每个交付阶段，都需要同时推进 People / Process / Technology 三个维度</em></p>
+<h3 id="_2">三、本篇及后续的阅读导航<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>本篇（第三篇）</strong> 以<strong>四阶段时间轴</strong>为主线组织，但请读者随时用 PPT 这把“内容标尺”去审视每个阶段：<strong>这一步我在改人、改流程，还是改技术？三者是否同步？</strong></li>
+<li><strong>第二篇（Palantir 标杆）</strong> 已经展示了 PPT 的“标准动作”——Foundry/Ontology 是 Technology、Delta/Echo/Engineering 三序列团队是 People、碎石路→铺装公路是 Process。（见 4.7 节的 PPT 透视）</li>
+<li><strong>第五篇（中国实践）</strong> 将展示中国厂商在 PPT 三维度上的各自侧重与妥协，并在结尾给出<strong>面向乙方的 PPT 转型对标行动纲领</strong>（见 14.8 节）。</li>
+</ul>
+<h3 id="gate">四、阶段 Gate 的运行规则：未通过、回滚与止损<a class="headerlink" href="#gate" title="Permanent link">&para;</a></h3>
+<p>每个阶段（第5–8章）末尾的 Gate 检查清单是质量闸门——"全部打勾才能进入下一阶段"。但只写"通过"不写"不通过怎么办"，Gate 就会退化成"带病签字"。<strong>Gate 的运行规则必须事先约定，这里统一给出三条规定，四个阶段共用</strong>（5.7 / 6.11 / 7.12 / 8.9 的清单本身不再重复，本节是其总纲）：</p>
+<p><strong>规则一：Gate 未通过的分级处理。</strong> 对未打勾项先定级，再按级处置，禁止"带病放行"：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">未通过定级</th>
+<th style="text-align: left;">判定标准</th>
+<th style="text-align: left;">标准动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>轻微缺口</strong></td>
+<td style="text-align: left;">缺的是"可限期补齐"的交付物（如一份文档、一次验收演示）</td>
+<td style="text-align: left;">约定补齐时限（建议 ≤1 个冲刺），补齐后<strong>带条件放行</strong>，条件记入下一阶段任务书</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>重大缺口</strong></td>
+<td style="text-align: left;">关键交付物缺失或质量不达标（如核心数据管道未跑通、安全权限未过审）</td>
+<td style="text-align: left;"><strong>暂停进入下一阶段</strong>，返回本阶段整改；整改完成后重开 Gate</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>致命缺口</strong></td>
+<td style="text-align: left;">发现方向性错误（快赢选错、价值证明失败、合规硬伤）</td>
+<td style="text-align: left;">触发"止损/回滚"判定（规则二、三），必要时 Abort</td>
+</tr>
+</tbody>
+</table>
+<p><strong>规则二：跨阶段回滚不是失败，是止损。</strong> 允许且鼓励按下列路径回退，重验后再进：</p>
+<ul>
+<li><strong>Prototype 验证失败 → 回退 Discovery（5.5）</strong>：快赢场景在原型期证明不了价值，回到快赢矩阵重筛切入点，而不是硬着头皮 Build；</li>
+<li><strong>Build 发现架构性错误 → 回退 Prototype（6.x）</strong>：原型的技术路线被证伪，回到原型重做可信度阶梯，而不是在错误的底座上加楼；</li>
+<li><strong>Scale 失速（8.7 健康退出指标恶化）→ 回退 Build（7.x）加固</strong>：客户自运营接不住、MAU 下滑，先回到 Build 做可运营移交加固，再谈扩展。</li>
+</ul>
+<p><strong>规则三：止损与退出要有判据。</strong> 连续 2 个冲刺 Gate 未通过、或累计投入超过预估 150% 仍无进展时，触发甲乙联合止损评审（呼应 15.2 风险共担条款）：</p>
+<ul>
+<li><strong>正常退出</strong>：按 8.7 撤出三级路线图完成移交（客户自运营、FDE 转战略咨询）；</li>
+<li><strong>异常终止（Abort）</strong>：按合同约定的退出条款收尾——数据归还、系统移交、知识产权边界（见 15.6 合同与定价设计的退出条款），并做一次失败复盘（参照 14.9 的口径），把教训回注到方法论。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>一句话</strong>：Gate 不是"卡人的关卡"，而是"防事故的保险丝"——<strong>未通过→分级处置；方向错了→回滚止损；该退出→体面收场</strong>。这三条规则让四阶段从"单向流水线"变成"带安全网的闭环"。</p>
+</div>
+<h3 id="sop_1">五、SOP 的裁剪方法：不是模板越多越好<a class="headerlink" href="#sop_1" title="Permanent link">&para;</a></h3>
+<p>本篇及后续章节提供了 SOP 0–9 等大量模板（干系人地图、数据盘点表、快赢矩阵、回注卡片、Gate 清单……）。<strong>模板是"弹药库"不是"必选清单"</strong>——用错了反而增加负担。裁剪遵循"三问"：</p>
+<ol>
+<li><strong>这个模板回应了客户的哪个真实决策？</strong> 没有对应决策的模板，砍掉。例如客户是存量系统升级而非新平台建设，"数据资产盘点表"可简化，"快赢矩阵"必做。</li>
+<li><strong>这个模板的产出能被下一个环节消费吗？</strong> 产出一旦无下游消费（写了没人用），说明它只是"为了交差"。例如"利益相关者地图"必须能驱动"冠军用户选择"与"汇报对象设计"，否则删。</li>
+<li><strong>填模板的时间成本是否小于它节省的沟通成本？</strong> 对 2 周冲刺的小项目，用轻量一页版即可；对千万级政企项目才需要完整版。<strong>模板粒度应与项目量级匹配。</strong></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>裁剪纪律</strong>：宁可少用一个模板，也不要让模板变成"形式主义交付物"——审校发现"模板齐全但没人用"是 FDE 项目最常见的隐性浪费之一。每个项目启动时（SOP 0）花 10 分钟过一遍"三问"，把不适用的模板提前划掉，比事后补文档高效得多。</p>
+</div>
+<p>至此，认知框架已立。下面进入四阶段的实操细节。</p>
+<hr />
+<h2 id="5-phase-1-discovery1-2">第5章 Phase 1: Discovery（发现期，1-2周）<a class="headerlink" href="#5-phase-1-discovery1-2" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本章导读</strong>：四阶段的第一步。发现期不写代码，而是"听客户说话"——绘制利益相关者地图、诊断业务痛点、盘点数据资产、筛选"快赢"切入点。本章配套 SOP 1-3（干系人地图/数据盘点表/快赢矩阵）与发现期 Gate 清单。这一步定调子，决定项目做成"锦上添花的玩具"还是"解燃眉之急的利器"。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>SOP 0: FDE 项目启动检查清单（在 Discovery 之前完成）</strong></p>
+<p><strong>商务侧</strong></p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 合同范围与交付边界是否已书面确认？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 计费模式是否为价值导向（而非人天计费）？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 客户方的项目 Sponsor 是否已明确？</p>
+</li>
+</ul>
+<p><strong>技术侧</strong></p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 客户环境访问权限（VPN/堡垒机/数据库）是否已获取？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 客户的技术栈和数据资产概况是否已初步了解？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 信创/合规约束是否已前置评估？</p>
+</li>
+</ul>
+<p><strong>团队侧</strong></p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> FDE 团队编制是否到位（至少 MVP 配置）？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 角色分工和汇报线是否已确认？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Playbook（如该行业已有）是否已分发给团队成员？</p>
+</li>
+</ul>
+<p><strong>用法说明</strong>：SOP 0 是本章各环节（5.1-5.7）的<strong>前置准备</strong>——它不回答"这个方案做不做"，而是确保"Discovery 一开机就有干净、合格的输入"。商务侧三问守住合同与价值基线，技术侧三问保证后面能连得上、读得到数据，团队侧三问确保执行口袋里有弹药。全部打勾，再正式进入 5.1 的目标与进入条件。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>四阶段 与 Palantir 官方体系的对照（三套阶段体系的完整对照）</strong>：本教材的 Discovery → Prototype → Build → Scale（How 总纲已说明）是业界对单项目交付的通用提炼，并非 Palantir 官方术语。为免读者误判，这里一次性给出<strong>四套阶段体系</strong>（教材四阶段 + Palantir 官方三套体系）的完整映射关系：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">本教材四阶段</th>
+<th style="text-align: left;">Palantir 用例生命周期</th>
+<th style="text-align: left;">Palantir Foundry 采纳四阶段</th>
+<th style="text-align: left;">Palantir AIP Activate</th>
+<th style="text-align: left;">阶段核心动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Discovery</strong>（发现期）</td>
+<td style="text-align: left;">需求提炼（Distilling functional requirements）</td>
+<td style="text-align: left;">Phase 1：聚焦用例（Focus on use cases）</td>
+<td style="text-align: left;">Identify &amp; Prioritize（识别与排序）</td>
+<td style="text-align: left;">找对问题</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prototype</strong>（原型期）</td>
+<td style="text-align: left;">方案设计（Solution Design）</td>
+<td style="text-align: left;">Phase 2：建设基础设施以解锁规模化（Build infrastructure）</td>
+<td style="text-align: left;">Prototype &amp; Validate（原型与验证）</td>
+<td style="text-align: left;">快速证明</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Build</strong>（构建期）</td>
+<td style="text-align: left;">开发排序（Sequencing development）</td>
+<td style="text-align: left;">Phase 3：自治式增长（Self-service growth）</td>
+<td style="text-align: left;">Deploy &amp; Operationalize（部署与运营化）</td>
+<td style="text-align: left;">做实做稳</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Scale</strong>（扩展期）</td>
+<td style="text-align: left;">（贯穿始终）</td>
+<td style="text-align: left;">Phase 4：超速增长（Hypergrowth）</td>
+<td style="text-align: left;">Scale &amp; Transform（扩展与转型）</td>
+<td style="text-align: left;">放大复制</td>
+</tr>
+</tbody>
+</table>
+<p><strong>粒度差异提醒</strong>：本教材四阶段更适合描述<strong>单个项目从 0 到 1 的交付</strong>；Palantir 的 Foundry 采纳四阶段更适合描述<strong>客户组织层面的平台采纳成熟度</strong>。两者的"阶段"不是一一对应的同一件事——前者是项目时间轴，后者是组织成熟度。AIP Activate 面向 <strong>AI 能力的渐进式引入</strong>，适合 AI FDE（见第15章）；"阶段核心动作"列是对每个阶段教材定位的一句话浓缩，供读者快速记忆。</p>
+</div>
+<h3 id="51">5.1 目标与进入条件<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<p><strong>战略意义（给高管）：</strong> 发现期是定调子的阶段，决定了项目是成为“锦上添花”的玩具，还是解决“燃眉之急”的利器。找准切入点，能最大化早期投资回报（ROI）。
+<strong>操作意义（给一线）：</strong> 不要急于写代码。技术执行工程师（对标Palantir Delta/FDE）的第一周不是看数据库，而是听客户说话，成为客户业务的“内行人”。</p>
+<ul>
+<li><strong>目标：</strong> 深入理解客户业务运转的真实逻辑，找到兼具高价值和高可行性的“快赢（Quick Win）”切入点，完成核心干系人绑定。</li>
+<li><strong>进入条件：</strong> 合同签署完毕，项目启动会（Kick-off）完成，客户方提供必要的物理/网络通行权限，FDE团队全员到位。</li>
+<li><strong>核心原则：</strong> “FDE的第一周不是写代码，而是听客户说话。”</li>
+</ul>
+<h3 id="52">5.2 利益相关者地图绘制<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>任何企业级软件的部署，本质上都是一次组织变革。没有人推动，再好的软件也会被束之高阁。</p>
+</div>
+<p><strong>为什么要做利益相关者地图？</strong>
+企业软件购买者和使用者往往分离。绘制地图是为了回答：谁来买单？谁来使用？谁会阻碍？谁能帮我们扫清障碍？</p>
+<p><strong>如何识别关键人物：</strong></p>
+<ol>
+<li><strong>决策者（Sponsor）：</strong> 掌握预算，关心宏观指标（如成本降低、营收增长）。</li>
+<li><strong>影响者（Influencer）：</strong> 可能是架构师、合规部门，他们有否决权。</li>
+<li><strong>使用者（End-user）：</strong> 真正每天用系统的基层员工，他们关心系统能否让自己早点下班。</li>
+<li><strong>阻碍者（Blocker）：</strong> 可能因为系统触动其利益或改变其习惯而产生抵触。</li>
+<li><strong>冠军用户（Champion）：</strong> 最有意愿推动系统落地的人，通常是痛点最深、渴望改变的业务骨干。</li>
+</ol>
+<p><strong>利益相关者地图模板（SOP 1）</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>SOP 1: 利益相关者地图模板</strong></p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>部门/职务</th>
+<th>角色类型</th>
+<th>对项目态度</th>
+<th>关注点</th>
+<th>沟通策略</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>张总</td>
+<td>供应链副总裁</td>
+<td>决策者</td>
+<td>积极支持</td>
+<td>降低库存周转天数</td>
+<td>每周核心指标汇报，展示ROI</td>
+</tr>
+<tr>
+<td>李工</td>
+<td>IT部数据架构师</td>
+<td>影响者</td>
+<td>观望/怀疑</td>
+<td>数据安全、系统兼容性</td>
+<td>邀请参与早期架构设计，打消安全顾虑</td>
+</tr>
+<tr>
+<td>王主管</td>
+<td>华东区调拨主管</td>
+<td>冠军用户</td>
+<td>极度热情</td>
+<td>告别手工Excel，自动化排程</td>
+<td>深度绑定，共同设计原型，树立标杆</td>
+</tr>
+<tr>
+<td>赵专员</td>
+<td>一线操作员</td>
+<td>使用者</td>
+<td>抵触</td>
+<td>增加工作量、改变操作习惯</td>
+<td>简化UI，强调能为他节省的时间</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>实操建议：</strong> 在到达现场的头三天，务必找到你的“冠军用户”。在某快消企业项目中，如果没有供应链总监这个冠军用户顶住IT部门初期的阻力，项目根本无法熬到第二周。</p>
+<h3 id="53">5.3 业务流程诊断与痛点识别<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<p><strong>访谈方法：</strong></p>
+<ul>
+<li><strong>结构化访谈：</strong> 针对管理层，使用预设问卷，聚焦战略目标和关键绩效指标。</li>
+<li><strong>跟班观察（Shadowing）：</strong> 针对操作层。坐在他们旁边，看他们如何处理一封邮件、如何打开5个系统比对数据。<strong>眼睛看到的，比他们嘴上说的更真实。</strong></li>
+</ul>
+<p><strong>关键问题清单（FDE访谈提纲）：</strong></p>
+<ul>
+<li>“您日常工作中最耗时的环节是什么？”（寻找效率痛点）</li>
+<li>“有哪些决策是凭经验而非数据做的？”（寻找数据赋能点）</li>
+<li>“跨部门协作中最大的卡点是什么？”（寻找信息孤岛）</li>
+<li>“如果有一个魔法棒，您最想解决什么问题？”（寻找终极期望）</li>
+</ul>
+<p><strong>痛点分类矩阵：</strong></p>
+<ol>
+<li><strong>流程痛点：</strong> 审批链路过长，手工操作多。</li>
+<li><strong>数据痛点：</strong> 数据对不上，数据拿不到，数据不实时。</li>
+<li><strong>决策痛点：</strong> 缺乏全局视野，只能盲人摸象。</li>
+<li><strong>协作痛点：</strong> 部门墙厚，邮件满天飞。</li>
+</ol>
+<h3 id="54">5.4 数据资产盘点<a class="headerlink" href="#54" title="Permanent link">&para;</a></h3>
+<p><strong>盘点方法论：</strong>
+千万不要直接向客户索要“全部数据”，这会引发安全部门的警觉，也会让你淹没在数据垃圾场中。应采用<strong>“业务牵引（Business-driven）”</strong>的逆向盘点法：业务需要什么指标 -&gt; 依赖什么实体 -&gt; 对应哪些系统和表。</p>
+<ul>
+<li><strong>系统清单：</strong> 客户现有的ERP, CRM, MES等。</li>
+<li><strong>数据源清单：</strong> 表结构、字段级含义。</li>
+<li><strong>数据质量评估：</strong> 脏数据、缺失数据。</li>
+<li><strong>系统拓扑图：</strong> 了解数据流向。</li>
+</ul>
+<p><strong>常见陷阱：</strong> 客户说“我们数据挺全的”，往往意味着数据质量堪忧；客户说“通过API实时拉取”，往往对方只提供了一个每天更新一次的FTP。</p>
+<p><strong>数据资产盘点表模板（SOP 2）</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>SOP 2: 数据资产盘点表模板</strong></p>
+<table>
+<thead>
+<tr>
+<th>系统名称</th>
+<th>所属部门</th>
+<th>数据类型</th>
+<th>数据量级</th>
+<th>更新频率</th>
+<th>接口方式</th>
+<th>数据质量</th>
+<th>共享现状</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SAP ERP</td>
+<td>财务/供应链</td>
+<td>订单/库存</td>
+<td>百万级/天</td>
+<td>T+1</td>
+<td>直连DB</td>
+<td>高，但多外键关联</td>
+<td>仅核心管理层可见</td>
+</tr>
+<tr>
+<td>CRM系统</td>
+<td>销售部</td>
+<td>客户信息</td>
+<td>十万级/总</td>
+<td>实时</td>
+<td>API</td>
+<td>极差，大量手动录入残缺</td>
+<td>各大区隔离</td>
+</tr>
+<tr>
+<td>生产MES</td>
+<td>制造中心</td>
+<td>设备传感器</td>
+<td>亿级/天</td>
+<td>毫秒级</td>
+<td>Kafka</td>
+<td>存在断点漂移</td>
+<td>孤岛，未与业务打通</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="541-prototype">5.4.1 核心业务对象的初步识别（为 Prototype 画草图）<a class="headerlink" href="#541-prototype" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>这一步只"画草图"，不是正式建模。</strong> Palantir 官方在 Discovery 阶段就要求开始识别核心 Object Type（如 AIP 方法论中的 Identify &amp; Prioritize），而不是等到 Prototype 才从零起步。本小节正是对齐这一做法：让技术执行工程师在进入原型期时不至于从零开始。</p>
+</div>
+<p>在盘点数据资产的同时，用<strong>业务语言</strong>列出"这个场景涉及哪些核心业务对象"——例如：客户、订单、产品、供应商。这是一张最朴素的清单，作用是回答"这个业务世界里有哪几类最重要的'东西'，它们之间大致是什么关系"。</p>
+<ul>
+<li><strong>用业务语言，而非数据库语言：</strong> 写"订单"而不是"t_order"，写"客户"而不是"cust_dim"。业务对象的名字，应当让业务方一听就懂——这正是未来 Ontology 建模（第 6 章）的命名起点。</li>
+<li><strong>先窄后宽：</strong> 聚焦与已锁定快赢场景直接相关的 3-5 个核心对象即可，不要一口气铺开几十个。对象越多，后期验证成本越高。</li>
+<li><strong>标注关键属性与关系：</strong> 顺手记下每个对象最想被"看到"的属性（如订单的金额、状态、日期），以及对象之间的粗略关系（客户—下单→订单，订单—包含→产品）。这为 Prototype 期的数据管道和展示页面提前锚定了骨架。</li>
+<li><strong>与 5.4 数据资产盘点联动：</strong> 一边盘点系统、表、字段（数据视角），一边列业务对象（业务视角）。两者对得上，说明数据能支撑该对象；对不上，恰恰暴露了数据断点，应反向补进 5.4 的数据质量评估。</li>
+</ul>
+<p><strong>产出物定位</strong>：这并非正式 Ontology 建模（那是 Prototype 阶段的事——见 6.2/6.3），而是为 Prototype <strong>提前画好的草图</strong>，让技术执行工程师进入原型期时直接站在"已有业务快照"的起点上，避免重复访谈、重复梳理。</p>
+<h3 id="55">5.5 "快赢"场景筛选<a class="headerlink" href="#55" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>与 Palantir 官方 "Delivering a use case" 的 Outcome-Data-Tools 三要素对齐（附录B-1）</strong>：本节的筛选框架并非教材自创，而是对 Palantir 官方三要素的本地化落地。对应关系如下：</p>
+<ul>
+<li>
+<p><strong>"业务价值 + 可见度"≈ Outcome（期望结果）</strong>——回答"这个用例解决了多大、多被看见的问题"；</p>
+</li>
+<li>
+<p><strong>"数据就绪度"≈ Data（数据可行性）</strong>——回答"现成数据能否支撑"；</p>
+</li>
+<li>
+<p><strong>"技术复杂度"≈ Tools（平台工具适配度）</strong>——回答"底层技术有多难攻克"。</p>
+</li>
+</ul>
+<p><strong>关于为何用"技术复杂度"替换 Tools</strong>：教材刻意将 Palantir 的 Tools 改为更通用的"技术复杂度"，因为<strong>非 Palantir 用户无法直接对标其平台工具</strong>；"技术复杂度"这一表述对任何技术栈（自研、开源或商业化平台）都成立，便于读者在自身语境下套用。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>与 2.3 节筛选框架的层级区分（避免混淆）</strong>：2.3 节的 Outcome-Data-痛点普遍性三要素，解决的是<strong>项目层</strong>的"这个客户/项目值不值得接"（入场决策）；本节解决的是<strong>场景层</strong>的"项目已经接了，先跑哪个用例"（项目内排序）。两者粒度不同、互补而非替代——先用 2.3 决定"入场"，再用本节决定"从哪切入"。</p>
+</div>
+<p><strong>快赢（Quick Win）的定义：</strong> 在2-4周内，能够用最小的数据集、最核心的流程，跑通闭环并向客户展示明确业务价值的场景。</p>
+<p><strong>筛选框架：</strong>
+采用 <strong>影响力（业务价值 + 可见度） × 可行性（数据就绪度 + 技术复杂度）</strong> 的二维框架。</p>
+<ul>
+<li><strong>业务价值：</strong> 解决多大的问题？（<span class="arithmatex">\(成本节约 = 减少时长 \times 资源单价\)</span>）</li>
+<li><strong>可见度：</strong> 这个改进能被多少高管看到？</li>
+<li><strong>数据就绪度：</strong> 现成数据能支撑吗？</li>
+<li><strong>技术复杂度：</strong> 是否需要攻克巨大的底层技术难题？</li>
+</ul>
+<p><strong>快赢场景评估矩阵模板（SOP 3）</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>SOP 3: 快赢场景评估矩阵</strong></p>
+<table>
+<thead>
+<tr>
+<th>候选场景</th>
+<th>业务价值(1-5)</th>
+<th>可见度(1-5)</th>
+<th>数据就绪度(1-5)</th>
+<th>技术复杂度(1-5反向*)</th>
+<th>综合得分</th>
+<th>优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A: 跨区库存智能调拨</td>
+<td>5 (省千万级物流费)</td>
+<td>4 (副总裁主抓)</td>
+<td>4 (ERP数据现成)</td>
+<td>3 (需算法支持)</td>
+<td>16</td>
+<td><strong>P0 (首选快赢)</strong></td>
+</tr>
+<tr>
+<td>B: 销售大盘实时监控</td>
+<td>3 (仅供查看无决策)</td>
+<td>5 (全体可见)</td>
+<td>5 (系统完善)</td>
+<td>5 (极简单)</td>
+<td>18</td>
+<td>P1 (辅助场景)</td>
+</tr>
+<tr>
+<td>C: 设备预测性维护</td>
+<td>5 (减少停机)</td>
+<td>3 (局部可见)</td>
+<td>1 (传感器未联网)</td>
+<td>1 (极复杂)</td>
+<td>10</td>
+<td>P3 (暂时搁置)</td>
+</tr>
+</tbody>
+</table>
+<p>*技术复杂度打分：1代表最复杂，5代表最简单，以保证总分越高越好。</p>
+</div>
+<p><strong>选择原则：选领导最关心、群众获得感最强的场景。</strong> 比如在某城商行项目，我们首选了“对公贷款贷后预警”而非复杂的“宏观经济预测”，因为前者直接关系到支行行长的KPI和客户经理每天的下班时间。</p>
+<h3 id="56">5.6 输出交付物清单<a class="headerlink" href="#56" title="Permanent link">&para;</a></h3>
+<p>在Discovery阶段结束时，FDE团队必须产出以下内容：</p>
+<ol>
+<li>利益相关者地图（详实版）</li>
+<li>业务痛点清单（按优先级排序）</li>
+<li>数据资产盘点报告（聚焦快赢场景相关的闭环数据）</li>
+<li>快赢场景定义文档（含可行性分析）</li>
+<li>初始项目路线图（明确后续Prototype的时间节点）</li>
+</ol>
+<h3 id="57-gate">5.7 阶段 Gate 检查清单<a class="headerlink" href="#57-gate" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>Discovery Gate 检查清单</strong> (只有全部打勾，才能进入Prototype阶段)</p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 是否已识别出清晰的决策者(Sponsor)并建立了直接沟通渠道？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 是否找到至少一位愿意全程陪跑的冠军用户(Champion)？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 是否完成了支撑快赢场景的数据资产盘点（至少验证了连接可行性）？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 客户决策层是否听取并正式认可了快赢场景及初始路线图？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> FDE团队（至少技术带头人）是否能不用任何技术词汇，用客户的行业黑话向客户复述其痛点？</p>
+</li>
+<li>
+<p><strong>对应交付物</strong>：本 Gate 各项与 5.6（输出交付物清单）逐项对应，验收时逐项勾对。</p>
+</li>
+<li>
+<p><strong>未通过怎么办</strong>：Gate 未全部打勾时的分级处置（轻微/重大/致命）、跨阶段回滚与止损判据，见第5章 How 总纲"四、阶段 Gate 的运行规则"。</p>
+</li>
+</ul>
+</div>
+<h3 id="58">5.8 节奏纪律：短周期冲刺（避免"第六周死亡"）<a class="headerlink" href="#58" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>本章节奏纪律的核心一句话：宁可每周交一点看得见的，也不闷头憋一个"完美"的大版本。</strong></p>
+</div>
+<p><strong>问题：为什么"闷头做三个月再上线"会死在第六周？</strong>
+Discovery 阶段找到切入点之后，最大的交付风险往往不是技术难度，而是<strong>节奏</strong>。如果交付模式是"闷头做三个月再上线"，项目大概率死在第六周——因为甲方在漫长的静默期里看不到任何阶段性成果，就会开始怀疑你的进度、抽调资源、砍预算，甚至直接叫停。FDE 面对的甲方不是"等着验收"的旁观者，而是一个持续在观望、随时可能收回投入的组织。<strong>信任不是项目结束时一次性兑现的，而是每个周期用可见成果一点点喂出来的。</strong></p>
+<p><strong>节奏建议：以 2 周为一个冲刺（Sprint），每次都交付"看得见、能演示、可验收"的增量。</strong>
+不要把整个项目当成一次"憋大招"。建议把工作量切成 <strong>2 周一个的短周期冲刺（Sprint）</strong>，每个冲刺结束都要向甲方交付<strong>看得见、能演示、可验收</strong>的增量。这个节奏与本章 5.5 的"快赢（Quick Win）"及后续 Prototype 的节奏天然同频——快赢本来就是 2-4 周能跑通闭环的小切口，用短周期冲刺把它拆成更细的 2 周增量，既延续了"小步快跑"的精神，也让甲方始终能看到进度。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">冲刺</th>
+<th style="text-align: left;">典型节奏（仅为示意，可按项目裁剪）</th>
+<th style="text-align: left;">交付给甲方的可见成果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Sprint 1</td>
+<td style="text-align: left;">跑通单一核心流程的最小闭环 Demo</td>
+<td style="text-align: left;">可点击、可演示的界面/原型</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sprint 2</td>
+<td style="text-align: left;">接到真实数据，验证关键指标</td>
+<td style="text-align: left;">带真实数据的结果展示</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sprint 3</td>
+<td style="text-align: left;">固化流程、补齐边界场景</td>
+<td style="text-align: left;">走通完整业务链路的版本</td>
+</tr>
+<tr>
+<td style="text-align: left;">...</td>
+<td style="text-align: left;">每个冲刺结尾做一次轻量演示与评审</td>
+<td style="text-align: left;">阶段验收记录</td>
+</tr>
+</tbody>
+</table>
+<p><strong>行业佐证：</strong></p>
+<blockquote>
+<p>行业调研显示，大量 AI Agent 项目卡在从 POC 到生产的跨越——亚马逊云科技陈晓建在 MEET2026 演讲中引述的口径为"<strong>93% 的企业 AI 项目卡在 POC 到生产的最后一公里</strong>"（据智源社区报道 <code>https://hub.baai.ac.cn/view/51444</code>）。核心失败原因之一是"技术部门推着 AI 上、业务部门却不知道要解决什么问题"。因此正确的起点应该是"<strong>这个 Agent 消灭了哪个岗位的哪类重复工作</strong>"，而不是"我们能用 AI 做什么"。</p>
+</blockquote>
+<p>这段话与本节的冲刺节奏互为表里：<strong>起点错了（技术驱动而非问题驱动），后期就必然靠"憋大版本"来圆场，于是走向第六周死亡；节奏对了（短周期、看得见），才能让业务方始终参与、始终认可，把"技术往前推"变成"业务拉着走"。</strong></p>
+<p><strong>落点：与 5.7 Gate 检查清单衔接。</strong>
+5.7 的 Discovery Gate 是阶段级的质量闸门，而短周期冲刺是<strong>阶段内部的节奏机制</strong>——两者不冲突，而是互补。落地方法是：<strong>每个冲刺结束对应一次轻量 Gate 评审</strong>，不用像 5.7 那么完整，掐住"这 2 周的要件是否达成、是否继续推进、是否需要微调方向"三个要点即可；待冲刺累积满 Discovery 的全部交付物（5.6），再走向完整版 5.7 阶段 Gate。这样既保持了大阶段的质量门槛，又避免了阶段内部的长时间无产出。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 · CC BY-NC-ND 4.0 · 《AI 时代的 FDE：认知、流程、团队与中国落地》
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/vendor/katex.min.js"></script>
+      
+        <script src="../../assets/vendor/auto-render.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="../../assets/vendor/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

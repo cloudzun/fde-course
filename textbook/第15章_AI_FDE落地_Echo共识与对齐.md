@@ -1,4 +1,4 @@
-# 第六篇：AI 篇 — AI FDE 落地：Echo 共识 × Delta 执行
+# 第六篇：AI 解决方案篇 — FDE 让 AI 真正落地
 
 > [!NOTE]
 > **本篇导读**

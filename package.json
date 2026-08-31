@@ -1,6 +1,6 @@
 {
   "name": "fde-course",
-  "version": "1.14.0",
+  "version": "1.16.0",
   "description": "> **副题：从非标交付到平台飞轮——\"卖人力\"到\"卖能力\"的完整方法论**",
   "main": "index.js",
   "directories": {

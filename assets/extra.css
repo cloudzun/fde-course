@@ -100,3 +100,16 @@ h1 {
 [data-md-color-scheme="slate"] .md-footer-meta {
   background-color: #0d1440;
 }
+
+/* ============================================================
+   字体统一：系统字体栈（零外部网络请求）
+   正文：优先系统无衬线中文（苹方/雅黑/Segoe），不加载任何外部字体文件
+   代码：保持等宽
+   ============================================================ */
+:root {
+  --md-text-font: -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Microsoft YaHei", "Segoe UI", "Noto Sans SC", "Source Han Sans SC",
+    system-ui, sans-serif;
+  --md-code-font: "Cascadia Mono", "SF Mono", "JetBrains Mono", Consolas,
+    "Courier New", monospace;
+}

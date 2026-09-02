@@ -1,0 +1,1813 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="FDE（前沿部署工程师）方法论与落地手册 —— 六篇 16 章：认知 / 标杆 / 流程 / 团队 / 中国实践 / AI 落地，贯穿"卖人力→卖能力"飞轮主线">
+      
+      
+      
+        <link rel="canonical" href="https://www.cloudzun.com/fde-course/textbook/%E7%AC%AC09%E7%AB%A0_%E8%83%BD%E5%8A%9B%E5%9B%9E%E6%B3%A8%E6%96%B9%E6%B3%95%E8%AE%BA/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC08%E7%AB%A0_Phase4_Scale/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC10%E7%AB%A0_FDE%E8%A7%92%E8%89%B2%E4%BD%93%E7%B3%BB/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第9章 能力回注方法论 - AI 时代的 FDE：认知、流程、团队与中国落地</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/vendor/katex.min.css">
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#9" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-header__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 时代的 FDE：认知、流程、团队与中国落地
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第9章 能力回注方法论
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-nav__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI 时代的 FDE：认知、流程、团队与中国落地
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_%E5%B0%81%E9%9D%A2%E4%B8%8E%E5%85%A8%E4%B9%A6%E5%AF%BC%E8%AF%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    导读与结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一篇 · 认知篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第一篇 · 认知篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC01%E7%AB%A0_FDE%E6%98%AF%E4%BB%80%E4%B9%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1章 FDE是什么
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC02%E7%AB%A0_%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81FDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2章 为什么需要FDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二篇 · 标杆篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第二篇 · 标杆篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC03%E7%AB%A0_Palantir%E7%9A%84%E5%B9%B3%E5%8F%B0%E4%B8%8EFDE%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3章 Palantir的平台与FDE体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC04%E7%AB%A0_Palantir%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4章 Palantir经典案例集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第三篇 · 流程篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第三篇 · 流程篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC05%E7%AB%A0_Phase1_Discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5章 Phase 1: Discovery（发现期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC06%E7%AB%A0_Phase2_Prototype/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6章 Phase 2: Prototype（原型期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC07%E7%AB%A0_Phase3_Build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7章 Phase 3: Build（构建期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC08%E7%AB%A0_Phase4_Scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8章 Phase 4: Scale（扩展期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9章 能力回注方法论
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9章 能力回注方法论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第9章 能力回注方法论（贯穿四阶段）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第9章 能力回注方法论（贯穿四阶段）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 四步法：识别→抽象→集成→验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 回注优先级评估矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-sop-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 能力回注需求卡片（SOP 4 复用）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 回注流程与组织保障
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 回注 KPI 与度量体系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.5 回注 KPI 与度量体系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#951" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.1 行业通用指标补充（第二层：交付与客户成功）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本篇收尾 · 甲乙方对照：谁来验收
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本篇收尾 · 甲乙方对照：谁来验收">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        甲方这么问 → 乙方这么答
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四篇 · 团队篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第四篇 · 团队篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC10%E7%AB%A0_FDE%E8%A7%92%E8%89%B2%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10章 FDE角色体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC11%E7%AB%A0_%E5%9B%9B%E9%98%B6%E6%AE%B5%E4%B8%AD%E7%9A%84%E8%A7%92%E8%89%B2%E5%8D%8F%E4%BD%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11章 四阶段中的角色协作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC12%E7%AB%A0_FDE%E4%BA%BA%E6%89%8D%E5%9F%B9%E5%85%BB%E4%B8%8E%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12章 FDE人才培养与知识管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五篇 · 中国实践篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第五篇 · 中国实践篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC13%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%95%86%E7%9A%84FDE%E5%AE%9E%E8%B7%B5%E5%9B%BE%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13章 中国云服务商的FDE实践图谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC14%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E5%8C%BAFDE%E8%BD%AC%E5%9E%8B%E7%9A%84%E4%BA%94%E5%A4%A7%E6%8C%91%E6%88%98%E4%B8%8E%E5%BA%94%E5%AF%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14章 中国区FDE转型的五大挑战与应对
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六篇 · AI 解决方案篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第六篇 · AI 解决方案篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC15%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Echo%E5%85%B1%E8%AF%86%E4%B8%8E%E5%AF%B9%E9%BD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15章 AI FDE 落地（Echo 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC16%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Delta%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%9C%BA%E6%99%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16章 AI FDE 落地（Delta 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95_%E5%8F%82%E8%80%83%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%AE%98%E6%96%B9%E8%B5%84%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第9章 能力回注方法论（贯穿四阶段）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第9章 能力回注方法论（贯穿四阶段）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 四步法：识别→抽象→集成→验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 回注优先级评估矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-sop-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 能力回注需求卡片（SOP 4 复用）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 回注流程与组织保障
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 回注 KPI 与度量体系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.5 回注 KPI 与度量体系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#951" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.1 行业通用指标补充（第二层：交付与客户成功）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本篇收尾 · 甲乙方对照：谁来验收
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本篇收尾 · 甲乙方对照：谁来验收">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        甲方这么问 → 乙方这么答
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>第9章 能力回注方法论</h1>
+
+<h2 id="9">第9章 能力回注方法论（贯穿四阶段）<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本章导读：护城河的唯一来源</strong>
+企业级软件定制化项目的护城河，不在于某一次交付有多漂亮，而在于严格、系统化的<strong>能力回注</strong>机制——即把现场的一次性定制，系统性地"上游化（upstreaming）"、沉淀为平台的通用能力（这一动作在业界也称为 productization，产品化）。这正是 3.4 节"碎石路→铺装公路"那个理念的<strong>工程化落地</strong>——如果说"碎石路→铺装公路"回答了"为什么、往哪走"，本章就回答"具体怎么走"：由谁识别、如何抽象、怎么并入平台、如何度量。
+前八章讲的四阶段方法论，本质上都是在为能力回注服务：Discovery 找到值得沉淀的场景，Prototype 验证抽象的可能性，Build 是回注的黄金窗口，Scale 是回注成果的复用放大器。<strong>没有回注，FDE 就退化为高级外包；有了回注，FDE 才是平台飞轮的引擎。</strong></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>本章学习目标（可测量）</strong>：读完并练完本章，读者应能——</p>
+<ol>
+<li><strong>执行</strong>能力回注四步法（识别→抽象→集成→验证），说清每个步骤的责任人与产出物（9.1）；</li>
+<li><strong>辨别</strong>"V1 来源项目回归验证"与"V2 第二场景复用验证"的区别，并正确判定某个组件是"已集成"还是"毕业入库"（9.1 第 IV 步）；</li>
+<li><strong>判断</strong>抽象的分寸——哪些共性值得抽象、哪些应留在项目里（避免过度抽象/抽象不足，9.1 第 II 步）；</li>
+<li><strong>设计</strong>一份能力回注需求卡片（SOP 4）并说明它何时可排期、何时被驳回（9.3）；</li>
+<li><strong>评估</strong>回注优先级与 KPI：用"通用性×成本"矩阵排优先级，用四类 KPI 度量回注是否真正形成飞轮（9.2/9.5）。</li>
+</ol>
+<p><strong>本章练习 + 完成证据</strong>（参考答案见附录 G）：基础题（四步法概念）→ 应用题（从你写过的代码里找 3 段可能复用的模式，登记成 SOP 4 卡片）→ 决策题（给定组件，判断该排期、驳回到留档，还是已验证复用可毕业）。完成证据：<strong>≥1 张填完整的回注需求卡片、一张优先级矩阵打分、一份 V1/V2 状态判定说明</strong>。</p>
+</div>
+<h3 id="91">9.1 四步法：识别→抽象→集成→验证<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<p>能力回注不是一句口号，而是一条有明确输入输出的流水线。四个步骤各有其责任人、动作和产出物——<strong>这里的责任人，正是 3.2 节定义的作战单元角色</strong>：现场的技术执行工程师（Delta）与业务策略工程师（Echo）负责"识别、抽象"的前两步，后方的平台工程师负责"集成"，最后由下一个项目的现场团队完成"验证"。前线与后方在此形成闭环。</p>
+<pre class="mermaid"><code>graph TD
+    recog["I. 识别&lt;br/&gt;现场发现重复痛点"] --&gt; abstr["II. 抽象&lt;br/&gt;提取通用模式"]
+    abstr --&gt; integ["III. 集成&lt;br/&gt;平台团队开发"]
+    integ --&gt; verif["IV. 验证&lt;br/&gt;回注项目复用验证"]
+    verif -.-&gt;|沉淀新版本, 持续迭代| recog
+
+    style recog fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style verif fill:#e4efe4,stroke:#5b7a5b</code></pre>
+<p><em>图：能力回注四步法流水线（识别→抽象→集成→验证，虚线为闭环迭代）</em></p>
+<p>上面的图只展示了"流程阶段"，下面这张时序图把<strong>每个步骤背后的角色协作</strong>展开——看清"谁在什么环节、与谁交互"：</p>
+<pre class="mermaid"><code>sequenceDiagram
+    participant Echo as 业务策略师(Echo)
+    participant Delta as 技术执行(Delta)
+    participant Dev as 平台工程师(Dev)
+    participant Next as 下一个项目现场
+    participant PL as Playbook 知识库
+
+    Delta-&gt;&gt;Echo: 同类清洗逻辑/模型第 2 次出现（技术重复信号）
+    Echo-&gt;&gt;Delta: 确认业务共性 + 行业普遍性（业务信号）
+    Delta-&gt;&gt;Delta: 登记能力回注日志条目
+    Delta-&gt;&gt;Dev: 提交能力回注需求卡片（SOP 4）
+    Dev-&gt;&gt;Dev: 双周评审 → 排期（或驳回留档）
+    Dev-&gt;&gt;Dev: 抽象 + 集成开发（不搬原样代码）
+    Dev-&gt;&gt;Next: 发布组件 / 配置项 + 使用文档
+    Next-&gt;&gt;Dev: 真实项目复用验证
+    alt 验证通过
+        Next-&gt;&gt;PL: 组件"毕业"，正式进入 Playbook
+    else 需大改才能用
+        Next-&gt;&gt;Dev: 退回：抽象层级不对，返工
+    end
+    PL--&gt;&gt;Delta: 反哺改进意见 → 触发新一轮识别</code></pre>
+<p><em>图：四步法的跨角色协作——前线（Delta/Echo）与后方（Dev）通过"卡片→组件"闭环咬合</em></p>
+<p><strong>I. 识别（Identify）— 责任人：技术执行工程师（Delta）+ 业务策略工程师（Echo）</strong></p>
+<ul>
+<li><strong>动作</strong>：两个视角共同判断"这段东西值不值得回注"——<ul>
+<li><strong>技术执行工程师</strong>从<strong>代码层</strong>识别："这段清洗逻辑/这个模型/这套集成，在上一个客户是否写过？"（技术重复信号）</li>
+<li><strong>业务策略工程师</strong>从<strong>业务层</strong>判断："这个痛点在同行业其他客户是否普遍存在？沉淀它未来能覆盖多少客户？"（业务共性与行业普遍性——呼应 2.3 节的判断标准）</li>
+<li>技术重复 + 业务普遍，两者叠加才构成一个高价值的回注候选。</li>
+</ul>
+</li>
+<li><strong>判断阈值</strong>：套用"五次部署法则"的前置信号——同一模式出现<strong>第 2 次</strong>即登记，出现<strong>第 3 次</strong>即触发抽象评估。</li>
+<li><strong>产出物</strong>：能力回注日志条目（一句话描述 + 发生频次 + 初步的通用性判断）。</li>
+</ul>
+<p><strong>II. 抽象（Abstract）— 责任人：技术执行工程师（Delta）+ 平台工程师（后方）</strong></p>
+<ul>
+<li><strong>动作</strong>：剥离客户特定的硬编码（表名、字段名、业务常量），把它参数化、配置化。核心问题是：“哪些是这个客户独有的？哪些是所有同类客户共有的？”</li>
+<li><strong>常见抽象手法</strong>：硬编码路径 → 配置文件；if-else 特判 → 规则引擎；专用脚本 → 带参数的模板组件；专用表结构 → 标准 Ontology 对象。</li>
+<li><strong>抽象的分寸（最考验功力的一步）</strong>：抽象既怕"不足"也怕"过度"。<strong>抽象不足</strong>——只是把 A 客户的代码换个名字，换个客户就用不了，等于没抽象；<strong>过度抽象</strong>——为了应对想象中的所有情况，造出一个参数几十个、没人看得懂的"万能框架"，反而比定制更难维护。经验法则是<strong>"面向已发生的重复抽象，而非面向想象的未来抽象"</strong>：只把已经在 2-3 个客户身上真实出现过的共性提取出来，其余留作配置扩展点，不预先实现。</li>
+<li><strong>产出物</strong>：能力回注需求卡片（见 9.3，SOP 4）。</li>
+</ul>
+<p><strong>III. 集成（Integrate）— 责任人：平台工程师（后方）</strong></p>
+<ul>
+<li><strong>动作</strong>：将抽象后的组件纳入平台主分支，遵循平台架构规范，编写单元测试、API 文档与 SDK 示例。</li>
+<li><strong>红线</strong>：绝不允许把“客户 A 的定制代码原样搬进平台”。未经抽象的代码进入平台，等于把技术债转移到全公司。</li>
+<li><strong>产出物</strong>：平台新组件 / 新配置项 + 面向 FDE 的使用文档。</li>
+</ul>
+<p><strong>IV. 验证（Validate）— 责任人：下一个项目的技术执行工程师（Delta）</strong></p>
+<ul>
+<li><strong>两级验证，不可混用</strong>：第8章/第11章出现的"回注验证"容易产生两种理解，这里明确统一为两点——<strong>V1（来源项目回归验证）</strong> 与 <strong>V2（第二场景复用验证）</strong>：<ul>
+<li><strong>V1 · 来源项目回归验证</strong>：平台化改造完成后，先把组件重新装回<strong>来源项目</strong>跑通，确认重构没有破坏原业务——接口、性能、权限、数据结果都正常。<strong>V1 只证明"改造没做坏"，状态标为「已集成／来源验证通过」，不算毕业。</strong></li>
+<li><strong>V2 · 第二场景复用验证</strong>：在<strong>另一个客户 / 另一项目 / 显著不同的业务上下文</strong>中调用该组件，验证其参数化能力成立、没有隐含来源客户的特定逻辑，并记录二次适配成本。<strong>只有 V2 通过，才能状态标为「已验证复用／毕业入库」</strong>，正式进入 Playbook。</li>
+</ul>
+</li>
+<li><strong>动作</strong>：先在来源项目做 V1 回归（快速、低风险）；再在一个真实的新客户项目做 V2 复用验证。若 V2 需要大改才能用，说明抽象层级不对，退回第 II 步（并记录二次适配成本作为后续抽象的依据）。</li>
+<li><strong>验证层级</strong>：能证明"重构没破坏原业务"（V1）≠ 能证明"它是真通用的"（V2）。<strong>以 V2 作为回注是否毕业的唯一判据</strong>——这正是"能力回注必须是通用能力、而非把 A 客户代码换个名"的本质要求（呼应 II 步的抽象分寸）。</li>
+<li><strong>闭环标志</strong>：V1 通过 + 新项目 V2 复用成功 → 组件"毕业"，正式进入 Playbook；反哺出的改进意见 → 触发新一轮识别。</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>反面模式：为回注而回注</strong>
+只出现过 1 次的需求就急于抽象，会造出没人用的“僵尸组件”，反而增加平台维护成本。回注的前提永远是"真实的重复"，而非"想象中的通用"。</p>
+</div>
+<h3 id="92">9.2 回注优先级评估矩阵<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
+<p>不是所有可回注的东西都值得回注。用 <strong>通用性（该能力能覆盖多少未来客户）× 实现成本（平台化开发的工作量）</strong> 构建九宫格，决定“做/缓/不做”。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><strong>通用性：低</strong></th>
+<th style="text-align: left;"><strong>通用性：中</strong></th>
+<th style="text-align: left;"><strong>通用性：高</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>成本：低</strong></td>
+<td style="text-align: left;">🟡 顺手做（个人 Utils 库）</td>
+<td style="text-align: left;">✅ <strong>立即做</strong></td>
+<td style="text-align: left;">✅ <strong>立即做（最高优先）</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>成本：中</strong></td>
+<td style="text-align: left;">❌ 不做</td>
+<td style="text-align: left;">🟡 排期规划</td>
+<td style="text-align: left;">✅ 立即做</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>成本：高</strong></td>
+<td style="text-align: left;">❌ 不做（保留为项目定制）</td>
+<td style="text-align: left;">❌ 暂缓（等更多需求佐证）</td>
+<td style="text-align: left;">🟡 立项评审（战略级投入）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>决策口诀：</strong></p>
+<ul>
+<li><strong>右上角（高通用 + 低成本）</strong>：无脑做，这是回注的甜点区，投入产出比最高。</li>
+<li><strong>左下角（低通用 + 高成本）</strong>：坚决不做，留在项目里作为一次性定制，避免污染平台。</li>
+<li><strong>右下角（高通用 + 高成本）</strong>：需 FDE Lead 与平台负责人共同立项，用 11.6 节的 ROI 公式量化决策。</li>
+</ul>
+<h3 id="93-sop-4">9.3 能力回注需求卡片（SOP 4 复用）<a class="headerlink" href="#93-sop-4" title="Permanent link">&para;</a></h3>
+<p>回注需求的标准载体是"能力回注需求卡片"，其完整模板见 7.8 节 SOP 4。这里补充<strong>卡片提交后的处理约定</strong>，使其从“一张表”变成“一个流程动作”：</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>SOP 4-补充：卡片提交与流转规则</strong></p>
+<ul>
+<li>
+<p><strong>提交时机</strong>：Build 阶段每周五下班前，强制提交本周新增卡片（哪怕是 0 张也要说明）。</p>
+</li>
+<li>
+<p><strong>必填校验</strong>："通用性评估"与"ROI 预测"两栏留空的卡片，评审委员会直接退回，不予排期。</p>
+</li>
+<li>
+<p><strong>状态字段</strong>：卡片须带状态标签——<code>待评审</code> → <code>已排期</code> → <code>开发中</code> → <code>已集成</code>（<strong>V1：来源项目回归通过</strong>）→ <code>已验证复用</code>（<strong>V2：第二场景复用通过</strong>）→ <code>毕业入库</code>（形成可追踪的两级验证生命周期；V1/V2 定义见 9.1 第 IV 步）。</p>
+</li>
+<li>
+<p><strong>驳回处理</strong>：被驳回的卡片不删除，标记 <code>暂缓/驳回原因</code>，作为未来需求佐证的证据留档。</p>
+</li>
+</ul>
+</div>
+<p>上面这串状态标签，画成状态图就是一张可追踪的"卡片生命周期地图"：</p>
+<pre class="mermaid"><code>stateDiagram-v2
+    Pending: 待评审
+    Scheduled: 已排期
+    Developing: 开发中
+    Integrated: 已集成
+    Verified: 已验证复用
+    Graduated: 毕业入库
+    Rejected: 暂缓/驳回
+
+    [*] --&gt; Pending: 提交需求卡片（SOP 4）
+    Pending --&gt; Scheduled: 评审通过（双周评审）
+    Pending --&gt; Rejected: 通用性/ROI 不达标
+    Rejected --&gt; [*]: 留档佐证，需求再次出现可重提
+    Scheduled --&gt; Developing: 平台团队排期开发
+    Developing --&gt; Integrated: 抽象+集成+Code Review
+    Integrated --&gt; Verified: V2 第二场景复用验证（V1 来源项目回归已过）
+    Verified --&gt; Graduated: V2 验证通过，毕业入库
+    Graduated --&gt; [*]: 进入 Playbook / 平台正式发布
+    Verified --&gt; Scheduled: 需大改：抽象层级不对，退回
+
+    classDef done fill:#f5ece0,stroke:#a8895f
+    classDef bad fill:#fdecea,stroke:#d94f4f
+    class Graduated done
+    class Rejected bad</code></pre>
+<p><em>图：能力回注需求卡片的生命周期——主链五个状态（蓝），毕业入库（金），驳回留档（红）</em></p>
+<h3 id="94">9.4 回注流程与组织保障<a class="headerlink" href="#94" title="Permanent link">&para;</a></h3>
+<p>回注若只靠一线工程师的自觉，必然失败。它需要制度化的流程和明确的组织角色来保障。</p>
+<pre class="mermaid"><code>graph TD
+    submit["FDE 提交&lt;br/&gt;回注卡片(工单)"] --&gt; review["回注评审委员会&lt;br/&gt;双周评审"]
+    review --&gt;|通过| dev["平台团队排期开发"]
+    review --&gt;|驳回| workaround["给出 Workaround&lt;br/&gt;并留档佐证"]
+    dev --&gt; verify["前线项目复用验证"]
+    verify --&gt;|验证通过| pub["纳入 Playbook / 平台正式发布"]
+    verify --&gt;|验证不通过| dev
+    workaround -.-&gt;|需求再次出现| submit
+
+    style submit fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style workaround fill:#f5ece0,stroke:#a8895f
+    style pub fill:#e4efe4,stroke:#5b7a5b</code></pre>
+<p><em>图：回注从提交到毕业的闭合流程——评审分流，复用验证通过方可纳入 Playbook</em></p>
+<p><strong>组织保障要点：</strong></p>
+<ol>
+<li><strong>回注评审委员会</strong>：固定成员应包含至少 1 名资深平台架构师、1 名 FDE Lead、1 名产品经理；<strong>双周</strong>评审一次，避免卡片积压。</li>
+<li><strong>代码准入 Review</strong>：任何试图并入平台主库的代码，必须通过平台架构师的严格 Code Review（见 11.6 节代码审核机制）。</li>
+<li><strong>20% 回注时间制度</strong>：呼应 11.4 节的"20% 回注法则"，Build 阶段强制划拨 20% 工时用于抽象重构，并写入项目排期，而非“有空再说”。</li>
+<li><strong>激励挂钩</strong>：将回注贡献度纳入高级别工程师的绩效考核（呼应 12.3 节 Playbook 贡献考核），让“愿意为后人铺路”的人得到回报。</li>
+</ol>
+<h3 id="95-kpi">9.5 回注 KPI 与度量体系<a class="headerlink" href="#95-kpi" title="Permanent link">&para;</a></h3>
+<p>没有度量就没有管理。以下四个指标构成回注健康度的仪表盘，建议按季度跟踪其<strong>趋势</strong>（而非绝对值）。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">KPI 指标</th>
+<th style="text-align: left;">定义与计算方式</th>
+<th style="text-align: left;">健康信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>能力回注率</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\text{回注率} = \dfrac{\text{成功并入平台主线的通用组件数}}{\text{项目中识别出的可回注点总数}}\)</span></td>
+<td style="text-align: left;">关注<strong>逐季上升的趋势</strong>，而非某个固定阈值</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>项目复用率</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\text{复用率} = \dfrac{\text{新项目复用的已有平台组件量}}{\text{新项目交付的总组件量}}\)</span></td>
+<td style="text-align: left;">随飞轮成熟持续走高（本教材设定的转型目标：能力积累期突破 60%，见 14.6）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>交付效率趋势</strong></td>
+<td style="text-align: left;">同类型项目的平均交付周期同比缩短幅度</td>
+<td style="text-align: left;">呼应经验曲线，第 N 个项目周期持续下降</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>路线图影响力</strong></td>
+<td style="text-align: left;">平台版本迭代中，由 FDE 一线反向驱动的 Feature 占比</td>
+<td style="text-align: left;">反映“前线经验→平台演进”通道是否畅通</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>上表"健康信号"中的量化目标（如复用率 60%）是本教材为转型企业设定的<strong>参考目标值</strong>，非行业统一基准。各团队应结合自身平台成熟度设定基线，<strong>重在跟踪趋势方向，而非攀比绝对数值</strong>。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>度量的陷阱</strong>：切忌把"回注卡片提交数量"当作 KPI 去考核一线，否则会诱发“为凑数而提交”的低质量卡片。真正应考核的是<strong>下游的复用率</strong>——只有被别人真正用起来的回注，才算创造了价值。</p>
+</div>
+<h4 id="951">9.5.1 行业通用指标补充（第二层：交付与客户成功）<a class="headerlink" href="#951" title="Permanent link">&para;</a></h4>
+<p>9.5 的四指标回答的是"<strong>平台飞轮健康度</strong>"（能力有没有沉淀、有没有被复用——FDE 模式的内因）；这里补充四个<strong>行业通用指标</strong>，回答"<strong>交付与客户成功</strong>"（客户感受到的价值——飞轮运转的外果）。两层的关系是：<strong>飞轮转得好，外果自然好</strong>；第二层指标是第一层的结果验证，不作为对一线 FDE 的单一考核（防止为了压 TTFV 牺牲复用，与 1.3 节"卖能力"矛盾）。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">补充指标</th>
+<th style="text-align: left;">定义</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>TTFV（Time to First Value，首次价值交付时间）</strong></td>
+<td style="text-align: left;">合同签署 → 客户首次从系统获得可量化业务价值的时间</td>
+<td style="text-align: left;">交付效率最直接的衡量；政企场景尤其看重（可与 14.5 的 PoV 前置呼应）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Customer Health Score（客户健康度）</strong></td>
+<td style="text-align: left;">使用活跃度 + 增购意向 + 关系质量的综合评分卡</td>
+<td style="text-align: left;">常见于客户成功平台（如 Gainsight）；用于识别"沉默客户"提前干预</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NPS / CSAT</strong></td>
+<td style="text-align: left;">净推荐值 / 客户满意度</td>
+<td style="text-align: left;">非 FDE 特有，但应作为团队考核的基础指标</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>定制/平台代码比</strong></td>
+<td style="text-align: left;">每次交付中定制代码量 ÷ 复用平台代码量</td>
+<td style="text-align: left;">飞轮健康度的"最简版"；目标随项目数<strong>逐项目递减</strong>（呼应 2.3 经验曲线）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>两层指标的使用口径</strong>：第一层（9.5）用于<strong>平台/产品线</strong>季度复盘（回注是否有效）；第二层（9.5.1）用于<strong>交付团队/客户成功</strong>复盘（客户是否真的受益）。两组数据应能互相印证——若复用率上升而 TTFV 没有缩短，说明回注沉淀了能力但没传导到客户价值，需检查交付流程而非指标本身。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>本篇小结</strong>
+流程篇把 FDE 交付拆成了可执行的两条轴：<strong>时间轴</strong>（Discovery→Prototype→Build→Scale 四阶段，每阶段有目标、活动、交付物与 Gate）与<strong>内容轴</strong>（People/Process/Technology 三维度同步推进），并以贯穿四阶段的<strong>能力回注</strong>为护城河核心（识别→抽象→集成→验证）。这套 SOP 与工具（利益相关者地图、数据盘点、快赢矩阵、回注卡片、Gate 清单等）是全书最"可落地"的部分。<strong>但流程再好，最终要靠人来执行。</strong> 什么样的团队、什么样的角色、如何协作与培养，是下一篇（团队篇）的主题。</p>
+</div>
+<h3 id="_1">本篇收尾 · 甲乙方对照：谁来验收<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>流程篇是全书最实操、读者期待最高的部分——读者要的是一套"拿到就能用"的 SOP。但在所有这些清单、Gate 与冲刺的背后，有一个贯穿始终、甲乙双方摩擦最集中的环节：<strong>验收</strong>。同一件事，甲方和乙方对"什么算做好、谁说了算、什么时候验"的理解往往天差地别。下面用三组问答，把流程篇的验收视角掰开揉碎。</p>
+<h4 id="_2">甲方这么问 → 乙方这么答<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<p><strong>① "你们说做好了，我怎么知道？"</strong></p>
+<blockquote>
+<p><strong>乙方这么答</strong>：光靠嘴上说"做好了"当然不够，这也是 FDE 模式刻意避免口头信任的原因。我们采用<strong>四阶段 Gate 联合评审</strong>——Discovery、Prototype、Build、Scale 每个阶段结束，都有一张明确的 Gate 检查清单（见第 5.7 节），由甲乙双方坐在一起逐项核对，而不是乙方自说自话地宣布"完成"。同时配上<strong>可量化的成功指标</strong>（见 9.5.1 的 TTFV"首次价值交付时间"与客户健康度），用数据说话：什么时候首次让贵方拿到可量化的业务价值、用了多少时间，白纸黑字摆出来，比任何承诺都有说服力。</p>
+</blockquote>
+<p><strong>② "为什么不能最后一次性验收？"</strong></p>
+<blockquote>
+<p><strong>乙方这么答</strong>：因为"最后一次性验收"正是很多项目死在半路的元凶。如果憋三个月才让你看一次，你在这三个月里得不到任何阶段性成果，就很容易开始怀疑、抽调资源、砍预算——这也就是第 5 章说的"第六周死亡"。所以我们用<strong>短周期冲刺的节奏纪律</strong>（见 5.8）把交付切成每 2 周一个、看得见、能演示、可验收的增量，配合每个冲刺一次轻量 Gate 评审。这不是为了给你添麻烦，恰恰相反——它是让贵方在每个时间点都能看到进度、掌控风险，而不是把宝全押在最后一次翻盘上。</p>
+</blockquote>
+<p><strong>③ "验收标准谁说了算？"</strong></p>
+<blockquote>
+<p><strong>乙方这么答</strong>：<strong>既不是你单方面定，也不是我单方面定，而是甲乙共同定义成功标准。</strong> 验收标准必须在项目早期就由双方一起写清楚——做什么、做到什么程度算"好"、用什么指标衡量，白纸黑字固化下来，而不是等做完再争。这套共同定义成功标准的机制，可以落到第 15 章 15.2《FDE 协作共识书》里，作为开局就签好的"游戏规则"。一旦标准是双方共同约定的，验收就从"甲乙对赌"变成"共同对表"——矛盾大大减少，摩擦自然降低。</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 · CC BY-NC-ND 4.0 · 《AI 时代的 FDE：认知、流程、团队与中国落地》
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/vendor/katex.min.js"></script>
+      
+        <script src="../../assets/vendor/auto-render.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="../../assets/vendor/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

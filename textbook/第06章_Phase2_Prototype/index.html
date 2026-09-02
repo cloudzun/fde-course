@@ -1,0 +1,2020 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="FDE（前沿部署工程师）方法论与落地手册 —— 六篇 16 章：认知 / 标杆 / 流程 / 团队 / 中国实践 / AI 落地，贯穿"卖人力→卖能力"飞轮主线">
+      
+      
+      
+        <link rel="canonical" href="https://www.cloudzun.com/fde-course/textbook/%E7%AC%AC06%E7%AB%A0_Phase2_Prototype/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC05%E7%AB%A0_Phase1_Discovery/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC07%E7%AB%A0_Phase3_Build/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第6章 Phase 2: Prototype（原型期） - AI 时代的 FDE：认知、流程、团队与中国落地</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/vendor/katex.min.css">
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-phase-2-prototype2-4" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-header__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 时代的 FDE：认知、流程、团队与中国落地
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第6章 Phase 2: Prototype（原型期）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-nav__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI 时代的 FDE：认知、流程、团队与中国落地
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_%E5%B0%81%E9%9D%A2%E4%B8%8E%E5%85%A8%E4%B9%A6%E5%AF%BC%E8%AF%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    导读与结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一篇 · 认知篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第一篇 · 认知篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC01%E7%AB%A0_FDE%E6%98%AF%E4%BB%80%E4%B9%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1章 FDE是什么
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC02%E7%AB%A0_%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81FDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2章 为什么需要FDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二篇 · 标杆篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第二篇 · 标杆篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC03%E7%AB%A0_Palantir%E7%9A%84%E5%B9%B3%E5%8F%B0%E4%B8%8EFDE%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3章 Palantir的平台与FDE体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC04%E7%AB%A0_Palantir%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4章 Palantir经典案例集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第三篇 · 流程篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第三篇 · 流程篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC05%E7%AB%A0_Phase1_Discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5章 Phase 1: Discovery（发现期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6章 Phase 2: Prototype（原型期）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6章 Phase 2: Prototype（原型期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#6-phase-2-prototype2-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第6章 Phase 2: Prototype（原型期，2-4周）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第6章 Phase 2: Prototype（原型期，2-4周）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 目标与进入条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-mvp-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 最小可行数据管道（MVP Pipeline）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-ontology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 本体论建模（Ontology）入门
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-ontology-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Ontology Design 深化：从草图到可运行的业务模型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 Ontology Design 深化：从草图到可运行的业务模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#641-object-type-palantir-ontology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.1 Object Type 设计原则（对标 Palantir Ontology 最佳实践）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#642" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.2 数据管道的"可演进架构"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#643" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.3 原型的"可信度阶梯"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-show-dont-tell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 原型应用构建：“Show, Don't Tell”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 原型的技术架构选择：什么时候低代码快搭，什么时候必须写代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 客户 Demo 与反馈收集
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#68" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.8 原型期的客户期望管理：防止"原型=上线"的致命误解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.8 原型期的客户期望管理：防止&#34;原型=上线&#34;的致命误解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        应对策略一：Demo 时故意展示一个"能看到问题但解决不了"的环节
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        应对策略二：用安全与合规做"挡箭牌"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        应对策略三：量化 Build 的增量价值
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#69" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.9 原型到生产的技术债管理："先脏后洗"策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#610" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.10 输出交付物
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#611-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.11 阶段 Gate 检查清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC07%E7%AB%A0_Phase3_Build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7章 Phase 3: Build（构建期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC08%E7%AB%A0_Phase4_Scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8章 Phase 4: Scale（扩展期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC09%E7%AB%A0_%E8%83%BD%E5%8A%9B%E5%9B%9E%E6%B3%A8%E6%96%B9%E6%B3%95%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9章 能力回注方法论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四篇 · 团队篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第四篇 · 团队篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC10%E7%AB%A0_FDE%E8%A7%92%E8%89%B2%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10章 FDE角色体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC11%E7%AB%A0_%E5%9B%9B%E9%98%B6%E6%AE%B5%E4%B8%AD%E7%9A%84%E8%A7%92%E8%89%B2%E5%8D%8F%E4%BD%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11章 四阶段中的角色协作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC12%E7%AB%A0_FDE%E4%BA%BA%E6%89%8D%E5%9F%B9%E5%85%BB%E4%B8%8E%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12章 FDE人才培养与知识管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五篇 · 中国实践篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第五篇 · 中国实践篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC13%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%95%86%E7%9A%84FDE%E5%AE%9E%E8%B7%B5%E5%9B%BE%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13章 中国云服务商的FDE实践图谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC14%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E5%8C%BAFDE%E8%BD%AC%E5%9E%8B%E7%9A%84%E4%BA%94%E5%A4%A7%E6%8C%91%E6%88%98%E4%B8%8E%E5%BA%94%E5%AF%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14章 中国区FDE转型的五大挑战与应对
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六篇 · AI 解决方案篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第六篇 · AI 解决方案篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC15%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Echo%E5%85%B1%E8%AF%86%E4%B8%8E%E5%AF%B9%E9%BD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15章 AI FDE 落地（Echo 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC16%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Delta%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%9C%BA%E6%99%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16章 AI FDE 落地（Delta 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95_%E5%8F%82%E8%80%83%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%AE%98%E6%96%B9%E8%B5%84%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#6-phase-2-prototype2-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第6章 Phase 2: Prototype（原型期，2-4周）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第6章 Phase 2: Prototype（原型期，2-4周）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 目标与进入条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-mvp-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 最小可行数据管道（MVP Pipeline）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-ontology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 本体论建模（Ontology）入门
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-ontology-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Ontology Design 深化：从草图到可运行的业务模型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 Ontology Design 深化：从草图到可运行的业务模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#641-object-type-palantir-ontology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.1 Object Type 设计原则（对标 Palantir Ontology 最佳实践）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#642" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.2 数据管道的"可演进架构"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#643" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4.3 原型的"可信度阶梯"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-show-dont-tell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 原型应用构建：“Show, Don't Tell”
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 原型的技术架构选择：什么时候低代码快搭，什么时候必须写代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 客户 Demo 与反馈收集
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#68" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.8 原型期的客户期望管理：防止"原型=上线"的致命误解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.8 原型期的客户期望管理：防止&#34;原型=上线&#34;的致命误解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        应对策略一：Demo 时故意展示一个"能看到问题但解决不了"的环节
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        应对策略二：用安全与合规做"挡箭牌"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        应对策略三：量化 Build 的增量价值
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#69" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.9 原型到生产的技术债管理："先脏后洗"策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#610" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.10 输出交付物
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#611-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.11 阶段 Gate 检查清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>第6章 Phase 2: Prototype（原型期）</h1>
+
+<h2 id="6-phase-2-prototype2-4">第6章 Phase 2: Prototype（原型期，2-4周）<a class="headerlink" href="#6-phase-2-prototype2-4" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本章导读</strong>：四阶段的第二步，也是"见真章"的一步。用最小可行架构（MVP 数据管道 + 本体建模）快速搭出能跑通、能演示的原型，坚持"Show, Don't Tell"——让客户亲手操作、用真实数据说话。目标是用最小代价证明最大价值，换取客户投入下一阶段的承诺。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>本章学习目标（可测量）</strong>：读完并练完本章，读者应能——</p>
+<ol>
+<li><strong>绘制</strong> 3–5 个核心 Object Type 的 Ontology 草图，并用"业务大白话"向原型相关方解释每条关系（6.4）；</li>
+<li><strong>选择</strong>合适的原型可信度层级，并解释在该阶段投入的边界（6.3 可信度阶梯）；</li>
+<li><strong>设计</strong>一场价值导向的客户 Demo，用真实数据讲"业务故事"而非功能罗列（6.6）；</li>
+<li><strong>识别</strong>原型技术债并判断哪些必须在进入 Build 前偿还（6.7）；</li>
+<li><strong>决策</strong>：根据 Demo 后客户与数据反馈，判断进入 Build / 继续原型 / 止损（呼应 6.8 期望管理）。</li>
+</ol>
+<p><strong>本章练习 + 完成证据</strong>（参考答案见附录 G）：基础题（Ontology 概念 / 可信度辨别）→ 应用题（给业务材料建一个 3–5 对象 Ontology 草图）→ 决策题（原型 Gate 判断）。完成证据：<strong>一张 Ontology 草图、一份原型技术债清单、一次 Demo 演练记录</strong>。</p>
+</div>
+<h3 id="61">6.1 目标与进入条件<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<p><strong>战略意义（给高管）：</strong> 这是“见真章”的阶段。原型期的成功与否，直接决定了客户是否愿意砸下真金白银购买长期License。用最小的代价证明最大的价值。
+<strong>操作意义（给一线）：</strong> 停止写长篇大论的PPT，用可运行的软件说话。让客户的手指在键盘上敲击，让客户的眼睛看到真实数据的流转。</p>
+<ul>
+<li><strong>目标：</strong> 用最小可行性架构构建原型，完成快赢场景闭环，验证业务逻辑。</li>
+<li><strong>进入条件：</strong> Discovery阶段Gate全部通过，客户核心数据已提供授权。</li>
+<li><strong>核心原则：</strong> “Show, Don't Tell（让客户亲手操作，而非仅看演示）”</li>
+</ul>
+<h3 id="62-mvp-pipeline">6.2 最小可行数据管道（MVP Pipeline）<a class="headerlink" href="#62-mvp-pipeline" title="Permanent link">&para;</a></h3>
+<p><strong>什么是MVP Pipeline？</strong>
+它是一条以最快速度从数据源（哪怕是离线CSV）到最终可视化前端的链路。不要追求高可用、自动重试、灾备等生产级特性。</p>
+<p><strong>搭建原则：够用就行，不追求完美。</strong>
+如果API暂时调不通，就让客户导出一份本周的Excel先用着；如果数据有脏记录，写几行Python脚本简单清洗即可，不要花两周时间搞主数据治理。</p>
+<p><strong>数据管道设计的"三要三不要"：</strong></p>
+<ul>
+<li><strong>要</strong>记录每一步转换的逻辑，<strong>不要</strong>写没有任何注释的面条代码。</li>
+<li><strong>要</strong>保证关键字段的准确性，<strong>不要</strong>在细枝末节的非核心数据上死磕。</li>
+<li><strong>要</strong>留有随时替换数据源的接口（如用配置文件），<strong>不要</strong>把文件路径写死在底层函数里。</li>
+</ul>
+<h3 id="63-ontology">6.3 本体论建模（Ontology）入门<a class="headerlink" href="#63-ontology" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>这是Palantir最核心的理念之一。不要让业务人员学习什么是“事实表”、“维度表”或“主键”，要让系统学习什么是“航班”、“飞行员”和“备降机场”。</p>
+</div>
+<p><strong>什么是Ontology？</strong>
+Ontology是用业务语言描述现实世界的数字孪生。它将底层碎片化、异构的系统表，映射为业务人员每天挂在嘴边的实体。</p>
+<p><strong>Ontology的核心要素：</strong></p>
+<ol>
+<li><strong>实体（Entity）：</strong> 业务中的核心对象（如：客户、员工、工厂）。</li>
+<li><strong>属性（Property）：</strong> 实体的特征（如：客户的信用评级，工厂的占地面积）。</li>
+<li><strong>关系（Relationship）：</strong> 实体间的联结（如：客户“签订”合同，工厂“生产”产品）。</li>
+</ol>
+<p><strong>建模示例：某政务场景的Ontology</strong>
+<pre class="mermaid"><code>graph TD
+    person["人口 (Entity)"] --&gt;|居住在| house["房屋 (Entity)"]
+    person --&gt;|就职于| corp["法人企业 (Entity)"]
+    corp --&gt;|发生| viol["环保违规事件 (Entity)"]
+    viol --&gt;|关联地点| house
+
+    style person fill:#dbe4f0,stroke:#3949ab,stroke-width:2px</code></pre>
+<em>图：某政务场景的 Ontology，以人口为起点关联房屋、法人企业与环保违规事件</em></p>
+<p><strong>为什么Ontology是能力回注的关键载体？</strong>
+只有沉淀在Ontology层的业务逻辑，才是跨越底层系统异构性的通用资产。一旦我们在A企业定义了“供应链牛鞭效应”的Ontology逻辑，在B企业即便底层表完全不同，只要映射到这套Ontology，能力就可以秒级复用。</p>
+<h3 id="64-ontology-design">6.4 Ontology Design 深化：从草图到可运行的业务模型<a class="headerlink" href="#64-ontology-design" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>6.3 讲的是"Ontology 是什么、为什么重要"；本节对标 Palantir 的 <strong>Solution Design</strong> 环节，回答"具体怎么设计才能让原型真的跑起来"。核心判断：Ontology 不只是"数据模型"，而是<strong>可操作的业务数字孪生</strong>——包含语义要素（对象、属性、关联）与动能要素（Action、函数、动态权限）。</p>
+</div>
+<p>Palantir 官方文档对 Ontology 有一句核心定义：</p>
+<blockquote>
+<p>"the Ontology serves as a digital twin of the organization, containing both the semantic elements (objects, properties, links) and kinetic elements (actions, functions, dynamic security)"</p>
+</blockquote>
+<p>这意味着 Ontology 不只是"数据模型"，而是"可操作的业务数字孪生"。原型期的 Ontology 设计应遵循以下四项原则：</p>
+<h4 id="641-object-type-palantir-ontology">6.4.1 Object Type 设计原则（对标 Palantir Ontology 最佳实践）<a class="headerlink" href="#641-object-type-palantir-ontology" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>设计原则</th>
+<th>说明</th>
+<th>反面模式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>业务语言优先</strong></td>
+<td>Object Type 命名用业务术语（"订单"而非"t_order"）</td>
+<td>照搬数据库表名</td>
+</tr>
+<tr>
+<td><strong>关系即业务逻辑</strong></td>
+<td>Link Type 表达业务规则（"供应商-供应→零件"）</td>
+<td>只建外键关联</td>
+</tr>
+<tr>
+<td><strong>Action 即决策</strong></td>
+<td>设计可写回的 Action（"调拨建议→执行"）</td>
+<td>只做只读展示</td>
+</tr>
+<tr>
+<td><strong>先窄后宽</strong></td>
+<td>先建核心 3-5 个 Object Type，验证后再扩</td>
+<td>一上来建 50 个</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>一个检验标准</strong>：如果 Ontology 里的每个 Object Type、每条 Link，都能用一句"业务大白话"向客户解释清楚，那建模方向就对了；如果只能说出"这是张三表的主键"，说明又滑回了数据库思维，需要回到"业务语言优先"。</p>
+</div>
+<h4 id="642">6.4.2 数据管道的"可演进架构"<a class="headerlink" href="#642" title="Permanent link">&para;</a></h4>
+<p>原型管道要满足"今天能跑、明天能改、后天能进生产"。三条硬性要求：</p>
+<ul>
+<li><strong>数据源接入用"配置驱动"</strong>（而非硬编码），便于 Build 阶段替换数据源——这与 6.2 的"三要三不要"一脉相承。</li>
+<li><strong>转换逻辑用"可测试的函数"封装</strong>，而非散落在 notebook 里——原型期就得让 Build 团队能看懂、能单测。</li>
+<li><strong>留出"增量 vs 全量"的切换点</strong>：原型跑全量没问题，但生产必须增量，切换点要在管道设计里提前预留，而不是上线前才补。</li>
+</ul>
+<h4 id="643">6.4.3 原型的"可信度阶梯"<a class="headerlink" href="#643" title="Permanent link">&para;</a></h4>
+<p>不是所有原型都需要同等精度。按可信度递进，原型期按场景选用不同层级：</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>数据形态</th>
+<th>足够用于</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Level 1</strong></td>
+<td>静态数据 + 手动刷新</td>
+<td>首次 Demo（证明方向对）</td>
+</tr>
+<tr>
+<td><strong>Level 2</strong></td>
+<td>自动刷新 + 真实近期数据</td>
+<td>高管决策 Demo（证明价值）</td>
+</tr>
+<tr>
+<td><strong>Level 3</strong></td>
+<td>实时/准实时 + 完整业务闭环</td>
+<td>Gate 通过进 Build（证明可生产）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>关键纪律</strong>：不要把"可信度层级"当成"偷工减料"，而要当成<strong>分层投入</strong>。首次 Demo 用 Level 1 完全够，硬上 Level 3 只会拖慢见真章的节奏；但 Level 3 也绝不能省——它是 Gate 判断"能否进 Build"的硬门槛。</p>
+</div>
+<h3 id="65-show-dont-tell">6.5 原型应用构建：“Show, Don't Tell”<a class="headerlink" href="#65-show-dont-tell" title="Permanent link">&para;</a></h3>
+<p><strong>原型的目标：让客户说“wow”，而非“我看懂了PPT”。</strong>
+当BP的工程师第一次在原型系统中通过拖拽查看到全球油田与钻井平台的实时生产状态、设备可靠性预警时，那种震撼是100页PPT也给不了的。</p>
+<p><strong>构建优先级：</strong>
+<strong>可交互 &gt; 美观 &gt; 功能完整</strong></p>
+<p><strong>原型中必须包含的要素：</strong></p>
+<ol>
+<li><strong>真实数据（而非假数据）：</strong> 必须是客户自己的真实数据。假数据无法激起任何同理心。</li>
+<li><strong>可操作的界面：</strong> 哪怕只有一个按钮，也要让客户自己点。</li>
+<li><strong>至少一个“惊喜”发现：</strong> 通过数据关联，发现一个客户过去凭经验未能发现的盲点（例如：某个常年被评为优秀的供应商，其实延期交货率高达30%）。</li>
+</ol>
+<p><strong>常见原型类型：</strong> 数据看板、分析工作台、流程监控。</p>
+<h3 id="66">6.6 原型的技术架构选择：什么时候低代码快搭，什么时候必须写代码<a class="headerlink" href="#66" title="Permanent link">&para;</a></h3>
+<p>原型期最容易犯的两个错误：要么"杀鸡用牛刀"（本该低代码快搭却硬写全栈工程），要么"牛刀杀鸡"（所有交互都靠低代码，结果要做原型之外的任何事都被平台框死）。选型没有绝对答案，但有清晰的判断框架——<strong>核心原则是：以"最快让真实数据跑起来"为目标，用 20% 的工程成本完成 80% 的价值证明</strong>。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">场景</th>
+<th style="text-align: left;">建议</th>
+<th style="text-align: left;">原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">场景变化快、需要反复演示给不同人看</td>
+<td style="text-align: left;"><strong>低代码快搭</strong>（Retool / Palantir Workshop / Streamlit 等）</td>
+<td style="text-align: left;">迭代成本低，可现场改、现场演示</td>
+</tr>
+<tr>
+<td style="text-align: left;">涉及复杂的后端逻辑、数据管道、算法</td>
+<td style="text-align: left;"><strong>传统代码</strong>（Python / Java / SQL 管道）</td>
+<td style="text-align: left;">原型期就要验证的往往正是底层逻辑是否成立</td>
+</tr>
+<tr>
+<td style="text-align: left;">需要演示"数据关联带来的惊喜发现"</td>
+<td style="text-align: left;">两者结合：低代码做交互外壳，代码做数据链路</td>
+<td style="text-align: left;">交互只是载体，数据洞察才是"wow"的来源</td>
+</tr>
+<tr>
+<td style="text-align: left;">客户环境受限（内网、信创、无外网依赖）</td>
+<td style="text-align: left;">提前确认依赖可控，低代码平台需先验证能否私有化部署</td>
+<td style="text-align: left;">原型期就踩环境坑会浪费宝贵的客户信任</td>
+</tr>
+</tbody>
+</table>
+<p><strong>决策要点：</strong></p>
+<ol>
+<li><strong>先验证"最不确定、风险最高"的那一环</strong>——如果你担心的是"这个算法能不能跑通"，就先把算法跑通；如果担心的是"客户爱不爱用"，就用低代码把交互做出来。</li>
+<li><strong>低代码不是偷懒的代名词</strong>。对一个需要高频演示、快速改需求的原型，低代码是刻意的战略选择，不是能力不足的妥协。</li>
+<li><strong>保留数据源的替换能力</strong>（同 6.2 的三要三不要），让原型在进入 Build 阶段时不至于推倒重来。</li>
+</ol>
+<h3 id="67-demo">6.7 客户 Demo 与反馈收集<a class="headerlink" href="#67-demo" title="Permanent link">&para;</a></h3>
+<p><strong>Demo准备清单：</strong> 预演数据刷新、确认网络连接、排演话术。</p>
+<p><strong>Demo的黄金法则：“不要演示功能，要演示价值”。</strong></p>
+<ul>
+<li><strong>错误示范</strong>：“你看，点击这个按钮，系统会调用后端API进行一次聚合运算，然后在这个表格渲染出结果。”</li>
+<li><strong>正确示范</strong>：“王总，这就是您平时花三天时间催各个大区交上来的销售报表。现在，只要点这个按钮，它不仅瞬间生成，还能直接高亮出哪个大区库存快断了。您想亲自点一下试试吗？”</li>
+</ul>
+<p><strong>反馈收集方法：</strong></p>
+<ul>
+<li><strong>现场记录：</strong> FDE团队至少有一人专门负责记录客户的微小表情和随口说出的话。</li>
+<li><strong>录屏回放：</strong> 回顾Demo过程中的交互卡点。</li>
+<li><strong>NPS快评：</strong> Demo结束后，用1分钟收集反馈：“0-10分，这个系统多大程度上解决了您的痛点？”</li>
+</ul>
+<p><strong>关键决策：</strong> 客户是否认可方向？是否愿意投入资源进入Build阶段？</p>
+<p><strong>Demo 的艺术：让决策者"当场拍板"而非"散会后再议"。</strong></p>
+<ul>
+<li><strong>对象决定内容</strong>：给 CEO/CFO 看的是 ROI 与风险（这个系统能省多少钱、多久回本）；给业务主管看的是痛点被解决（你的痛点在这条链路里如何消失）；给 IT 看的是可行性（数据从哪来、安不安全、怎么集成）。<strong>同一个 Demo，面对不同角色要换讲法。</strong></li>
+<li><strong>用客户的业务语言开场，不用技术语言冷场</strong>：前 30 秒点出客户的高频痛点（"王总，这就是您每周三天催各区分公司交上来的报表"），而不是介绍架构。</li>
+<li><strong>设计"一个逼真的关键时刻"</strong>：提前把客户自己的真实数据、真实地名、真实产品名嵌进去——让决策者产生"这就是我们公司"的代入感。宁可只演示一个场景，也要让这个场景逼真到无可反驳。</li>
+<li><strong>手把手让拍板人操作一次</strong>：决策者的"回答"其实写在他们的表情和动作里。让他们亲手点一次按钮，比任何口头承诺都更能锁定下一阶段资源。</li>
+<li><strong>时刻留意"谁在皱眉"</strong>：Demo 现场至少一名 FDE 专职记录微表情与会后私聊内容——决策者是斩钉截铁，还是礼貌性点头？这决定了进入 Build 前的资源谈判筹码。</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p><strong>Demo 的三大禁忌</strong>：① 演示花哨但数据是假的（客户一问真实数据立刻穿帮）；② 只顾自己讲、不让决策者上手（沦为"我看懂了 PPT"）；③ 一上来就演示功能而非价值（见 6.7 黄金法则）。</p>
+</div>
+<h3 id="68">6.8 原型期的客户期望管理：防止"原型=上线"的致命误解<a class="headerlink" href="#68" title="Permanent link">&para;</a></h3>
+<p><strong>问题所在：客户的"顺理成章"往往是最危险的反应。</strong></p>
+<p>客户看到能跑的原型后，最常见的反应不是惊喜，而是反问："这不就行了吗，为什么还要花 3 个月做 Build？"——如果管理不好这个预期，会出现两种坏结局：</p>
+<ul>
+<li><strong>被逼仓促上线</strong>：客户要求"就按这个上生产"，原型那套"够用就行"的架构直接裸奔，系统必崩，飞轮一次就折断。</li>
+<li><strong>客户拒绝为 Build 付费</strong>：既然原型已经"能跑"，客户凭什么再为"只是做得更稳"掏钱？项目停在原型，价值永远无法放大。</li>
+</ul>
+<p>所以，<strong>期望管理不是 Demo 结束后的补救，而是要在 Demo 现场就埋下种子</strong>。</p>
+<h4 id="demo">应对策略一：Demo 时故意展示一个"能看到问题但解决不了"的环节<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h4>
+<p>不要只展示"系统多聪明"，要主动暴露"系统当下的边界"。比如：</p>
+<blockquote>
+<p>"您看，这里已经显示了断供风险，但目前还不能自动生成调拨方案——<strong>这就是 Build 阶段要解决的</strong>。"</p>
+</blockquote>
+<p>这一句把"原型能做什么"与"生产要做什么"画出一条明确的界线，客户自然会理解：原型是"验方向"，Build 才是"解决问题"。</p>
+<h4 id="_1">应对策略二：用安全与合规做"挡箭牌"<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<p>把"不能直接上线"从"我们不想干"翻译成"行业硬约束"：</p>
+<blockquote>
+<p>"原型跑在沙箱里，要进生产必须过安全审计、权限、合规审查——<strong>这些都需要 Build 阶段完成</strong>。"</p>
+</blockquote>
+<p>这条既给了客户一个不可辩驳的"为什么不能直接上"的理由，也为 Build 阶段的工作量提前做了铺垫。</p>
+<h4 id="build">应对策略三：量化 Build 的增量价值<a class="headerlink" href="#build" title="Permanent link">&para;</a></h4>
+<p>用数字把"Build 到底多付了什么"讲清楚：</p>
+<blockquote>
+<p>"原型能覆盖 1 个场景，Build 能覆盖 5 个，<strong>ROI 是 X 倍</strong>。"</p>
+</blockquote>
+<p>让客户意识到：Build 不是"把原型再做一遍"，而是"把一只试点翅膀变成整个机群"——覆盖范围、落地能力、投资回报都上了一个量级。</p>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>三颗种子必须在同一场 Demo 里全部埋下，缺一不可</strong>。策略一让客户看到"问题还有待解决"，策略二挡住"直接上线"的冲动，策略三回答"那 Build 值不值"。三者串起来，客户才会从"这不就够了吗"走向"那我们赶紧进 Build"。</p>
+</div>
+<h3 id="69">6.9 原型到生产的技术债管理："先脏后洗"策略<a class="headerlink" href="#69" title="Permanent link">&para;</a></h3>
+<p>原型期用"够用就行"换来的速度，一定会留下技术债。关键在于<strong>要有意识地记账，而不是装看不见</strong>——否则到了 Build 阶段，原型那笔债会让生产化成本爆炸。</p>
+<p><strong>技术债的三种记账清单（建议在原型末一并移交 Build 团队）：</strong></p>
+<ol>
+<li><strong>数据债</strong>：临时硬编码的清洗脚本、写死的数据源路径、缺失字段的空值兜底策略。</li>
+<li><strong>逻辑债</strong>：快速打补丁的分支逻辑、写死的业务规则阈值（如"库存&lt;100 预警"）、未参数化的常量。</li>
+<li><strong>架构债</strong>：单体原型里的"一次性"耦合、缺少的错误处理、未做安全加固的接口。</li>
+</ol>
+<p><strong>"先脏后洗"的操作纪律：</strong></p>
+<ul>
+<li><strong>原型期允许脏</strong>，但每处"脏"都要有明确标注（TODO / 注释 / 需求卡片），让 Build 期能一眼定位要"洗"的地方。</li>
+<li><strong>把"洗债"成本写进 Build 的排期</strong>，而不是默认"原型能跑，生产就能跑"——原型期跳过的所有生产级要求（高可用、权限、审计、重试）都会在 Build 期加倍奉还。</li>
+<li><strong>识别"值得砍掉的债"</strong>：有些原型代码本就不该进生产（如一次性数据搬运脚本），直接废弃重写反而比"洗"更便宜。判断标准：这段代码是"业务能力"，还是"一次性搬运工具"？前者值得洗，后者应丢弃。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>技术债管理三问</strong>：①这笔债进生产会造成什么后果？②洗掉它要多少人天？③如果不洗，最迟什么时候必须还？——答案决定它是"进 Build 还"、"原型期顺手还"还是"直接废弃"。</p>
+</div>
+<h3 id="610">6.10 输出交付物<a class="headerlink" href="#610" title="Permanent link">&para;</a></h3>
+<ol>
+<li>可运行的原型应用（部署在沙箱或受控环境）</li>
+<li>初始本体模型文档（Ontology Draft）</li>
+<li>数据管道架构图（标明数据血缘）</li>
+<li>客户Demo反馈记录及复盘纪要</li>
+<li>修订后的项目路线图（为Build阶段做准备）</li>
+</ol>
+<h3 id="611-gate">6.11 阶段 Gate 检查清单<a class="headerlink" href="#611-gate" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>Prototype Gate 检查清单</strong> </p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 原型是否使用了客户的真实数据（哪怕只是一小部分）？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 是否成功跑通了至少一条核心业务流程的端到端数据闭环？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 客户决策者是否亲自操作了系统，并给出了明确的积极反馈？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 客户是否签署或口头明确承诺了进入下一阶段（Build）的资源投入（如对接API的IT人员、参与测试的业务人员）？</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 是否已用 6.9 的技术债清单，把原型遗留的数据债/逻辑债/架构债登记在案，移交给 Build 团队？</p>
+</li>
+<li>
+<p><strong>对应交付物</strong>：本 Gate 各项与 6.10（输出交付物清单）逐项对应，验收时逐项勾对。</p>
+</li>
+<li>
+<p><strong>未通过怎么办</strong>：Gate 未全部打勾时的分级处置（轻微/重大/致命，含"快赢验证失败回退 5.5 重筛"）、跨阶段回滚与止损判据，见第5章 How 总纲"四、阶段 Gate 的运行规则"。</p>
+</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 · CC BY-NC-ND 4.0 · 《AI 时代的 FDE：认知、流程、团队与中国落地》
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/vendor/katex.min.js"></script>
+      
+        <script src="../../assets/vendor/auto-render.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="../../assets/vendor/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

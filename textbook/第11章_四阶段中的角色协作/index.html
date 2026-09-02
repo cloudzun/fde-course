@@ -1,0 +1,2400 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="FDE（前沿部署工程师）方法论与落地手册 —— 六篇 16 章：认知 / 标杆 / 流程 / 团队 / 中国实践 / AI 落地，贯穿"卖人力→卖能力"飞轮主线">
+      
+      
+      
+        <link rel="canonical" href="https://www.cloudzun.com/fde-course/textbook/%E7%AC%AC11%E7%AB%A0_%E5%9B%9B%E9%98%B6%E6%AE%B5%E4%B8%AD%E7%9A%84%E8%A7%92%E8%89%B2%E5%8D%8F%E4%BD%9C/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC10%E7%AB%A0_FDE%E8%A7%92%E8%89%B2%E4%BD%93%E7%B3%BB/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC12%E7%AB%A0_FDE%E4%BA%BA%E6%89%8D%E5%9F%B9%E5%85%BB%E4%B8%8E%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第11章 四阶段中的角色协作 - AI 时代的 FDE：认知、流程、团队与中国落地</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/vendor/katex.min.css">
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#11" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-header__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 时代的 FDE：认知、流程、团队与中国落地
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第11章 四阶段中的角色协作
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-nav__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI 时代的 FDE：认知、流程、团队与中国落地
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_%E5%B0%81%E9%9D%A2%E4%B8%8E%E5%85%A8%E4%B9%A6%E5%AF%BC%E8%AF%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    导读与结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一篇 · 认知篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第一篇 · 认知篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC01%E7%AB%A0_FDE%E6%98%AF%E4%BB%80%E4%B9%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1章 FDE是什么
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC02%E7%AB%A0_%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81FDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2章 为什么需要FDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二篇 · 标杆篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第二篇 · 标杆篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC03%E7%AB%A0_Palantir%E7%9A%84%E5%B9%B3%E5%8F%B0%E4%B8%8EFDE%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3章 Palantir的平台与FDE体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC04%E7%AB%A0_Palantir%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4章 Palantir经典案例集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第三篇 · 流程篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第三篇 · 流程篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC05%E7%AB%A0_Phase1_Discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5章 Phase 1: Discovery（发现期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC06%E7%AB%A0_Phase2_Prototype/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6章 Phase 2: Prototype（原型期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC07%E7%AB%A0_Phase3_Build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7章 Phase 3: Build（构建期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC08%E7%AB%A0_Phase4_Scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8章 Phase 4: Scale（扩展期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC09%E7%AB%A0_%E8%83%BD%E5%8A%9B%E5%9B%9E%E6%B3%A8%E6%96%B9%E6%B3%95%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9章 能力回注方法论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四篇 · 团队篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第四篇 · 团队篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC10%E7%AB%A0_FDE%E8%A7%92%E8%89%B2%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10章 FDE角色体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11章 四阶段中的角色协作
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11章 四阶段中的角色协作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第11章 四阶段中的角色协作
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第11章 四阶段中的角色协作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-raci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 总览RACI矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 Discovery阶段的团队协作模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 Prototype阶段的团队协作模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 Build阶段的团队协作模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.5 Scale阶段的团队协作模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#116-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.6 FDE团队与平台团队的协同机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#117" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.7 每个阶段的典型冲突场景与化解方案
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.7 每个阶段的典型冲突场景与化解方案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#discovery-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲突一：Discovery 期业务部门与 IT 部门目标不一致
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲突二：Prototype 期销售/客户临时插入紧急需求，打乱原型范围
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲突三：Build 期"原型=上线"误解导致的工期挤压
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲突四：Scale 期冠军用户流失或客户团队接手意愿不足
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#118-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8 跨区域/远程 FDE 团队的协作规范
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.8 跨区域/远程 FDE 团队的协作规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1181" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8.1 远程与驻场的分工原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1182" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8.2 异步沟通规范：什么走文档/工单，什么必须同步会议
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1183" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8.3 每日站会与周度节奏
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1184-playbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8.4 共享工作区与 Playbook 沉淀
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1185" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8.5 时间区/跨省现场支持轮换与"防止驻场即失联"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119-fde-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9 FDE 与客户方 IT 团队的协作边界
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.9 FDE 与客户方 IT 团队的协作边界">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1191" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9.1 谁管什么：交付边界一表说清
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1192" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9.2 争议怎么升级：联合例会 + 升级通道，避免直接对抗
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1193" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9.3 权限与变更的书面留痕
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1194-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9.4 最终要移交什么给客户 IT：交接清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC12%E7%AB%A0_FDE%E4%BA%BA%E6%89%8D%E5%9F%B9%E5%85%BB%E4%B8%8E%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12章 FDE人才培养与知识管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五篇 · 中国实践篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第五篇 · 中国实践篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC13%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%95%86%E7%9A%84FDE%E5%AE%9E%E8%B7%B5%E5%9B%BE%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13章 中国云服务商的FDE实践图谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC14%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E5%8C%BAFDE%E8%BD%AC%E5%9E%8B%E7%9A%84%E4%BA%94%E5%A4%A7%E6%8C%91%E6%88%98%E4%B8%8E%E5%BA%94%E5%AF%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14章 中国区FDE转型的五大挑战与应对
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六篇 · AI 解决方案篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第六篇 · AI 解决方案篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC15%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Echo%E5%85%B1%E8%AF%86%E4%B8%8E%E5%AF%B9%E9%BD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15章 AI FDE 落地（Echo 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC16%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Delta%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%9C%BA%E6%99%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16章 AI FDE 落地（Delta 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95_%E5%8F%82%E8%80%83%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%AE%98%E6%96%B9%E8%B5%84%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第11章 四阶段中的角色协作
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第11章 四阶段中的角色协作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-raci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 总览RACI矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 Discovery阶段的团队协作模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 Prototype阶段的团队协作模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 Build阶段的团队协作模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.5 Scale阶段的团队协作模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#116-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.6 FDE团队与平台团队的协同机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#117" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.7 每个阶段的典型冲突场景与化解方案
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.7 每个阶段的典型冲突场景与化解方案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#discovery-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲突一：Discovery 期业务部门与 IT 部门目标不一致
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲突二：Prototype 期销售/客户临时插入紧急需求，打乱原型范围
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲突三：Build 期"原型=上线"误解导致的工期挤压
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冲突四：Scale 期冠军用户流失或客户团队接手意愿不足
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#118-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8 跨区域/远程 FDE 团队的协作规范
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.8 跨区域/远程 FDE 团队的协作规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1181" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8.1 远程与驻场的分工原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1182" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8.2 异步沟通规范：什么走文档/工单，什么必须同步会议
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1183" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8.3 每日站会与周度节奏
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1184-playbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8.4 共享工作区与 Playbook 沉淀
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1185" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8.5 时间区/跨省现场支持轮换与"防止驻场即失联"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#119-fde-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9 FDE 与客户方 IT 团队的协作边界
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.9 FDE 与客户方 IT 团队的协作边界">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1191" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9.1 谁管什么：交付边界一表说清
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1192" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9.2 争议怎么升级：联合例会 + 升级通道，避免直接对抗
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1193" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9.3 权限与变更的书面留痕
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1194-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9.4 最终要移交什么给客户 IT：交接清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>第11章 四阶段中的角色协作</h1>
+
+<h2 id="11">第11章 四阶段中的角色协作<a class="headerlink" href="#11" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本章导读</strong>：第10章定义了"有哪些角色"，本章回答"这些角色在四个交付阶段里如何分工与漂移"。同一个角色在不同阶段的权责并非固定——发现期业务策略师主导、原型期技术执行与业务策略双轮驱动、构建期技术主导、扩展期向平台与客户双向移交。本章用 RACI 矩阵把这种动态漂移显性化，避免团队在阶段切换时权责不清、互相推诿。</p>
+</div>
+<p>沿用本教材的四阶段划分（Discovery 发现 → Prototype 原型 → Build 构建 → Scale 扩展，其来源属性见第三篇 How 总纲），在不同阶段，不同角色的权责会发生动态漂移。本章用 RACI 矩阵把这种漂移显性化。</p>
+<h3 id="111-raci">11.1 总览RACI矩阵<a class="headerlink" href="#111-raci" title="Permanent link">&para;</a></h3>
+<p>为了避免推诿扯皮，我们采用RACI模型来界定协作边界：</p>
+<ul>
+<li><strong>R（Responsible）</strong>：负责执行，真正动手干活的人。</li>
+<li><strong>A（Accountable）</strong>：最终审批/负责，背锅的人（每个活动只能有1个A）。</li>
+<li><strong>C（Consulted）</strong>：需要咨询意见，提供专业输入。</li>
+<li><strong>I（Informed）</strong>：需要知会，单向信息同步。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>FDE团队四阶段RACI协作矩阵模板</strong></p>
+<p><em>(此模板可直接复制到项目开工会Kick-off PPT中，向全员及客户对齐边界)</em></p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">阶段/关键活动</th>
+<th style="text-align: left;">技术执行工程师</th>
+<th style="text-align: left;">业务策略师</th>
+<th style="text-align: left;">平台工程师</th>
+<th style="text-align: left;">FDE负责人</th>
+<th style="text-align: left;">基础设施工程师</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Discovery - 利益相关者访谈</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">I</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">I</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Discovery - 数据资产盘点</strong></td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">C</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Discovery - 快赢场景筛选</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">I</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prototype - 数据管道搭建</strong></td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">I</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">R</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prototype - 本体论建模 (Ontology)</strong></td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">R</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">I</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prototype - 原型应用构建</strong></td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">I</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">C</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Prototype - 客户高层Demo</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">I</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">I</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Build - 数据集成与清洗深化</strong></td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">I</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">R</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Build - 生产级应用开发</strong></td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">C</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Build - 终端用户培训</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">I</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">I</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Build - 能力回注识别与提交</strong></td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">R</td>
+<td style="text-align: left;">R</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">I</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Scale - 新业务场景扩展</strong></td>
+<td style="text-align: left;">R</td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">C</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Scale - 客户冠军用户培养</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">I</td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">I</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Scale - 能力回注的平台实施</strong></td>
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">I</td>
+<td style="text-align: left;"><strong>R</strong></td>
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">I</td>
+</tr>
+</tbody>
+</table>
+<h3 id="112-discovery">11.2 Discovery阶段的团队协作模式<a class="headerlink" href="#112-discovery" title="Permanent link">&para;</a></h3>
+<p><strong>核心主旨</strong>：业务策略师主导，技术执行辅助，找到那把“金钥匙”。</p>
+<p>在这个阶段，<strong>业务策略师（Echo）</strong>是绝对的主角。他们需要穿梭于客户的各个部门，寻找最具价值的痛点。</p>
+<ul>
+<li><strong>日常活动</strong>：密集开展车间访谈、绘制流程图、筛选需求。</li>
+<li><strong>技术执行的配合</strong>：技术执行工程师虽然不主导，但必须参与核心访谈（Consulted）。他们的任务是进行初步的<strong>数据资产盘点</strong>，评估业务策略师提出的场景在现有数据条件下“技术上是否可行”。</li>
+<li><strong>常见陷阱</strong>：</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>技术过早介入综合症</strong>：技术执行工程师听完客户抱怨后，忍不住当场想打开电脑写代码。必须克制！在没有把业务流和利益分配理清楚之前，写的代码90%都是要推翻的废代码。</p>
+</div>
+<h3 id="113-prototype">11.3 Prototype阶段的团队协作模式<a class="headerlink" href="#113-prototype" title="Permanent link">&para;</a></h3>
+<p><strong>核心主旨</strong>：“双轮驱动”，在极短时间（通常2-3周）内震撼客户。</p>
+<p>一旦确定了MVP场景，团队进入“战时状态”。</p>
+<ul>
+<li><strong>协作模式</strong>：技术执行工程师和业务策略师背靠背工作。业务策略师每天拿着画好的线框图和业务逻辑草案，与技术执行确认；技术执行则疯狂地清洗脏数据，搭建本体（Ontology）模型和前端界面。</li>
+<li><strong>基础设施介入</strong>：此时，<strong>基础设施工程师</strong>开始入场，解决诸如“客户VPN连不上”、“内网服务器端口未开”等底层问题，扫清障碍。</li>
+<li><strong>关键节点</strong>：实行“每日Demo”制度。每天下班前，技术执行必须向业务策略师展示当天的软件进展。两人确认无误后，准备每周五向客户Sponsor汇报的正式演示。</li>
+</ul>
+<h3 id="114-build">11.4 Build阶段的团队协作模式<a class="headerlink" href="#114-build" title="Permanent link">&para;</a></h3>
+<p><strong>核心主旨</strong>：技术主导，追求工程卓越，同时捍卫“能力回注”。</p>
+<p>原型得到认可后，项目进入漫长且充满细节挑战的构建期。</p>
+<ul>
+<li><strong>技术执行主导</strong>：处理海量历史数据的批处理/流处理，完善权限控制，重构原型期的“脏代码”。</li>
+<li><strong>能力回注的保卫战</strong>：交付压力最大时，前线团队最容易滑向“纯外包”模式——直接在现场写死代码，而不顾通用性。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>20%回注法则</strong>：如同Google的20%创新时间，FDE团队必须每周强制划拨20%的时间用于代码重构和能力回注提炼。</p>
+</div>
+<ul>
+<li><strong>FDE负责人的作用</strong>：负责人在这一阶段至关重要。当客户提出无理的定制化需求时，负责人需要站出来，用高超的谈判技巧Say No，或者争取更多的时间，保护工程师不被需求压垮，同时为平台化留出空间。</li>
+</ul>
+<h3 id="115-scale">11.5 Scale阶段的团队协作模式<a class="headerlink" href="#115-scale" title="Permanent link">&para;</a></h3>
+<p><strong>核心主旨</strong>：授人以渔，从FDE主导向客户自运营、平台标准化的双向跨越。</p>
+<ul>
+<li><strong>业务侧的规模化</strong>：业务策略师转移重心，从“帮客户做”转变为“教客户做”。重点是在客户内部培养<strong>冠军用户（Champion User）</strong>，让他们成为系统在企业内部的布道师。</li>
+<li><strong>技术侧的规模化</strong>：此时，<strong>平台工程师</strong>成为接力棒的最终接收者。前线在Build阶段识别出的共性痛点（例如，某城商行和某大型险企都需要一种特定模式的知识图谱穿透查询），将由平台工程师主导，抽象并入核心产品线。前线技术执行只需协助测试。</li>
+</ul>
+<h3 id="116-fde">11.6 FDE团队与平台团队的协同机制<a class="headerlink" href="#116-fde" title="Permanent link">&para;</a></h3>
+<p>前线与后方的矛盾是ToB企业的永恒难题：前线嫌平台开发慢、不接地气；后方嫌前线乱写代码、破坏架构。</p>
+<p><strong>破局之道：闭环的反馈机制与量化ROI</strong></p>
+<p>先看整条反馈环路的全貌——前线与后方如何通过"提卡→评审→集成→验证"咬合成闭环：</p>
+<pre class="mermaid"><code>graph TD
+    pain["前线 FDE 现场&lt;br/&gt;发现共性痛点"] --&gt;|提交需求卡片&lt;br/&gt;Feature Request| review["平台团队双周评审"]
+    review --&gt;|排期| dev["平台开发集成&lt;br/&gt;抽象入主分支"]
+    review --&gt;|驳回| wa["给出 Workaround&lt;br/&gt;替代方案"]
+    dev --&gt; verify["前线升级版本&lt;br/&gt;来源项目回归（V1）"]
+    verify --&gt;|V1 通过| done["V2 第二场景复用验证&lt;br/&gt;通过后才"毕业入库""]
+    verify -.-&gt;|验证不通过| dev
+    wa -.-&gt;|痛点再次出现| pain
+
+    style pain fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style wa fill:#f5ece0,stroke:#a8895f
+    style done fill:#e4efe4,stroke:#5b7a5b</code></pre>
+<p><em>图：反馈环路——前线提卡、双周评审、平台集成、前线 V1 回归，再到 V2 第二场景复用验证（闭环且可回退；V1/V2 定义见 9.1）</em></p>
+<ol>
+<li><strong>反馈环路设计（Feedback Loop）</strong>：<ul>
+<li>FDE在现场遇到痛点 → 提交标准化的能力回注需求卡片（Feature Request，需附带业务价值和发生频次，见 9.3 SOP 4）。</li>
+<li>平台团队双周评审 → 给出排期或驳回（给出Workaround替代方案）。</li>
+<li>平台开发集成 → 前线FDE在客户现场升级版本做<strong>V1 来源项目回归</strong>（证明改造没做坏）→ 再到一个新场景做 <strong>V2 第二场景复用验证</strong>，通过后才"毕业入库"（V1/V2 见 9.1 第 IV 步）——<strong>"现场能跑"不等于"能毕业"，源项目回归只是第一步</strong>。</li>
+</ul>
+</li>
+<li><strong>沟通与对齐机制</strong>：<ul>
+<li><strong>双周同步会</strong>：各 FDE 负责人与平台团队产品负责人同步近期重大卡点。</li>
+<li><strong>季度路线图（Roadmap）对齐会</strong>：确保未来3个月平台的研发资源投入，与前线打大单的方向一致。</li>
+</ul>
+</li>
+<li><strong>代码审核（Code Review）机制</strong>：<ul>
+<li>FDE编写的、试图合并入标准产品库的代码，必须经过平台架构师的严格Review。确保代码符合全局设计规范。</li>
+</ul>
+</li>
+<li><strong>决策模型（经济学视角）</strong>：
+   在处理“客户紧急需求 vs 平台标准化”冲突时，高管应引入ROI模型决策：</li>
+</ol>
+<div class="arithmatex">\[
+ROI = \frac{V_{platform} \times N - C_{platform}}{C_{custom}}
+\]</div>
+<p>其中 <span class="arithmatex">\(V_{platform}\)</span> 是标准化功能带给单个客户的增量价值，<span class="arithmatex">\(N\)</span> 是预期复用客户数，<span class="arithmatex">\(C_{platform}\)</span> 是平台抽象开发的成本，<span class="arithmatex">\(C_{custom}\)</span> 是前线暴力写死的定制化成本。只有当 <span class="arithmatex">\(ROI &gt; 1\)</span> 且长期价值显著时，才应坚决压制前线定制冲动，投入平台研发。</p>
+<h3 id="117">11.7 每个阶段的典型冲突场景与化解方案<a class="headerlink" href="#117" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本节导读</strong>：RACI 矩阵界定了"谁该管什么"，但边界再清晰，阶段切换与多角色交错时仍会爆发冲突。本节把四个阶段最典型的冲突提前"剧透"出来，给出<strong>症状 → 根因 → 化解动作（谁做什么）</strong>的固定分析模板，让 FDE 团队在冲突发生前就有预案，而不是临场救火。冲突本身不可怕，可怕的是"没人认领、无限拖期"。</p>
+</div>
+<p>冲突化解的通用纪律：<strong>先对齐目标（Why），再对齐动作（Who/What）</strong>。任何一个冲突，先坐下来确认双方对"这个阶段的成功标准"理解是否一致——多数冲突的根因并不是某一方不配合，而是对"现在到什么程度算好"没有共识。</p>
+<h4 id="discovery-it">冲突一：Discovery 期业务部门与 IT 部门目标不一致<a class="headerlink" href="#discovery-it" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>症状</strong></td>
+<td style="text-align: left;">业务部门要"快、要全、要漂亮"，IT 部门处处拦：要安全审计、要走数据审批、强调"底层系统不能动"。访谈时业务抱怨 IT 是"绊脚石"，IT 抱怨业务"不懂规矩"。需求一变再变，快赢场景迟迟锁不定。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>根因</strong></td>
+<td style="text-align: left;">Discovery 期业务与 IT 两个部门的<strong>考核目标与风险偏好不同</strong>：业务背着业绩指标要快赢，IT 背着稳定性与合规责任要保守。FDE 若只贴着业务做，会失去 IT 的信任与配合；只贴着 IT 做，又找不到业务真正的痛点。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>化解动作</strong></td>
+<td style="text-align: left;">- <strong>业务策略师</strong>牵头，在访谈初期就把 IT 代表请进同一间会议室，明确三方共同的"问题定义"，而非各自埋头画图。<br>- <strong>FDE 负责人</strong>在项目开工会上推动形成书面共识：本阶段唯一目标是"锁定一个可验证的快赢场景"，让业务与 IT 都看到"先解决这个、其他以后再谈"的共同底座。<br>- <strong>技术执行工程师</strong>提前做数据资产盘点时，把"IT 最担心的数据权限/合规红线"单独列一张清单，主动给 IT 一个"我们替你兜住风险"的姿态，化解对抗。<br>- 若双方仍僵持，<strong>FDE 负责人</strong>将冲突升级到客户 Sponsor，请其拍板阶段优先级（见 11.9 节的升级通道）。</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>一句话心法</strong>：Discovery 期不做"业务 vs IT"的二选一，而是把两个部门都变成"找场景"的自己人——<strong>让 IT 成为问题定义的一部分，而不是审批的对象</strong>。</p>
+</div>
+<h4 id="prototype">冲突二：Prototype 期销售/客户临时插入紧急需求，打乱原型范围<a class="headerlink" href="#prototype" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>症状</strong></td>
+<td style="text-align: left;">原型进行到一半，客户高层或销售突然带来"更急的需求"："既然你们在，顺便把这个报表也做了""下个季度要上汇报，加个模块吧"。原型范围像滚雪球，2-3 周的"战时冲刺"被不断打断，核心 Demo 反而做不完。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>根因</strong></td>
+<td style="text-align: left;">Prototype 的目标是"快速证明一个 MVP"，但<strong>业务侧对"原型"与"正式交付"的边界感知模糊</strong>，把 FDE 在场误当成"免费需求池"。销售为了维系客户关系，不愿 Say No，反而帮着加需求。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>化解动作</strong></td>
+<td style="text-align: left;">- <strong>技术执行工程师</strong>把"本周原型范围"冻结成一张可见的清单（白板/共享文档），任何新增需求都进"待办池（Backlog）"而非当场改范围，用<strong>可视化</strong>让"范围正在膨胀"肉眼可见。<br>- <strong>业务策略师</strong>用第 <strong>6 章原型期的客户期望管理</strong>话术回应新增需求："这个很有价值，我先记入 Backlog，原型期聚焦证明主场景；它更适合进 Build 或二期，我们评估后再答复。"——既接住情绪，又不打乱节奏。<br>- <strong>FDE 负责人</strong>与销售对齐：销售的新增需求必须走书面需求登记，并明确<strong>"原型期砍需求的授权在谁手里"</strong>；紧急到必须插入的需求，由负责人单独评估工时与风险后决定，而不是默认接受。<br>- 对强行插入的需求，坚持"<strong>先出原型、后谈扩容</strong>"：把主场景的 Demo 做扎实，用成功的 Demo 反过来证明"先把这件事做成，比摊子铺大更重要"。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="build">冲突三：Build 期"原型=上线"误解导致的工期挤压<a class="headerlink" href="#build" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>症状</strong></td>
+<td style="text-align: left;">客户看了能跑的原型后，误以为"这不就行了吗？"，拒绝为 Build 的三个月工期买单，甚至要求"按原型原样上线"；要么压缩工期逼 FDE 仓促交付，上线后系统必崩、返工成山。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>根因</strong></td>
+<td style="text-align: left;">这是第 <strong>6 章原型期的客户期望管理</strong>没有做好留下的"债"——Demo 时只展示了"能跑"的惊艳，却没埋下"原型 ≠ 生产"的三颗种子（原型只能看问题、沙箱非生产、Build 才能规模化）。客户因此对 Build 的增量价值无感。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>化解动作</strong></td>
+<td style="text-align: left;">- <strong>业务策略师</strong>回顾第 6 章期望管理：复盘 Demo 是否展示了"原型看到问题但解决不了"的环节；若没埋种，则<strong>在 Build 开工前补一次"原型能力边界清单"说明会</strong>，明示哪些是原型演示、哪些必须生产化。<br>- <strong>技术执行工程师</strong>给出量化的"原型 vs 生产"差距表：数据量级、权限、可扩性、安全审计各差多少，用事实让"按原型上线"的不可行性可见。<br>- <strong>FDE 负责人</strong>把 Build 的排期拆成与业务价值挂钩的里程碑，争取把"原型已覆盖 1 个场景、Build 覆盖 5 个、ROI 是 X 倍"的增量价值讲给客户 Sponsor，扭转"Build=白花钱"的认知（呼应 11.6 节的 ROI 决策思维）。<br>- <strong>防守底线</strong>：明确"原型跑在沙箱、要进生产必经安全与合规审计"，这是不可让步的红线，也是争取 Build 工期的挡箭牌。</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>"原型=上线"是四阶段中最贵的误解。</strong> 它的预防只能在 Prototype 期（第 6 章期望管理）完成，Build 期只是补救。任何 FDE 团队都应在原型 Demo 时就反问自己一句：<strong>"客户看这场 Demo，会不会误会系统已经可以上线了？"</strong>——会，就立刻把误解的种子拆掉。</p>
+</div>
+<h4 id="scale">冲突四：Scale 期冠军用户流失或客户团队接手意愿不足<a class="headerlink" href="#scale" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>症状</strong></td>
+<td style="text-align: left;">刚培养起来的冠军用户（Champion）被调岗/离职，或客户业务方觉得"这系统是 FDE 的，不关我们事"，系统上线后无人维护、无人扩展，FDE 一撤就变成"搁板软件"（呼应第 8 章 8.3 变革管理的失败模式）。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>根因</strong></td>
+<td style="text-align: left;">Scale 的核心是"授人以渔"，但组织变革最怕<strong>单点依赖与责任悬空</strong>：冠军用户只培养了一个人、客户团队没有把"接手"写进考核，FDE 撤场后能力断档。</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>化解动作</strong></td>
+<td style="text-align: left;">- <strong>业务策略师</strong>在 Scale 期培养<strong>冠军用户网络</strong>（呼应 8.4 冠军用户网络建设），不求单点，而是一支覆盖各业务条线的种子队伍，即便个别人流失也不会断档。<br>- <strong>FDE 负责人</strong>推动客户把"系统自运营"写进客户团队的<strong>关键绩效与交接节点</strong>：明确"谁对上线后的运行负责"，而不是默认 FDE 无限期驻场。<br>- <strong>技术执行工程师/平台工程师</strong>配合产出可自服务的材料——运维手册、值班 SOP、健康度看板（呼应第 7 章"可运营移交"标准），把"接手门槛"降到客户团队能独立承接的水平。<br>- 按第 8 章 FDE 撤出的三级路线图（FDE 主导 → 客户主导+FDE 辅导 → 客户自运营）设置<strong>逐步撤出的节奏与健康退出指标</strong>，发现客户迟迟接不住时及时回拉辅导，而不是硬撤或无限驻场。</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>四段冲突的共性规律</strong>：前三个冲突（Discovery、Prototype、Build）的根因几乎都指向<strong>对"阶段边界与成功标准"的共识缺失</strong>，第四个（Scale）指向<strong>单点依赖与责任悬空</strong>。因此 11.1 的 RACI 矩阵 + 清晰的分阶段目标声明 + 第 6 章期望管理 + 第 8 章变革管理，是化解这一切的"总开关"。</p>
+</div>
+<h3 id="118-fde">11.8 跨区域/远程 FDE 团队的协作规范<a class="headerlink" href="#118-fde" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本节导读</strong>：本章之前的角色协作假设团队"在一起"。但中国大客户跨省部署是常态：总部在北京、数据中心在上海、业务现场在成都，FDE 只能"线上为主、驻场为辅"。本节回答远程协作最锋利的三个问题：<strong>谁驻场、异步怎么同步、怎么防止"驻场即失联"</strong>。</p>
+</div>
+<h4 id="1181">11.8.1 远程与驻场的分工原则<a class="headerlink" href="#1181" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">分工维度</th>
+<th style="text-align: left;">驻场 FDE</th>
+<th style="text-align: left;">远程 FDE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>定位</strong></td>
+<td style="text-align: left;">客户现场窗口，负责"贴近业务"的高频互动</td>
+<td style="text-align: left;">支撑大后方，负责"耗费专注"的深度技术工作</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>适合承担</strong></td>
+<td style="text-align: left;">车间访谈、现场 Demo、客户关系维护、冠军用户辅导、环境问题现场排查</td>
+<td style="text-align: left;">数据管道搭建、代码重构、Ontology 建模、文档与 Playbook 沉淀、平台回注准备</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>不适合承担</strong></td>
+<td style="text-align: left;">需要长时间无打扰专注的编码工作</td>
+<td style="text-align: left;">需要面对面信任与即时反应的业务对齐</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>"慢工给远程、快活给驻场"</strong>：驻场 FDE 的时间被客户碎片化占用是必然的，把需要连续 2 小时以上专注的编码工作硬塞给驻场，往往是低效的来源。反过来，远程 FDE 也别垄断"写代码"，否则会与客户业务脱节——<strong>驻场要定期伸手进技术、远程要定期贴近业务</strong>，让两类人双向"漂移"，呼应全章的"角色漂移"主题。</p>
+</div>
+<h4 id="1182">11.8.2 异步沟通规范：什么走文档/工单，什么必须同步会议<a class="headerlink" href="#1182" title="Permanent link">&para;</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>异步优先、同步兜底</strong>：跨区协作的默认方式应是<strong>可追溯的异步沟通</strong>，同步会议只用于"不可延迟的事"。这条纪律能最大化减少跨区的时间窗错位，也让责任留痕。</p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">沟通类型</th>
+<th style="text-align: left;">事项示例</th>
+<th style="text-align: left;">载体</th>
+<th style="text-align: left;">响应时效</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>必须异步（走文档/工单）</strong></td>
+<td style="text-align: left;">需求变更、问题/缺陷上报、权限申请、环境变更、需求回注卡片、每周 Demo 说明</td>
+<td style="text-align: left;">工单系统 / 共享文档 / 回注卡片（见 9.3 SOP 4）</td>
+<td style="text-align: left;">24h 内应有回复或认领</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>必须同步（会议/视频）</strong></td>
+<td style="text-align: left;">每日站会、Gate 评审、客户高层 Demo、范围冲突裁决、复盘</td>
+<td style="text-align: left;">视频会议 + 会后纪要</td>
+<td style="text-align: left;">当场解决或明确结论</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>二者皆可（先异步后补会议）</strong></td>
+<td style="text-align: left;">需多方拍板的设计决策、跨区需求协调</td>
+<td style="text-align: left;">先写文档对齐事实 → 会议只讨论分歧</td>
+<td style="text-align: left;">会议后 1 个工作日产出结论</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>一条金线</strong>：凡是会产生"责任结论"的事（谁做、做到什么程度、何时交付），<strong>一律落到文档/工单留痕</strong>；凡是"纯信息同步"且能异步消化的事，也优先异步。只有"需要即时来回澄清、且影响关键路径"的事，才动用同步会议——否则会议越多，跨区团队越疲惫。</p>
+</div>
+<h4 id="1183">11.8.3 每日站会与周度节奏<a class="headerlink" href="#1183" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>每日站会（线上，15 分钟以内）</strong>：固定时段，跨区全员参加。只回答三问——昨天完成什么、今天做什么、有无阻塞。<strong>站会产出三项物</strong>：今日风险清单、需横跨时区协调的事项、当日 Demo/汇报提醒。站会不解决具体问题，具体问题进异步工单。</li>
+<li><strong>周度节奏（两级）</strong>：<ul>
+<li><strong>周中冲刺会</strong>：技术执行与业务策略对齐本周原型/Build 进展与卡点（呼应 Prototype 期"每日 Demo"的周化形态）。</li>
+<li><strong>周五周报/复盘会</strong>：向客户 Sponsor 与 FDE 负责人汇报阶段性成果，同步下周计划；重大变更在周五前完成决策，避免跨周末悬置。</li>
+</ul>
+</li>
+<li><strong>节奏红线</strong>：跨区项目<strong>不允许出现"一周以上没有同步动作"的状态</strong>——超过一周没有站会、没有产出物、没有工单更新，默认视为风险，必须主动告警。</li>
+</ul>
+<h4 id="1184-playbook">11.8.4 共享工作区与 Playbook 沉淀<a class="headerlink" href="#1184-playbook" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>单一事实来源（Single Source of Truth）</strong>：项目相关文档、代码、数据资产、决策记录，全部收敛到一个共享工作区（Confluence/Wiki/代码仓库的组合），<strong>禁止"文件在个人的电脑/聊天里"</strong>。</li>
+<li><strong>Playbook 是共享工作区的心脏</strong>：跨省项目是 Playbook 最佳的"产粮地"——把"这个省的客户有什么特点、这套系统怎么接、踩过什么坑"沉淀成可复用的作战手册（呼应第 12 章 12.3 Playbook 体系）。</li>
+<li><strong>沉淀时机</strong>：不是项目结束才写，而是<strong>发生一次"重复劳动"或"踩坑"后当场沉淀</strong>；跨区异地最容易重复踩同一个坑，谁踩了坑谁负责把解法写进 Playbook，作为绩效加分。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>异地协作的"信息不是越多越好，而是越结构化越好"</strong>。与其在群里刷屏同步，不如把每个决策都写成"背景—结论—责任—时间"四段式条目，放进共享工作区——这才是远程 FDE 真正能复用的协作资产。</p>
+</div>
+<h4 id="1185">11.8.5 时间区/跨省现场支持轮换与"防止驻场即失联"<a class="headerlink" href="#1185" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>驻场轮换</strong>：跨省项目需长期驻场的，实行<strong>定期轮换制</strong>（例如每 4-8 周轮换一次驻场人员），防止单一工程师长期脱离后方、身心透支（呼应 12.2 轮岗机制与 12.6 驻场轮换防倦怠的防范）。轮换交接必须产出《交接文档》，确保知识不随人走。</li>
+<li><strong>现场支持轮值</strong>：建立"现场支持值班表"，谁在哪个省市、谁的手机号/IM 负责当天响应，全局可见；客户只需找得到"今天该找谁"。</li>
+<li><strong>防止"驻场即失联"的信息透明机制</strong>：<ul>
+<li><strong>驻场 FDE 每日在共享工作区留一条"驻场日志"</strong>：今天见了谁、发生了什么、有无需要后方支援的卡点——这是驻场与后方的"信息锚点"。</li>
+<li><strong>后方负责人每日看看驻场日志</strong>，主动发现"这个驻场是不是好几天只报平安、没有实质进展"，及时干预。</li>
+<li><strong>驻场与后方的对齐会议固定化</strong>（至少每周一次），不让驻场变成"被遗忘的孤岛"。</li>
+<li>关键决策（范围变更、交付承诺）<strong>禁止驻场单点口头拍板</strong>，必须同步到共享工作区并通知后方负责人，避免"驻场嘴上答应了客户、后方不知道也没资源"的失联黑洞。</li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>"驻场即失联"是跨区 FDE 团队最大的隐形杀手。</strong> 一个驻场工程师在客户现场忙了一整天，若他当天唯一的"音讯"只是群里一句"今天正常"，那后方团队其实对项目真实状态一无所知。<strong>信息透明的标准不是"每天有消息"，而是"每天有可追溯的进展记录"。</strong></p>
+</div>
+<h3 id="119-fde-it">11.9 FDE 与客户方 IT 团队的协作边界<a class="headerlink" href="#119-fde-it" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本节导读</strong>：前面讲的是 FDE 团队内部与平台团队的协作，本节把边界延伸到<strong>客户方的 IT 团队</strong>——系统最终要交到他们手里。边界不清，要么 FDE 越权动客户生产环境惹出事故，要么客户 IT 甩手不管导致"上线即烂尾"。本节回答：<strong>谁管什么、争议怎么升级、权限变更怎么留痕、最终移交什么</strong>。</p>
+</div>
+<h4 id="1191">11.9.1 谁管什么：交付边界一表说清<a class="headerlink" href="#1191" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">责任域</th>
+<th style="text-align: left;">FDE 负责</th>
+<th style="text-align: left;">客户方 IT 负责</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>系统与数据</strong></td>
+<td style="text-align: left;">交付系统的搭建、数据管道、Ontology、应用开发与迭代</td>
+<td style="text-align: left;">生产环境的最终发布、运行时治理</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>环境与权限</strong></td>
+<td style="text-align: left;">申请开发/测试环境资源、梳理数据接入需求、提出权限申请</td>
+<td style="text-align: left;">生产环境、基础网络、账号权限的发放与审计</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>运维与交接</strong></td>
+<td style="text-align: left;">交付期内提供运维支持、SOP 文档、值班培训</td>
+<td style="text-align: left;">交接后的日常运维、监控值守、故障响应</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>安全与合规</strong></td>
+<td style="text-align: left;">交付方案符合客户要求、配合安全审查</td>
+<td style="text-align: left;">安全审计、合规审批、等保/信创合规把关</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>一条边界心法</strong>：<strong>FDE 管"交付系统与数据管道"，客户 IT 管"生产环境、权限与运维交接"。</strong> FDE 可以在客户生产环境做受控发布，但发布动作、生产权限的变更，必须由客户 IT 执行或授权——越权的代价是信任的崩塌。</p>
+</div>
+<h4 id="1192">11.9.2 争议怎么升级：联合例会 + 升级通道，避免直接对抗<a class="headerlink" href="#1192" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>联合例会（固定化）</strong>：FDE 与客户 IT 建立<strong>双周联合例会</strong>，同步交付进展、环境与权限问题、风险清单。让"问题"在例会里公开讨论，而不是让 FDE 工程师与 IT 工程师私下互相较劲。</li>
+<li><strong>升级通道（分级）</strong>：<ol>
+<li><strong>一线层</strong>：FDE 技术执行 ↔ 客户 IT 对接人，处理日常环境/数据/权限问题，24h 内响应。</li>
+<li><strong>管理层</strong>：问题 3 个工作日未妥善解决，升级到 FDE 负责人 ↔ 客户 IT 负责人，拍板资源与优先级。</li>
+<li><strong>决策层</strong>：涉及生产事故、范围大变、合规红线，升级到客户 Sponsor 与 FDE 项目总监（呼应 11.7 升级到 Sponsor 的机制）。</li>
+</ol>
+</li>
+<li><strong>升级的纪律</strong>：升级不是"告状"，而是<strong>带着事实与方案去升级</strong>——说明问题、已做尝试、需要的决策，让上级做选择题而非问答题。<strong>避免直接对抗</strong>：任何争议先记录在案，再走升级通道，严禁在客户现场与 IT 当面争执。</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>对抗的代价</strong>：FDE 与客户 IT 一旦在客户现场直接对抗，输掉的不仅是这一次合作，更是客户对 FDE 团队专业度的整体信任。<strong>所有争议先落文档，再上通道，最后才谈对错。</strong></p>
+</div>
+<h4 id="1193">11.9.3 权限与变更的书面留痕<a class="headerlink" href="#1193" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>权限申请留痕</strong>：FDE 需要的一切权限（VPN、堡垒机、数据库账号、生产发布权限），一律通过<strong>工单/书面审批</strong>申请，保留申请人、审批人、有效期、使用目的。禁止"借账号""共用权限"的裸奔式操作。</li>
+<li><strong>变更留痕（Change Request）</strong>：任何对客户生产环境的变更（发布、配置改动、数据操作），必须先写<strong>变更单</strong>：变更内容、原因、影响范围、回滚方案、执行人、审批人，经客户 IT 审批后执行。</li>
+<li><strong>发布与回滚记录</strong>：每次发布保留版本与时间戳；一旦出问题，能立刻回溯"谁、在何时、改了什么"。</li>
+<li><strong>统一到客户变更流程</strong>：FDE 的变更尽量纳入客户既有的变更管理流程，而不是另起炉灶——既降低摩擦，也让留痕"客户 IT 看得懂、查得清"。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>"留痕"是两个目的</strong>：一是<strong>保护 FDE</strong>——出了生产事故，书面的变更与权限记录能证明"动作合规、边界清晰"；二是<strong>保护客户 IT</strong>——他们要对生产负责，看得见、查得清的记录是他们在合规审计面前的底气。留痕不是桎梏，是双方共同的安全网。</p>
+</div>
+<h4 id="1194-it">11.9.4 最终要移交什么给客户 IT：交接清单<a class="headerlink" href="#1194-it" title="Permanent link">&para;</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>这是 Scale 阶段"可运营移交"落点的</strong>甲乙双方交接清单（呼应第 7 章 7.10 的"进入能力转移的技术条件"与第 8 章 8.7 的"客户自运营"）。<strong>本节只回答"交什么、验什么、签什么"</strong>——"客户如何从观摩到自治、FDE 何时撤"的问题归 8.7，不在这里重复。<strong>逐项打勾，双方验收签字后才视为本阶段交接完成。</strong></p>
+<p><strong>甲乙分工</strong>：<strong>乙方（FDE）交</strong>——文档、监控、代码与配置、权限等交付物与 SOP；<strong>甲方（客户 IT）验</strong>——能否独立照着操作、独立巡检、自主回滚；<strong>双方签</strong>——交接确认单（含验收要点勾兑与遗留问题清单、时间节点）。</p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类别</th>
+<th style="text-align: left;">交接物</th>
+<th style="text-align: left;">验收要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>文档</strong></td>
+<td style="text-align: left;">运维手册、值班 SOP、架构说明、数据字典</td>
+<td style="text-align: left;">客户 IT 能独立照着操作，无需 FDE 陪同解释</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>监控</strong></td>
+<td style="text-align: left;">数据管道健康度看板、告警规则、指标定义</td>
+<td style="text-align: left;">客户能看到"昨晚管道跑成功了吗"，异常可自行定位</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>代码与配置</strong></td>
+<td style="text-align: left;">代码仓库权限移交、配置项清单、回滚方案</td>
+<td style="text-align: left;">客户 IT 具备版本管理与回滚能力</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>权限</strong></td>
+<td style="text-align: left;">生产发布、权限、账号的最终归属与回收清单</td>
+<td style="text-align: left;">FDE 撤离后不再持有过期的生产权限</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>知识</strong></td>
+<td style="text-align: left;">疑难问题 FAQ、常见故障处置、Playbook 移交（呼应 12.4 知识管理）</td>
+<td style="text-align: left;">客户团队能自服务、未来可自行扩展新场景</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>联系人</strong></td>
+<td style="text-align: left;">明确交接后的运维值班联系人矩阵（FDE 留一位支持接口 vs 客户 IT 值班人）</td>
+<td style="text-align: left;">客户知道"出了问题第一时间找谁"</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>交接的验收标准只有一句</strong>：<strong>"FDE 完全不在场时，客户 IT 能否独立让系统正常跑、正常监控、正常应对故障、正常做小扩展？"</strong>——答案是"能"，交接才算完成；答案含糊，就继续辅导，而不是把系统"扔"过去。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 · CC BY-NC-ND 4.0 · 《AI 时代的 FDE：认知、流程、团队与中国落地》
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/vendor/katex.min.js"></script>
+      
+        <script src="../../assets/vendor/auto-render.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="../../assets/vendor/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

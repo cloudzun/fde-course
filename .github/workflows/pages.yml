@@ -18,6 +18,10 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Style lint（体例检查，零依赖）
+        # AGENTS.md §4.2：提交前必须过，退出码 0 才算过——挡在构建之前
+        run: python scripts/style-lint.py
+
       - name: Install Python dependencies
         # jieba：search 插件 lang=zh 的中文分词依赖（缺它会退化为整段不切词）
         run: pip install mkdocs-material mkdocs-callouts jieba

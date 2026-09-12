@@ -24,11 +24,14 @@ theme:
         name: 切换浅色模式
   features:
     - navigation.instant
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.top
+    - navigation.footer
     - navigation.expand
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.copy
     - content.code.annotate
     - toc.follow
@@ -51,6 +54,8 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.magiclink:
+      hide_protocol: false
   - pymdownx.arithmatex:
       generic: true
   - toc:
@@ -75,32 +80,34 @@ extra:
 copyright: Copyright &copy; 2026 · CC BY-NC-ND 4.0 · 《AI 时代的 FDE：认知、流程、团队与中国落地》
 
 plugins:
-  - search
+  # 中文分词检索：lang 指定 zh 后 MkDocs 会用 jieba 切词（依赖见 .github/workflows/pages.yml）
+  - search:
+      lang: [zh]
   - callouts
 
 nav:
   - 首页: index.md
   - 导读与结构: textbook/00_封面与全书导读.md
   - 第一篇 · 认知篇:
-      - 第1章 FDE是什么: textbook/第01章_FDE是什么.md
-      - 第2章 为什么需要FDE: textbook/第02章_为什么需要FDE.md
+      - 第 1 章 FDE 是什么: textbook/第01章_FDE是什么.md
+      - 第 2 章 为什么需要 FDE: textbook/第02章_为什么需要FDE.md
   - 第二篇 · 标杆篇:
-      - 第3章 Palantir的平台与FDE体系: textbook/第03章_Palantir的平台与FDE体系.md
-      - 第4章 Palantir经典案例集: textbook/第04章_Palantir经典案例集.md
+      - 第 3 章 Palantir 的平台与 FDE 体系: textbook/第03章_Palantir的平台与FDE体系.md
+      - 第 4 章 Palantir 经典案例集: textbook/第04章_Palantir经典案例集.md
   - 第三篇 · 流程篇:
-      - "第5章 Phase 1: Discovery（发现期）": textbook/第05章_Phase1_Discovery.md
-      - "第6章 Phase 2: Prototype（原型期）": textbook/第06章_Phase2_Prototype.md
-      - "第7章 Phase 3: Build（构建期）": textbook/第07章_Phase3_Build.md
-      - "第8章 Phase 4: Scale（扩展期）": textbook/第08章_Phase4_Scale.md
-      - 第9章 能力回注方法论: textbook/第09章_能力回注方法论.md
+      - "第 5 章 Phase 1: Discovery（发现期）": textbook/第05章_Phase1_Discovery.md
+      - "第 6 章 Phase 2: Prototype（原型期）": textbook/第06章_Phase2_Prototype.md
+      - "第 7 章 Phase 3: Build（构建期）": textbook/第07章_Phase3_Build.md
+      - "第 8 章 Phase 4: Scale（扩展期）": textbook/第08章_Phase4_Scale.md
+      - 第 9 章 能力回注方法论: textbook/第09章_能力回注方法论.md
   - 第四篇 · 团队篇:
-      - 第10章 FDE角色体系: textbook/第10章_FDE角色体系.md
-      - 第11章 四阶段中的角色协作: textbook/第11章_四阶段中的角色协作.md
-      - 第12章 FDE人才培养与知识管理: textbook/第12章_FDE人才培养与知识管理.md
+      - 第 10 章 FDE 角色体系: textbook/第10章_FDE角色体系.md
+      - 第 11 章 四阶段中的角色协作: textbook/第11章_四阶段中的角色协作.md
+      - 第 12 章 FDE 人才培养与知识管理: textbook/第12章_FDE人才培养与知识管理.md
   - 第五篇 · 中国实践篇:
-      - 第13章 中国云服务商的FDE实践图谱: textbook/第13章_中国云服务商的FDE实践图谱.md
-      - 第14章 中国区FDE转型的五大挑战与应对: textbook/第14章_中国区FDE转型的五大挑战与应对.md
+      - 第 13 章 中国云服务商的 FDE 实践图谱: textbook/第13章_中国云服务商的FDE实践图谱.md
+      - 第 14 章 中国区 FDE 转型的五大挑战与应对: textbook/第14章_中国区FDE转型的五大挑战与应对.md
   - 第六篇 · AI 解决方案篇:
-      - 第15章 AI FDE 落地（Echo 视角）: textbook/第15章_AI_FDE落地_Echo共识与对齐.md
-      - 第16章 AI FDE 落地（Delta 视角）: textbook/第16章_AI_FDE落地_Delta技术与场景.md
+      - 第 15 章 AI FDE 落地（Echo 视角）: textbook/第15章_AI_FDE落地_Echo共识与对齐.md
+      - 第 16 章 AI FDE 落地（Delta 视角）: textbook/第16章_AI_FDE落地_Delta技术与场景.md
   - 附录: textbook/附录_参考来源与官方资料.md

@@ -47,6 +47,7 @@ shutil.copy2(os.path.join(ROOT, "index.md"), os.path.join(DOCS, "index.md"))
 for src, rel in [
     (os.path.join(ROOT, "assets", "extra.css"), "assets/extra.css"),
     (os.path.join(ROOT, "javascripts", "katex.js"), "javascripts/katex.js"),
+    (os.path.join(ROOT, "javascripts", "analytics.js"), "javascripts/analytics.js"),
 ]:
     dst = os.path.join(DOCS, rel)
     os.makedirs(os.path.dirname(dst), exist_ok=True)

@@ -1,0 +1,1935 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="FDE（前沿部署工程师）方法论与落地手册 —— 六篇 16 章：认知 / 标杆 / 流程 / 团队 / 中国实践 / AI 落地，贯穿"卖人力→卖能力"飞轮主线">
+      
+      
+      
+        <link rel="canonical" href="https://www.cloudzun.com/fde-course/textbook/%E7%AC%AC14%E7%AB%A0_%E8%BF%90%E8%90%A5%E5%95%86AI%E5%B9%B3%E5%8F%B0%E4%B8%8EFDE%E5%AE%9E%E8%B7%B5/">
+      
+      
+        <link rel="prev" href="../%E7%AC%AC13%E7%AB%A0_%E6%94%BF%E7%AD%96%E5%AF%BC%E5%90%91%E4%B8%8B%E7%9A%84FDE%E8%BD%AC%E5%9E%8B%E6%8C%91%E6%88%98%E4%B8%8E%E5%BA%94%E5%AF%B9/">
+      
+      
+        <link rel="next" href="../%E7%AC%AC15%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%95%86%E7%9A%84FDE%E5%AE%9E%E8%B7%B5%E5%9B%BE%E8%B0%B1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>第 14 章 三大运营商的 AI 平台与 FDE 实践 - AI 时代的 FDE：认知、流程、团队与中国落地</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/vendor/katex.min.css">
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#14-ai-fde" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-header__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 时代的 FDE：认知、流程、团队与中国落地
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第 14 章 三大运营商的 AI 平台与 FDE 实践
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="amber"  aria-label="切换浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI 时代的 FDE：认知、流程、团队与中国落地" class="md-nav__button md-logo" aria-label="AI 时代的 FDE：认知、流程、团队与中国落地" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI 时代的 FDE：认知、流程、团队与中国落地
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cloudzun/fde-course" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cloudzun/fde-course
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_%E5%B0%81%E9%9D%A2%E4%B8%8E%E5%85%A8%E4%B9%A6%E5%AF%BC%E8%AF%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    导读与结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一篇 · 认知篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第一篇 · 认知篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC01%E7%AB%A0_FDE%E6%98%AF%E4%BB%80%E4%B9%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 1 章 FDE 是什么
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC02%E7%AB%A0_%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81FDE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 2 章 为什么需要 FDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二篇 · 标杆篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第二篇 · 标杆篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC03%E7%AB%A0_Palantir%E7%9A%84%E5%B9%B3%E5%8F%B0%E4%B8%8EFDE%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 3 章 Palantir 的平台与 FDE 体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC04%E7%AB%A0_Palantir%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E9%9B%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 4 章 Palantir 经典案例集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第三篇 · 流程篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第三篇 · 流程篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC05%E7%AB%A0_Phase1_Discovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 5 章 Phase 1: Discovery（发现期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC06%E7%AB%A0_Phase2_Prototype/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 6 章 Phase 2: Prototype（原型期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC07%E7%AB%A0_Phase3_Build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 7 章 Phase 3: Build（构建期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC08%E7%AB%A0_Phase4_Scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 8 章 Phase 4: Scale（扩展期）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC09%E7%AB%A0_%E8%83%BD%E5%8A%9B%E5%9B%9E%E6%B3%A8%E6%96%B9%E6%B3%95%E8%AE%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 9 章 能力回注方法论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四篇 · 团队篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第四篇 · 团队篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC10%E7%AB%A0_FDE%E8%A7%92%E8%89%B2%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 10 章 FDE 角色体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC11%E7%AB%A0_%E5%9B%9B%E9%98%B6%E6%AE%B5%E4%B8%AD%E7%9A%84%E8%A7%92%E8%89%B2%E5%8D%8F%E4%BD%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 11 章 四阶段中的角色协作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC12%E7%AB%A0_FDE%E4%BA%BA%E6%89%8D%E5%9F%B9%E5%85%BB%E4%B8%8E%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 12 章 FDE 人才培养与知识管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五篇 · 中国实践篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第五篇 · 中国实践篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC13%E7%AB%A0_%E6%94%BF%E7%AD%96%E5%AF%BC%E5%90%91%E4%B8%8B%E7%9A%84FDE%E8%BD%AC%E5%9E%8B%E6%8C%91%E6%88%98%E4%B8%8E%E5%BA%94%E5%AF%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 13 章 政策导向下的中国区 FDE 转型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 14 章 三大运营商的 AI 平台与 FDE 实践
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 14 章 三大运营商的 AI 平台与 FDE 实践
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#14-ai-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 14 章 三大运营商的 AI 平台与 FDE 实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第 14 章 三大运营商的 AI 平台与 FDE 实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 运营商为什么是特殊的 FDE 主体
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 平台分层图谱：六个名字不在同一层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 中国电信：息壤、星辰、星海与智惠工程师
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.3 中国电信：息壤、星辰、星海与智惠工程师">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1431" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3.1 案例：中国电信北京公司"智惠工程师"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.4 中国联通：星罗、元景万悟与京元
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#145-knova" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.5 中国移动：九天体系与梧桐 KnoVa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#146-foundry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.6 对标 Foundry：真正该比的五个点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#147-poc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.7 统一 PoC 验证方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#148" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.8 运营商作为服务商与服务团牵头方
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#149" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.9 甲乙方对照：运营商到底在卖算力，还是在卖能力？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC15%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%95%86%E7%9A%84FDE%E5%AE%9E%E8%B7%B5%E5%9B%BE%E8%B0%B1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 15 章 中国云服务商的 FDE 实践图谱
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC16%E7%AB%A0_%E5%85%B3%E9%94%AE%E8%A1%8C%E4%B8%9AFDE%E5%AE%9E%E8%B7%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 16 章 关键行业 FDE 实践
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六篇 · AI 解决方案篇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第六篇 · AI 解决方案篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC17%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Echo%E5%85%B1%E8%AF%86%E4%B8%8E%E5%AF%B9%E9%BD%90/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 17 章 AI FDE 落地（Echo 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%AC%AC18%E7%AB%A0_AI_FDE%E8%90%BD%E5%9C%B0_Delta%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%9C%BA%E6%99%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 18 章 AI FDE 落地（Delta 视角）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E5%BD%95_%E5%8F%82%E8%80%83%E6%9D%A5%E6%BA%90%E4%B8%8E%E5%AE%98%E6%96%B9%E8%B5%84%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#14-ai-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第 14 章 三大运营商的 AI 平台与 FDE 实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第 14 章 三大运营商的 AI 平台与 FDE 实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-fde" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 运营商为什么是特殊的 FDE 主体
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 平台分层图谱：六个名字不在同一层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 中国电信：息壤、星辰、星海与智惠工程师
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14.3 中国电信：息壤、星辰、星海与智惠工程师">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1431" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3.1 案例：中国电信北京公司"智惠工程师"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.4 中国联通：星罗、元景万悟与京元
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#145-knova" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.5 中国移动：九天体系与梧桐 KnoVa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#146-foundry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.6 对标 Foundry：真正该比的五个点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#147-poc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.7 统一 PoC 验证方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#148" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.8 运营商作为服务商与服务团牵头方
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#149" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.9 甲乙方对照：运营商到底在卖算力，还是在卖能力？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>第 14 章 三大运营商的 AI 平台与 FDE 实践</h1>
+
+<h2 id="14-ai-fde">第 14 章 三大运营商的 AI 平台与 FDE 实践<a class="headerlink" href="#14-ai-fde" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>本章导读</strong>：第 13 章读懂了 414 号文：政策要的是能牵头服务团、扎根用户现场的服务商。在这个框架里，中国电信、中国联通、中国移动三大运营商位置最特殊——它们既是央企，又是 414 号文所说的人工智能应用服务商，还常常是地方服务团的天然牵头方；底层资产也不同于云厂商的"云 + 模型"，而是"网络 + 算力 + 属地政企服务"。因此本篇先从运营商看政策如何落地。本章先用一张分层图谱把三家的平台放到同一坐标系里，再分家剖析，然后以 Palantir Foundry 为参照找出真正该比的五个点，最后给出一套统一的 PoC 验证方法。<strong>读完本章，你能说清某个运营商平台处在哪一层、适合验证什么，以及它离"数据→对象→行动"的完整闭环还差什么。</strong></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>本章的三条写作纪律</strong>（请读者也按此阅读）：</p>
+<ol>
+<li><strong>按"产品 + 版本 + 证据等级"说话</strong>：例如"元景万悟开源版 v0.6.4 的操作手册给出了对象类与行动类配置"，而不是"联通平台支持本体"。</li>
+<li><strong>证据分四级</strong>：<strong>A</strong> 官方技术文档、API、可读的部署配置或代码；<strong>B</strong> 官方产品页与发布宣称；<strong>C</strong> 案例报道与第三方材料；<strong>?</strong> 公开资料不足。证据等级不是性能分数，"没有公开文档"也不等于"不支持"。</li>
+<li><strong>不排名、不打总分</strong>：本章只给分层定位与"适合验证什么"，不据公开文档数量给三家排座次。</li>
+</ol>
+</div>
+<h3 id="141-fde">14.1 运营商为什么是特殊的 FDE 主体<a class="headerlink" href="#141-fde" title="Permanent link">&para;</a></h3>
+<p>运营商做 FDE，和云厂商、模型厂商相比有三个结构性差异：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">云厂商（见第 15 章）</th>
+<th style="text-align: left;">运营商（本章）</th>
+<th style="text-align: left;">对 FDE 交付的含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">底层资产</td>
+<td style="text-align: left;">公有云、模型、开发者生态</td>
+<td style="text-align: left;">骨干网与专线、智算中心、属地机房</td>
+<td style="text-align: left;">数据不出域、专网直连场景天然占优</td>
+</tr>
+<tr>
+<td style="text-align: left;">客户触达</td>
+<td style="text-align: left;">行业线 + 伙伴</td>
+<td style="text-align: left;">省、市、区县三级政企客户经理</td>
+<td style="text-align: left;">触达深但"懂 AI 的人"稀缺，FDE 是补位</td>
+</tr>
+<tr>
+<td style="text-align: left;">身份</td>
+<td style="text-align: left;">市场化企业</td>
+<td style="text-align: left;">央企 + AI 应用服务商 + 服务团牵头方</td>
+<td style="text-align: left;">同时受国资委考核与工信部培育政策牵引</td>
+</tr>
+</tbody>
+</table>
+<p>国务院国资委在 2026 年 1 月的国新办发布会上披露，中央企业"AI+"专项行动已开放 1000 多个应用场景，建成 4 个万卡级智算集群；中国电信星辰、中国移动九天等大模型已服务 200 多家外部单位（见附录 D-8）。这说明运营商的 AI 平台不只是自用，已经在对外输出。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>给乙方的读法</strong>：运营商是你的<strong>潜在总包方或服务团牵头方</strong>，而不只是竞争对手。看懂它的平台分层，才能判断自己在哪一层做补位：数据治理、行业本体、智能体应用，还是现场交付人力。</p>
+</div>
+<h3 id="142">14.2 平台分层图谱：六个名字不在同一层<a class="headerlink" href="#142" title="Permanent link">&para;</a></h3>
+<p>业内常把"息壤、星辰、星罗、元景、京元、九天"放在一起比，这其实混合了算力平台、模型服务、Token 供给、智能体应用和综合品牌。按层拆开才能比较：</p>
+<pre class="mermaid"><code>graph TD
+    L4["④ 业务语义与本体层&lt;br/&gt;对象 / 关系 / 行动 / 权限"]
+    L3["③ 智能体执行层&lt;br/&gt;智能体开发平台 / 任务型智能体"]
+    L2["② Token 供给层&lt;br/&gt;统一模型 API / 词元计量与分发"]
+    L1["① 算力与模型底座&lt;br/&gt;智算调度 / 训推 / 模型服务"]
+    L1 --&gt; L2 --&gt; L3 --&gt; L4
+    L4 -.-&gt;|结果回流| L1
+
+    style L4 fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style L1 fill:#f5ece0,stroke:#a8895f</code></pre>
+<p><em>图 14-1：运营商 AI 平台四层结构——越往上越接近业务，越往上公开证据越少</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">层级</th>
+<th style="text-align: left;">中国电信</th>
+<th style="text-align: left;">中国联通</th>
+<th style="text-align: left;">中国移动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">① 算力与模型底座</td>
+<td style="text-align: left;">天翼云息壤一体化智算服务平台</td>
+<td style="text-align: left;">星罗先进算力调度平台</td>
+<td style="text-align: left;">九天模型家族、LLM Studio、MaaS</td>
+</tr>
+<tr>
+<td style="text-align: left;">② Token 供给</td>
+<td style="text-align: left;">息壤模型 / Token 服务</td>
+<td style="text-align: left;">星罗 Token 服务、京元 Token 服务平台、元景词元运营分发</td>
+<td style="text-align: left;">九天 MaaS</td>
+</tr>
+<tr>
+<td style="text-align: left;">③ 智能体执行</td>
+<td style="text-align: left;">星辰智能体开发平台、星辰超级智能体 TeleAgent</td>
+<td style="text-align: left;">元景万悟智能体平台</td>
+<td style="text-align: left;">聚智 JoinAI、九天 AI OS</td>
+</tr>
+<tr>
+<td style="text-align: left;">④ 业务语义与本体</td>
+<td style="text-align: left;">星海 AI-Studio 本体语义中枢、星海智能动态本体平台</td>
+<td style="text-align: left;">元景万悟本体模块</td>
+<td style="text-align: left;">梧桐数据 KnoVa 本体智能平台</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p><strong>两个都不成立的判断</strong>：一是"运营商只有算力和模型，没有 Ontology，只有 Palantir 才有"——三家在第④层都已有公开产品；二是"出现了本体就等于能替代 Foundry"——Foundry 的差异化不在某个模块，而在数据工程、业务对象、逻辑、行动、应用、安全与持续演化<strong>连成一个体系</strong>的程度。</p>
+</div>
+<h3 id="143">14.3 中国电信：息壤、星辰、星海与智惠工程师<a class="headerlink" href="#143" title="Permanent link">&para;</a></h3>
+<p><strong>平台侧</strong>：</p>
+<ul>
+<li><strong>息壤</strong>（第①②层，A/B）：天翼云官方文档把它定义为一体化智算服务平台，覆盖公共算力、训推、模型与 Token 服务、应用托管。它是底座，不应被当作已证实的统一业务对象平台。</li>
+<li><strong>星辰 TeleAgent</strong>（第③层，A）：官方有详细的桌面版操作手册，定位是面向个人的任务执行智能体，可比较其任务、Skills、MCP、授权与交付能力；另有独立的星辰智能体开发平台，两者不能混为一谈。</li>
+<li><strong>星海</strong>（第④层，B/C）：官方介绍星海 AI-Studio 具备本体语义中枢、元数据同步、本体探索、列级权限与审计；另有"星海·智能动态本体平台"的发布报道。<strong>两者之间的产品关系、与息壤和 TeleAgent 的技术关系，公开资料尚未说明。</strong></li>
+</ul>
+<h4 id="1431">14.3.1 案例：中国电信北京公司"智惠工程师"<a class="headerlink" href="#1431" title="Permanent link">&para;</a></h4>
+<p><strong>1. 背景与挑战</strong>：政企客户上 AI 的普遍卡点不是模型，而是"场景说不清、数据接不上、上线后没人运营"。中国电信北京公司把 FDE 本地化为"智惠工程师"队伍，定位是打通 AI 落地的"最后一公里"（见附录 D-9）。</p>
+<p><strong>2. FDE 介入方式</strong>：公开报道把队伍分为三类角色——<strong>Echo</strong>（业务洞察与需求转化）、<strong>Delta</strong>（技术实现与交付）、<strong>Foundry</strong>（平台与工具沉淀）。前两类与本书三角色一致，第三类值得注意：它把"能力回注"单独设成了一类岗位。</p>
+<p><strong>3. 技术方案</strong>：以电信自有的算力与模型平台为底座，按"联合创新、定制开发、标化交付"三类场景分层供给——前沿场景联合共创，个性需求定制开发，成熟场景做成标准化产品交付。</p>
+<p><strong>4. 交付过程</strong>：报道提及的一个央企平台项目中，上线模型 200 多个、日均 Token 调用 10 亿次以上（企业披露口径）。</p>
+<p><strong>5. 业务成果</strong>：公开报道以规模与覆盖为主，未披露单场景的业务指标（如效率、准确率、成本）。</p>
+<p><strong>6. 能力回注</strong>："联合创新→定制开发→标化交付"本身就是一条回注链：场景从一次性共创，逐步沉淀为可复制的标准产品。Foundry 类岗位承担其中的平台沉淀职能。</p>
+<p><strong>7. 方法论启示</strong>：这是国内少见的<strong>把回注职能显式设岗</strong>的样本，对应第 9 章的"集成"一步和第 10 章的 Dev 角色。乙方可以借鉴的不是名称，而是"有人专门对沉淀负责"这一组织设计；同时要注意，公开材料证明的是规模，不是单位 FDE 的产出效率。</p>
+<h3 id="144">14.4 中国联通：星罗、元景万悟与京元<a class="headerlink" href="#144" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>星罗</strong>（第①②层，B）：先进算力调度平台，面向异构算力的统一调度与 Token 供给。它不是 Foundry 数据—业务执行层的同类产品。</li>
+<li><strong>元景</strong>（第①–④层，A/B）：模型家族、MaaS、词元运营分发，以及<strong>元景万悟</strong>智能体平台。联通 2026 年的发布材料中出现了"词元运营分发与 FDE、本体、智能体结合"的表述。</li>
+<li><strong>京元</strong>（第②层，B）：与北京联通关联的京元 Token 服务平台，提供统一模型 API、Token 服务与智能体生态接入。名称真实可查，但详细的操作文档不足。</li>
+</ul>
+<p><strong>元景万悟是本章证据最扎实的一个</strong>。其开源仓库与官方操作手册（Release v0.6.4，2026-09-04）给出了操作级的配置路径：</p>
+<pre class="mermaid"><code>graph TD
+    ds["数据连接"] --&gt; view["SQL / Join 视图"]
+    view --&gt; obj["对象类 + 关系类&lt;br/&gt;逻辑属性"]
+    obj --&gt; act["行动类"]
+    act --&gt; emp["数字员工 / 执行服务"]
+
+    style obj fill:#dbe4f0,stroke:#3949ab,stroke-width:2px
+    style act fill:#e4efe4,stroke:#5b7a5b</code></pre>
+<p><em>图 14-2：元景万悟开源版的本体配置路径——从数据连接到数字员工执行</em></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>开源手册 ≠ 生产验收</strong>。万悟文档同时写明了一些限制，例如<strong>底表写入后不会自动更新本体索引，需要手动构建或定时构建</strong>，因此不能承诺自动实时一致。这正是第 7 章 Build 期要专门检查"索引新鲜度"的原因：数据变了、对象状态没变，智能体就会基于过期事实行动。另外，GitHub 上的开源版与商业版元景 MaaS 不共用版本号，不能用开源版的能力推断商业版的规格。</p>
+</div>
+<h3 id="145-knova">14.5 中国移动：九天体系与梧桐 KnoVa<a class="headerlink" href="#145-knova" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>九天</strong>（第①–③层，B）：九天是一个综合品牌，下面包括模型、LLM Studio、MaaS、聚智 JoinAI 和 2026 年发布的九天 AI OS。比较时要落到具体组件，不能拿某个聊天应用代表整个体系。</li>
+<li><strong>梧桐数据·本体智能平台 KnoVa</strong>（第④层，B/C）：公开材料给出了"数据—语义—动力—行动"四层架构，以及运营商内部的流失预警、反诈白名单等案例，涉及对象化建模、规则 / 机器学习 / 图推理、决策仿真与结果回流。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>对标 Foundry 的业务语义与决策层，中国移动最值得看的是 <strong>KnoVa</strong>，而不是"九天大模型"本身。但目前能拿到的是架构与案例层面的证据，<strong>还没有与万悟同等细度的公开操作文档和 API</strong>，适合放进 PoC 实测，不适合直接写进方案承诺。</p>
+</div>
+<h3 id="146-foundry">14.6 对标 Foundry：真正该比的五个点<a class="headerlink" href="#146-foundry" title="Permanent link">&para;</a></h3>
+<p>比较运营商平台与 Foundry，不要比"有没有大模型、有没有知识库、有没有工作流"，而要比<strong>跨层能不能打通</strong>。下面五个点是公开文档最少、项目里最容易出事的地方：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">比较点</th>
+<th style="text-align: left;">要回答的问题</th>
+<th style="text-align: left;">典型失败表现</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1. 数据→对象状态</td>
+<td style="text-align: left;">源系统数据变化后，多久、以何种保证反映到业务对象？</td>
+<td style="text-align: left;">智能体基于过期对象状态做决策</td>
+</tr>
+<tr>
+<td style="text-align: left;">2. 权限全链贯通</td>
+<td style="text-align: left;">用户权限能否从数据、检索、模型、工具一直传到动作？</td>
+<td style="text-align: left;">检索层绕过了数据层的行级权限</td>
+</tr>
+<tr>
+<td style="text-align: left;">3. 写回一致性</td>
+<td style="text-align: left;">行动写回失败、重试、并发时，业务状态会不会错？</td>
+<td style="text-align: left;">工单重复创建、状态不一致</td>
+</tr>
+<tr>
+<td style="text-align: left;">4. 变更与发布</td>
+<td style="text-align: left;">对象、逻辑、应用能否一起测试、发布、回退？</td>
+<td style="text-align: left;">改了本体，下游应用悄悄坏掉</td>
+</tr>
+<tr>
+<td style="text-align: left;">5. 跨场景复制</td>
+<td style="text-align: left;">一个项目能否带着治理与依赖复制到另一省份或客户？</td>
+<td style="text-align: left;">每个省重新做一遍</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>五个"看起来都有"的误判</strong>：</p>
+<ul>
+<li>有知识库 ≠ 有业务对象；</li>
+<li>有 MCP / API ≠ 有可靠的业务行动；</li>
+<li>有角色菜单 ≠ 有全链路权限；</li>
+<li>有 Token 账单 ≠ 有端到端数据血缘；</li>
+<li>有 Docker 或应用市场 ≠ 有可治理的跨环境交付。</li>
+</ul>
+</div>
+<p><strong>Foundry 自己也不是没有边界</strong>。按 Palantir 官方文档：Webhook 写回外部系统不是分布式强事务，外部调用成功后本体更新仍可能失败；OSDK 把数据返回给外部应用之后，后续处理仍需另行治理；分支合并部分失败时目前无法直接回退（详见第 3 章）。这提醒我们：对标的目的不是证明谁"更像 Palantir"，而是<strong>把这五个点变成验收项</strong>。</p>
+<h3 id="147-poc">14.7 统一 PoC 验证方法<a class="headerlink" href="#147-poc" title="Permanent link">&para;</a></h3>
+<p>比较不同平台，最公平的办法是<strong>同一道题、同一套检查项</strong>。推荐题目：<strong>政企专线故障影响分析与工单协同</strong>——它同时涉及网络资源数据、客户合同对象、影响范围推理、工单写回和多角色权限，能把五个比较点一次性暴露出来。</p>
+<p>检查项共 12 项，按"数据→对象→行动→交付"排列（完整清单、硬门槛、权重与总成本口径见附录 J）：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类别</th>
+<th style="text-align: left;">检查项</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">数据</td>
+<td style="text-align: left;">V01 接入与更新　V02 质量与血缘</td>
+</tr>
+<tr>
+<td style="text-align: left;">对象与逻辑</td>
+<td style="text-align: left;">V03 业务对象　V04 逻辑与解释</td>
+</tr>
+<tr>
+<td style="text-align: left;">行动与权限</td>
+<td style="text-align: left;">V05 受控写回　V06 权限全链路　V07 业务操作台</td>
+</tr>
+<tr>
+<td style="text-align: left;">AI 与运行</td>
+<td style="text-align: left;">V08 智能体评测　V09 运行追踪</td>
+</tr>
+<tr>
+<td style="text-align: left;">交付与演化</td>
+<td style="text-align: left;">V10 变更与回滚　V11 多环境与隔离　V12 跨省复制与退出</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>PoC 纪律</strong>：要求平台方对每一项标明能力来源——<strong>原生功能、厂商配套产品、第三方组件、还是项目自研</strong>。定制开发可以写进方案，但不能伪装成开箱即用；否则中标后的"定制工作量"会原样回到 FDE 身上，这正是第 13 章所说的项目制陷阱。</p>
+</div>
+<h3 id="148">14.8 运营商作为服务商与服务团牵头方<a class="headerlink" href="#148" title="Permanent link">&para;</a></h3>
+<p>414 号文要求各地遴选人工智能应用服务商入池，并组织由 1 家服务商牵头、不少于 2 家上下游单位参与的人工智能应用服务团（详见第 13 章）。运营商在其中有三种典型站位：</p>
+<ol>
+<li><strong>牵头方</strong>：以算力、网络与属地客户关系牵头，联合模型厂商、行业软件商、本地集成商组团，向产业链或园区提供成套服务；</li>
+<li><strong>底座供给方</strong>：以息壤、星罗、九天等平台和 Token 服务进入别人牵头的服务团，按调用量计费；</li>
+<li><strong>FDE 人力方</strong>：以智惠工程师这类队伍提供驻场交付，与平台捆绑销售。</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p><strong>警惕"算力换项目"</strong>：若运营商只以算力券、Token 优惠换取项目入口，而没有第④层的业务本体与第 9 章的回注机制，交付仍会退化为按人头计价的集成项目。评估一个运营商服务团的成熟度，看的是它<strong>有没有人对沉淀负责、有没有可复制的行业本体</strong>，而不是算力规模。</p>
+</div>
+<h3 id="149">14.9 甲乙方对照：运营商到底在卖算力，还是在卖能力？<a class="headerlink" href="#149" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">视角</th>
+<th style="text-align: left;">甲方该问</th>
+<th style="text-align: left;">乙方该做</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">平台选型</td>
+<td style="text-align: left;">这个平台在四层里覆盖到哪一层？第④层有没有操作级证据？</td>
+<td style="text-align: left;">用附录 J 的 12 项做 PoC，逐项标注能力来源</td>
+</tr>
+<tr>
+<td style="text-align: left;">采购条款</td>
+<td style="text-align: left;">Token 计费之外，业务效果怎么验收？</td>
+<td style="text-align: left;">把"写回一致性、权限贯通"写进验收标准</td>
+</tr>
+<tr>
+<td style="text-align: left;">服务团</td>
+<td style="text-align: left;">牵头方是否有专人负责沉淀与复制？</td>
+<td style="text-align: left;">选定自己的层级站位，避免与牵头方同层竞争</td>
+</tr>
+<tr>
+<td style="text-align: left;">长期关系</td>
+<td style="text-align: left;">平台锁定后，本体与数据能否迁出？</td>
+<td style="text-align: left;">自建可迁移的本体描述与评测集，作为自己的资产</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Important</p>
+<p><strong>本章小结</strong>：运营商的优势在第①②层，趋势在第④层，FDE 的价值在于把两者连起来。算力是入场券，<strong>能把"数据→对象→行动"闭环跑通并复制到下一个省份的能力</strong>，才是运营商从"卖算力"走向"卖能力"的分水岭。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E7%AC%AC13%E7%AB%A0_%E6%94%BF%E7%AD%96%E5%AF%BC%E5%90%91%E4%B8%8B%E7%9A%84FDE%E8%BD%AC%E5%9E%8B%E6%8C%91%E6%88%98%E4%B8%8E%E5%BA%94%E5%AF%B9/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第 13 章 政策导向下的中国区 FDE 转型">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第 13 章 政策导向下的中国区 FDE 转型
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E7%AC%AC15%E7%AB%A0_%E4%B8%AD%E5%9B%BD%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%95%86%E7%9A%84FDE%E5%AE%9E%E8%B7%B5%E5%9B%BE%E8%B0%B1/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第 15 章 中国云服务商的 FDE 实践图谱">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第 15 章 中国云服务商的 FDE 实践图谱
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 · CC BY-NC-ND 4.0 · 《AI 时代的 FDE：认知、流程、团队与中国落地》
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.top", "navigation.footer", "navigation.expand", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/analytics.js"></script>
+      
+        <script src="../../assets/vendor/katex.min.js"></script>
+      
+        <script src="../../assets/vendor/auto-render.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="../../assets/vendor/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

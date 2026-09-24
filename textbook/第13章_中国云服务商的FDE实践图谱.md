@@ -112,9 +112,9 @@ graph TD
 #### 13.2.1 华为的铁三角模式 (Iron Triangle)
 面对大型政企客户，华为在前端配置了三个核心角色协同作战：
 
-- **AR (客户经理, Account Representative)**：负责客户关系和商务闭环。
-- **SR (解决方案经理, Solution Representative)**：最接近 FDE 的角色，负责洞察业务痛点并输出整体技术方案（对标 Palantir 部署主管/架构师）。SR 不仅需要极强的技术底蕴，更需要具备与客户 CXO 级别对话的商业视角。
-- **FR (交付经理, Fulfillment Representative)**：负责项目的生命周期管理、资源协调与实施交付。
+- **AR（客户经理, Account Representative）**：负责客户关系和商务闭环。
+- **SR（解决方案经理, Solution Representative）**：最接近 FDE 的角色，负责洞察业务痛点并输出整体技术方案（对标 Palantir 部署主管/架构师）。SR 不仅需要极强的技术底蕴，更需要具备与客户 CXO 级别对话的商业视角。
+- **FR（交付经理, Fulfillment Representative）**：负责项目的生命周期管理、资源协调与实施交付。
 
 ```mermaid
 graph TD

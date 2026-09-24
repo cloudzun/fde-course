@@ -83,6 +83,21 @@ graph TD
 >
 > 但这里藏着一个必须提前想清楚的提醒：**Ontology 一旦建好，业务语义层就会绑定在平台的私有形态上**——在 Palantir 那里，它绑定的是封闭的 Foundry。国内团队在复刻时若不加规划，同样会把自己绑在某家国产平台的私有形态上。因此落地前就要规划好"**FDE 的经验如何沉淀为可迁移的资产**"，让它沉淀为 Skill、模板与通用方法论（呼应第 9 章"能力回注"），而不是把一摞绑定平台的定制代码留在客户那里、永远靠堆人维护。**避免陷入"永远在堆人"的困局，甚至比技术选型本身更接近成败。**
 
+#### 3.1.1 Foundry 自身的边界（官方文档口径）
+
+对标 Palantir 时容易把它理想化。按 Palantir 官方文档，Foundry 至少有三处需要项目自行处理的边界：
+
+| 边界 | 官方文档说明 | 对 FDE 交付的含义 |
+| :--- | :--- | :--- |
+| 跨系统写回 | Webhook 写回外部系统不是分布式强事务，外部调用成功后本体更新仍可能失败 | 设计幂等键、补偿与可见的不一致状态 |
+| 导出后的权限 | OSDK 把数据返回给外部应用后，后续处理仍需另行治理 | 外部应用要有自己的权限与审计 |
+| 分支回退 | Global Branching 部分合并失败时目前无法直接回退 | 发布前做依赖检查与回退演练 |
+
+来源：Palantir 官方文档 [Webhooks](https://www.palantir.com/docs/foundry/action-types/webhooks/)、[Ontology SDK](https://www.palantir.com/docs/foundry/ontology-sdk/overview/)、[Global Branching](https://www.palantir.com/docs/foundry/global-branching/core-concepts/)。
+
+> [!CAUTION]
+> 这三点不是否定 Foundry，而是说明：**写回一致性、权限贯通、变更回退是任何平台都要在项目里验收的问题**。第 14 章与附录 J 把它们转成了统一的 PoC 检查项。
+
 ### 3.2 作战单元：团队结构（技术执行 / 业务策略 / 基础设施）
 
 有了武器库，接下来的问题是**谁来使用它**。在客户现场，单纯派出一名写代码的工程师是不够的，必须形成特种作战小组——这三类角色，正是 People 维度的核心配置。
